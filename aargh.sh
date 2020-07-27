@@ -22,14 +22,10 @@ esac done
 
 ### FUNCTIONS ###
 
-if type apt >/dev/null 2>&1; then
-	installpkg(){ apt-get install -y "$1" >/dev/null 2>&1 ;}
-	grepseq="\"^[PGU]*,\""
-else
-	distro="arch"
-	installpkg(){ pacman --noconfirm --needed -S "$1" >/dev/null 2>&1 ;}
-	grepseq="\"^[PGA]*,\""
-fi
+# Initial settings
+distro="arch"
+installpkg(){ pacman --noconfirm --needed -S "$1" >/dev/null 2>&1 ;}
+grepseq="\"^[PGA]*,\""
 
 error() { clear; printf "ERROR:\\n%s\\n" "$1"; exit;}
 
@@ -133,7 +129,6 @@ installationloop() { \
 		esac
 	done < /tmp/progs.csv ;}
 
-	## TODO: DotBare
 putgitrepo() {
 	[ ! -d "$2" ] && mkdir -p "$2"
 	mkdir -p "$2/.config/dots"
@@ -145,7 +140,7 @@ putgitrepo() {
 		export DOTBARE_DIR="/home/$name/.config/dots"
 		export DOTBARE_TREE="/home/$name"
 		export DOTBARE_BACKUP="/home/$name/.local/share}/dotbare"
-	# make ssh key in an interactive way (!)
+	# make ssh key in an interactive way
 		ssh-keygen -t rsa -b 4096 -C "ad17fmin@uwcad.it"
 		curl -u "BachoSeven" \
 		    --data "{\"title\":\"DevVm_`date +%Y%m%d%H%M%S`\",\"key\":\"`cat ~/.ssh/id_rsa.pub`\"}" \
@@ -227,7 +222,7 @@ yes | sudo -u "$name" $aurhelper -S libxft-bgra >/dev/null 2>&1
 
 # Install the dotfiles in the user's home directory
 putgitrepo
-rm -f "/home/$name/README.md"
+rm -f "/home/$name/LICENSE.md"
 # make git ignore deleted LICENSE file
 git update-index --assume-unchanged "/home/$name/LICENSE"
 
