@@ -218,6 +218,9 @@ ntpdate 0.us.pool.ntp.org >/dev/null 2>&1
 # and all build dependencies are installed.
 installationloop
 
+# Uninstall useless packages from Anarchy
+sudo -u "$name" $aurhelper -Rsc --noconfirm zsh-syntax-highlighting vim
+
 ### POST-INSTALLATION
 dialog --title "AARGH Installation" --infobox "Activating services (post-installation)" 5 70
 sudo -u "$name" systemctl --user enable mpd.service
