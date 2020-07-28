@@ -1,5 +1,5 @@
 #TAG,NAME IN REPO (or git url),PURPOSE
-A,chromium,"is the browser."
+,chromium,"is the browser."
 ,xscreensaver,"is a fantastic screensaver package"
 ,gimp,"is a powerful image editor"
 A,nerd-fonts-hack,"is the main TUI font"

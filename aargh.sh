@@ -7,7 +7,6 @@
 
 while getopts ":a:r:b:p:sh" o; do case "${o}" in
 	h) printf "Optional arguments for custom use:\\n  -r: Dotfiles repository (local file or url)\\n  -p: Dependencies and programs csv (local file or url)\\n  -a: AUR helper (must have pacman-like syntax)\\n  -h: Show this message\\n" && exit ;;
-	s) sshgit=true ;;
 	r) dotfilesrepo=${OPTARG} && git ls-remote "$dotfilesrepo" || exit ;;
 	b) repobranch=${OPTARG} ;;
 	p) progsfile=${OPTARG} ;;
@@ -143,7 +142,9 @@ putgitrepo() {
 	# make ssh key in an interactive way
 		sudo -u "$name" ssh-keygen -t rsa -b 4096 -C "ad17fmin@uwcad.it"
 		cat /home/$name/.ssh/id_rsa.pub > /tmp/sshkey
-		sudo -u "$name" curl -H "Authorization: 6a532dcb73bf9f7c9c96de5eb9c69ce2290ee922" \
+		dialog --title "AARGH Installation" --infobox "insert github Personal Access Token to add sshkey for your account, if you'd like to. It's useful when using dotbare" 12 80
+		read -r token
+		sudo -u "$name" curl -H "Authorization: $token" \
 			--data "{\"title\":\"Machine_`date +%Y%m%d%H%M%S`\",\"key\":\"$(cat /tmp/sshkey)\"}" \
 		    https://api.github.com/user/keys
 	# called dotbare executable so to install $dotfilesrepo ["$repobranch"] (with sudo -u "$name")
@@ -219,6 +220,7 @@ ntpdate 0.us.pool.ntp.org >/dev/null 2>&1
 installationloop
 
 # Uninstall useless packages from Anarchy
+dialog --title "AARGH Installation" --infobox "Removing useless packages from Anarchy installation: \`vim\` and \`zsh-syntax-highlighting\`" 5 70
 sudo -u "$name" $aurhelper -Rsc --noconfirm zsh-syntax-highlighting vim
 
 ### POST-INSTALLATION
