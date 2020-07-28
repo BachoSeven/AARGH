@@ -6,6 +6,10 @@
 - vsftpd
 - wget
 
+## AARGH
+wget https://raw.githubusercontent.com/BachoSeven/AARGH/master/aargh.sh
+sudo sh aargh.sh (if gh PAT is alright)
+
 ## Setups post-install
 - swapfile
 - plymouth: hook in mkinitcpio && regenerate initramfs
