@@ -130,19 +130,19 @@ installationloop() { \
 	done < /tmp/progs.csv ;}
 
 putgitrepo() {
-	[ ! -d "$2" ] && mkdir -p "$2"
-	mkdir -p "$2/.config/dots"
-	chown -R "$name":wheel "$2"
+	[ ! -d "/home/$name" ] && mkdir -p "/home/$name"
+	mkdir -p "/home/$name/.config/dots"
+	chown -R "$name":wheel "/home/$name"
 	# Install dotbare from AUR [yay is needed at this point]
-		dialog --title "AARGH Installation" --infobox "Installing `dotbare` from AUR to manage dotfiles" 5 70
+		dialog --title "AARGH Installation" --infobox "Installing \`dotbare\` from AUR to manage dotfiles" 5 70
 		sudo -u "$name" $aurhelper -S --noconfirm dotbare >/dev/null 2>&1
 	# set dotbare ENV variables
 		export DOTBARE_DIR="/home/$name/.config/dots"
 		export DOTBARE_TREE="/home/$name"
 		export DOTBARE_BACKUP="/home/$name/.local/share}/dotbare"
 	# make ssh key in an interactive way
-		ssh-keygen -t rsa -b 4096 -C "ad17fmin@uwcad.it"
-		curl -u "BachoSeven" \
+		sudo -u "$name" ssh-keygen -t rsa -b 4096 -C "ad17fmin@uwcad.it"
+		sudo -u "$name" curl -u "BachoSeven" \
 		    --data "{\"title\":\"DevVm_`date +%Y%m%d%H%M%S`\",\"key\":\"`cat ~/.ssh/id_rsa.pub`\"}" \
 		    https://api.github.com/user/keys
 	# called dotbare executable so to install $dotfilesrepo ["$repobranch"] (with sudo -u "$name")
@@ -222,9 +222,6 @@ yes | sudo -u "$name" $aurhelper -S libxft-bgra >/dev/null 2>&1
 
 # Install the dotfiles in the user's home directory
 putgitrepo
-rm -f "/home/$name/LICENSE.md"
-# make git ignore deleted LICENSE file
-git update-index --assume-unchanged "/home/$name/LICENSE"
 
 # Most important command! Get rid of the beep!
 systembeepoff

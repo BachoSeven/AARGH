@@ -1,5 +1,5 @@
 #TAG,NAME IN REPO (or git url),PURPOSE
-A,chromium,"is an elegant browser with built-in adblocking, tor and other features."
+A,chromium,"is the browser."
 ,gimp,"is a powerful image editor"
 A,nerd-fonts-hack,"is the main TUI font"
 ,noto-fonts-cjk,"is a basic Chinese, Japanese and Korean font"
