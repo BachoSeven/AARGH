@@ -7,8 +7,10 @@
 - wget
 
 ## AARGH
+``` sh
 wget https://raw.githubusercontent.com/BachoSeven/AARGH/master/aargh.sh
 sudo sh aargh.sh (if gh PAT is alright)
+```
 
 ## Setups post-install
 - swapfile

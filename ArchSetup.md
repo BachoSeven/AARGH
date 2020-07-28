@@ -14,9 +14,6 @@ export VIMINIT='if !has('nvim') | source "$XDG_CONFIG_HOME/vim/vimrc" | endif'
 }
 ```
 
-# wifi pass:
-IN4VzmzhsYBx0zSVgboFP1Yf
-
 # crontab:
 ``` sh
 */2 * * * * /usr/bin/mailsync >/dev/null 2>&1
