@@ -142,8 +142,9 @@ putgitrepo() {
 		export DOTBARE_BACKUP="/home/$name/.local/share}/dotbare"
 	# make ssh key in an interactive way
 		sudo -u "$name" ssh-keygen -t rsa -b 4096 -C "ad17fmin@uwcad.it"
-		sudo -u "$name" curl -u "BachoSeven" \
-		    --data "{\"title\":\"DevVm_`date +%Y%m%d%H%M%S`\",\"key\":\"`cat ~/.ssh/id_rsa.pub`\"}" \
+		## TODO: Fix this
+		# sudo -u "$name" curl -u "BachoSeven" \
+		    # --data "{\"title\":\"DevVm_`date +%Y%m%d%H%M%S`\",\"key\":\"`sudo -u "$name" cat ~/.ssh/id_rsa.pub`\"}" \
 		    https://api.github.com/user/keys
 	# called dotbare executable so to install $dotfilesrepo ["$repobranch"] (with sudo -u "$name")
 		dialog --infobox "Downloading and installing config files..." 4 60
