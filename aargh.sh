@@ -145,7 +145,7 @@ putgitrepo() {
 		dialog --title "AARGH Installation" --infobox "insert github Personal Access Token to add sshkey for your account, if you'd like to. It's useful when using dotbare" 12 80
 		read -r token
 		sudo -u "$name" curl -H "Authorization: $token" \
-			--data "{\"title\":\"Machine_`date +%Y%m%d%H%M%S`\",\"key\":\"$(cat /tmp/sshkey)\"}" \
+			--data "{\"title\":\"Machine_$(date +%Y%m%d%H%M%S)\",\"key\":\"$(cat /tmp/sshkey)\"}" \
 		    https://api.github.com/user/keys
 	# called dotbare executable so to install $dotfilesrepo ["$repobranch"] (with sudo -u "$name")
 		dialog --infobox "Downloading and installing config files..." 4 60
