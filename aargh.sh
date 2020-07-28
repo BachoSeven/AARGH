@@ -63,7 +63,7 @@ adduserandpass() { \
 	dialog --infobox "Adding user \"$name\"..." 4 50
 	useradd -m -g wheel -s /bin/bash "$name" >/dev/null 2>&1 ||
 	usermod -a -G wheel "$name" && mkdir -p /home/"$name" && chown "$name":wheel /home/"$name"
-	repodir="/home/$name/.local/src"; mkdir -p "$repodir"; chown -R "$name":wheel $(dirname "$repodir")
+	repodir="/home/$name/.local/src"; mkdir -p "$repodir"; chown -R "$name":wheel "$(dirname "$repodir")"
 	echo "$name:$pass1" | chpasswd
 	unset pass1 pass2 ;}
 
@@ -137,14 +137,14 @@ putgitrepo() {
 		dialog --title "AARGH Installation" --infobox "Installing \`dotbare\` from AUR to manage dotfiles" 5 70
 		sudo -u "$name" $aurhelper -S --noconfirm dotbare >/dev/null 2>&1
 	# set dotbare ENV variables
-		export DOTBARE_DIR="/home/$name/.config/dots"
-		export DOTBARE_TREE="/home/$name"
-		export DOTBARE_BACKUP="/home/$name/.local/share}/dotbare"
+		DOTBARE_DIR="/home/$name/.config/dots"
+		DOTBARE_TREE="/home/$name"
+		DOTBARE_BACKUP="/home/$name/.local/share/dotbare"
 	# make ssh key in an interactive way
 		sudo -u "$name" ssh-keygen -t rsa -b 4096 -C "ad17fmin@uwcad.it"
-		## TODO: Fix this
-		# sudo -u "$name" curl -u "BachoSeven" \
-		    # --data "{\"title\":\"DevVm_`date +%Y%m%d%H%M%S`\",\"key\":\"`sudo -u "$name" cat ~/.ssh/id_rsa.pub`\"}" \
+		cat /home/$name/.ssh/id_rsa.pub > /tmp/sshkey
+		sudo -u "$name" curl -H "Authorization: 6a532dcb73bf9f7c9c96de5eb9c69ce2290ee922" \
+			--data "{\"title\":\"Machine_`date +%Y%m%d%H%M%S`\",\"key\":\"$(cat /tmp/sshkey)\"}" \
 		    https://api.github.com/user/keys
 	# called dotbare executable so to install $dotfilesrepo ["$repobranch"] (with sudo -u "$name")
 		dialog --infobox "Downloading and installing config files..." 4 60
@@ -217,6 +217,10 @@ ntpdate 0.us.pool.ntp.org >/dev/null 2>&1
 # the user has been created and has priviledges to run sudo without a password
 # and all build dependencies are installed.
 installationloop
+
+### POST-INSTALLATION
+dialog --title "AARGH Installation" --infobox "Activating services (post-installation)" 5 70
+sudo -u "$name" systemctl --user enable mpd.service
 
 dialog --title "AARGH Installation" --infobox "Finally, installing \`libxft-bgra\` to enable color emoji in suckless software without crashes." 5 70
 sudo -u "$name" $aurhelper -S --noconfirm libxft-bgra >/dev/null 2>&1
