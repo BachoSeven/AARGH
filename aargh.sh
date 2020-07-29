@@ -8,7 +8,6 @@
 while getopts ":a:r:b:p:sh" o; do case "${o}" in
 	h) printf "Optional arguments for custom use:\\n  -r: Dotfiles repository (local file or url)\\n  -p: Dependencies and programs csv (local file or url)\\n  -a: AUR helper (must have pacman-like syntax)\\n  -h: Show this message\\n" && exit ;;
 	r) dotfilesrepo=${OPTARG} && git ls-remote "$dotfilesrepo" || exit ;;
-	b) repobranch=${OPTARG} ;;
 	p) progsfile=${OPTARG} ;;
 	a) aurhelper=${OPTARG} ;;
 	*) printf "Invalid option: -%s\\n" "$OPTARG" && exit ;;
@@ -17,7 +16,6 @@ esac done
 [ -z "$dotfilesrepo" ] && dotfilesrepo="git@github.com:BachoSeven/dotfiles.git"
 [ -z "$progsfile" ] && progsfile="https://raw.githubusercontent.com/BachoSeven/AARGH/master/progs.csv"
 [ -z "$aurhelper" ] && aurhelper="yay"
-[ -z "$repobranch" ] && repobranch="master"
 
 ### FUNCTIONS ###
 
@@ -140,14 +138,15 @@ putgitrepo() {
 		DOTBARE_TREE="/home/$name"
 		DOTBARE_BACKUP="/home/$name/.local/share/dotbare"
 	# make ssh key in an interactive way
+		dialog --title "AARGH Installation" --infobox "Generating ssh key and importing it into your github account" 5 70
 		sudo -u "$name" ssh-keygen -t rsa -b 4096 -C "ad17fmin@uwcad.it"
 		cat /home/$name/.ssh/id_rsa.pub > /tmp/sshkey
-		dialog --title "AARGH Installation" --infobox "insert github Personal Access Token to add sshkey for your account, if you'd like to. It's useful when using dotbare" 12 80
+		dialog --title "AARGH Installation" --infobox "insert github Personal Access Token to add the ssh key for your account, if you'd like to. It's useful when using dotbare" 12 80
+		printf "token:\n"
 		read -r token
 		sudo -u "$name" curl -H "Authorization: $token" \
 			--data "{\"title\":\"Machine_$(date +%Y%m%d%H%M%S)\",\"key\":\"$(cat /tmp/sshkey)\"}" \
 		    https://api.github.com/user/keys
-	# called dotbare executable so to install $dotfilesrepo ["$repobranch"] (with sudo -u "$name")
 		dialog --infobox "Downloading and installing config files..." 4 60
 		sudo -u "name" dotbare finit -u $dotfilesrepo -s
 	}

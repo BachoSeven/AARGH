@@ -14,6 +14,11 @@ export VIMINIT='if !has('nvim') | source "$XDG_CONFIG_HOME/vim/vimrc" | endif'
 }
 ```
 
+# Replace tabs with spaces(vimium):
+``` vim
+1,$s/\t/ /g
+```
+
 # crontab:
 ``` sh
 */2 * * * * /usr/bin/mailsync >/dev/null 2>&1
@@ -23,21 +28,10 @@ export VIMINIT='if !has('nvim') | source "$XDG_CONFIG_HOME/vim/vimrc" | endif'
 00 * * * *  export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus; export DISPLAY=:0; . ~/.profile; ~/.local/bin/cron/chekup
 ```
 
-# Replace tabs with spaces(vimium):
-``` vim
-1,$s/\t/ /g
-```
-
-
 # Bluetooth headphones autoconnect
 `/etc/pulse/default.pa`
 # automatically switch to newly-connected devices
 `load-module module-switch-on-connect`
-
-# Brave
-flags:
-	- native notifications
-	- smooth scrolling
 
 # xkcd
 https://github.com/itsron717/XKCD

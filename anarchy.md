@@ -13,10 +13,11 @@ sudo sh aargh.sh (if gh PAT is alright)
 ```
 
 ## Setups post-install
+- **Dotbare** (see dotbare.md)
 - swapfile
 - plymouth: hook in mkinitcpio && regenerate initramfs
-- neovim plugins install
-- tlp
+- neovim plugins install (including Remote)
+- tlp activation
 - systemctl: set-default multi-user-target; enable nordvpn.service
 - sudo mandb
 - crontab install
