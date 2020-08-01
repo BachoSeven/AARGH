@@ -6,6 +6,9 @@
 - vsftpd
 - wget
 
+### SSH [TODO]
+- this needs to be done "manually" with a pastebin before installing from github...
+
 ## AARGH
 ``` sh
 wget https://raw.githubusercontent.com/BachoSeven/AARGH/master/aargh.sh
