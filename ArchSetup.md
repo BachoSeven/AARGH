@@ -15,7 +15,7 @@ export VIMINIT='if !has('nvim') | source "$XDG_CONFIG_HOME/vim/vimrc" | endif'
 ```
 
 # Replace tabs with spaces(vimium):
-``` vim
+``` sh
 1,$s/\t/ /g
 ```
 
@@ -23,7 +23,7 @@ export VIMINIT='if !has('nvim') | source "$XDG_CONFIG_HOME/vim/vimrc" | endif'
 ``` sh
 */2 * * * * /usr/bin/mailsync >/dev/null 2>&1
 */5 * * * * export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus; export DISPLAY=:0; . ~/.profile; ~/.local/bin/cron/cronbat
-*/10 * * * * /bin/rm -rf ~/.java ~/.macromedia ~/.adobe ~/mconnect
+*/10 * * * * /bin/rm -rf ~/.java ~/.macromedia ~/.adobe ~/mconnect ~/.local/state ~/.mozilla ~/.pulse-cookie ~/.steampath
 */30 * * * * export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus; export DISPLAY=:0; . ~/.profile; ~/.local/bin/cron/feedup
 00 * * * *  export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus; export DISPLAY=:0; . ~/.profile; ~/.local/bin/cron/chekup
 ```
