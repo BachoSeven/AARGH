@@ -32,3 +32,4 @@ sudo sh aargh.sh (if gh PAT is alright)
 - compile ungoogled-chromium and install extensions
 - keepassxc import database && sync with chromium extension
 - DVD Ripping: install whipper-git WITH <'python-discid'# for calculating Musicbrainz ids, until they fix it upstream
+- tig: mkdir ~/.local/share/tig to unclutter ~.
