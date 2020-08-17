@@ -33,5 +33,4 @@ sudo sh aargh.sh (if gh PAT is alright)
 - keepassxc import database && sync with chromium extension
 - DVD Ripping: install whipper-git WITH <'python-discid'# for calculating Musicbrainz ids, until they fix it upstream
 - tig: mkdir ~/.local/share/tig to unclutter ~.
-- weechat-matrix autolading at startup: `ln -s /usr/share/weechat/python/weechat-matrix.py -t ~/.weechat/python/autoload
-`
+- weechat-plugins autoloading at startup: `ln -s /usr/share/weechat/python/weechat-matrix.py -t ~/.weechat/python/autoload`; `ln -s /usr/lib/weechat/python/notify_send.py -t $XDG_CONFIG_HOME/weechat/python/autoload`; `ln -s /usr/lib/weechat/python/vimode.py -t $XDG_CONFIG_HOME/weechat/python/autoload`; `ln -s /usr/lib/weechat/python/edit.py -t $XDG_CONFIG_HOME/weechat/python/autoload`
