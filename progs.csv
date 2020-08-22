@@ -156,7 +156,6 @@ G,git@github.com:BachoSeven/st.git,"is the simple terminal emulator."
 G,git@github.com:BachoSeven/dwm.git,"is the window manager."
 G,git@github.com:BachoSeven/slock.git,"allows you to lock your computer, and quickly unlock with your password."
 G,git@github.com:BachoSeven/tabbed.git,"an application Tabber."
-G,git@github.com:BachoSeven/tdq.git,"A simple dictionary parser written in C."
 G,git://git.ucw.cz/xsv.git,"csv-like files swiss-army knife." ## NOTE that this requires ascii-doc to be installed for making it!!
 G,https://github.com/mitchweaver/subs.git,"is a better Youtube feed using dmenu."
 A,mutt-wizard-git,"is a light-weight terminal-based email system."
