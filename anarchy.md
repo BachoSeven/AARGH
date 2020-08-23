@@ -1,9 +1,7 @@
 ## Packages
 
 - imagemagick
-- cups
 - openssh
-- vsftpd
 - wget
 
 ### SSH [TODO]
