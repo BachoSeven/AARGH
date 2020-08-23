@@ -1,6 +1,7 @@
 #TAG,NAME IN REPO (or git url),PURPOSE
 A,mimi-bachoseven-git,"is a better xdg-open. [replaces xdg-utils]"
 ,which,"is to complement mimi in replacing xdg-open"
+,arch-wiki-lite,"is an awesome offline Arch Wiki Reader."
 A,chromium-snapshot-bin,"is the browser."
 A,chromium-widevine,"is a plugin for using Netflix in chromium."
 A,nerd-fonts-hack,"is the main font."
