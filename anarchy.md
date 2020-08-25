@@ -5,6 +5,7 @@
 - wget
 
 ## Stuff
+- `zsh`
 - install efibootmgr if needed...
 - same for os-prober
 - use Grub:)
