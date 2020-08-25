@@ -8,7 +8,7 @@
 - install efibootmgr if needed...
 - same for os-prober
 - use Grub:)
-- activate touchpad, dhcpd(i think) to activate ip at startup, networkmanager, pppoe(ethernet), also bluez stuff if asked.
+- activate touchpad, dhcpd(i think) to activate ip at startup, networkmanager, wifi stuff, pppoe(ethernet), also bluez stuff if asked.
 
 ### SSH [TODO]
 - this needs to be done "manually" with a pastebin before installing from github...
