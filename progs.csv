@@ -158,7 +158,7 @@ G,git://git.ucw.cz/xsv.git,"csv-like files swiss-army knife." ## NOTE that this 
 G,https://github.com/mitchweaver/subs.git,"is a better Youtube feed using dmenu."
 A,mutt-wizard-git,"is a light-weight terminal-based email system."
 A,isync-config-patched,"patched version of mbsync for XDG dirs."
-,kitt,"is an alternative terminal emulator."
+,kitty,"is an alternative terminal emulator."
 A,typiskt,"a terminal touch typing tutor."
 A,10ff-git,"another terminal typing tutor."
 A,abook-configdir,"is an offline addressbook usable by neomutt."
