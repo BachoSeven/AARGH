@@ -1,6 +1,5 @@
 #TAG,NAME IN REPO (or git url),PURPOSE
 A,mimi-bachoseven-git,"is a better xdg-open. [replaces xdg-utils]."
-,which,"is to complement mimi in replacing xdg-open."
 ,arch-wiki-lite,"is an awesome offline Arch Wiki Reader."
 A,pacnews-neovim-git,"is a simple script to manage .pacnew files."
 A,newsie,"is a cli utility for reading Arch newsfeed (+pacman hook)."
