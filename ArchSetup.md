@@ -29,12 +29,9 @@ export VIMINIT='if !has('nvim') | source "$XDG_CONFIG_HOME/vim/vimrc" | endif'
 ```
 
 # Bluetooth headphones autoconnect
-`/etc/pulse/default.pa`
-# automatically switch to newly-connected devices
+`/etc/pulse/default.pa`:
+## automatically switch to newly-connected devices
 `load-module module-switch-on-connect`
-
-# xkcd
-https://github.com/itsron717/XKCD
 
 ## Ripped off https://github.com/GloverDonovan/dotfiles/tree/master/.archlinux/install-scripts
 # Enable colors in pacman by uncommenting the Color line.
