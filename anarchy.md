@@ -22,6 +22,7 @@ sudo sh aargh.sh (if gh PAT is alright)
 
 ## Setups post-install
 - **Dotbare** (see dotbare.md)
+- remove asciidoc(used to install xsv docs)
 - swapfile
 - plymouth: hook in mkinitcpio && regenerate initramfs; theme settings in /etc/plymouth.d
 - neovim plugins install (including Remote)
