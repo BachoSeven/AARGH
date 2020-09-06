@@ -162,7 +162,6 @@ G,https://github.com/mitchweaver/subs.git,"is a better Youtube feed using dmenu.
 A,mutt-wizard-git,"is a light-weight terminal-based email system."
 A,isync-config-patched,"patched version of mbsync for XDG dirs."
 ,kitty,"is an alternative terminal emulator."
-,discord,"is an all-in-one voice and messaging chat for gamers."
 A,bastet-xdg-git,"is the BAStard TETris game's xdg-compliant version."
 ,tty-solitaire,"is a great ncurses-based klondike solitaire game."
 A,nudoku-git,"is a ncurses-based sudoku game."
