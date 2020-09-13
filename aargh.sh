@@ -73,9 +73,9 @@ newperms() { # Set special sudoers settings for install (or after).
 	sed -i "/#AARGH/d" /etc/sudoers
 	echo "$* #AARGH" >> /etc/sudoers ;}
 
-manualinstall() { # Installs $1 manually if not installed. Used only for AUR helper here.
+manualinstall() { # Installs $1 manually if not installed.
 	[ -f "/usr/bin/$1" ] || (
-	dialog --infobox "Installing \"$1\", an AUR helper..." 4 50
+	dialog --infobox "Installing \"$1\"." 4 50
 	cd /tmp || exit
 	rm -rf /tmp/"$1"*
 	curl -sO https://aur.archlinux.org/cgit/aur.git/snapshot/"$1".tar.gz &&
@@ -211,6 +211,9 @@ ntpdate 0.us.pool.ntp.org >/dev/null 2>&1
 
 	manualinstall $aurhelper || error "Failed to install AUR helper."
 	}
+
+## I need to manually install my sxiv here
+manualinstall sxiv-bachoseven-git
 
 # The command that does all the installing. Reads the progs.csv file and
 # installs each needed program the way required. Be sure to run this only after
