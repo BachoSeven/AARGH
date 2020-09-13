@@ -42,3 +42,4 @@ sudo sh aargh.sh (if gh PAT is alright)
 - weechat-plugins autoloading at startup: `ln -s /usr/share/weechat/python/weechat-matrix.py -t ~/.weechat/python/autoload`; `ln -s /usr/lib/weechat/python/notify_send.py -t $XDG_CONFIG_HOME/weechat/python/autoload`; `ln -s /usr/lib/weechat/python/vimode.py -t $XDG_CONFIG_HOME/weechat/python/autoload`; `ln -s /usr/lib/weechat/python/edit.py -t $XDG_CONFIG_HOME/weechat/python/autoload`
 - bootstrap weechat with https://wiki.archlinux.org/index.php/WeeChat; and also from https://weechat.org/files/doc/stable/weechat_quickstart.en.html
 - copy stuff from /etc (disables systemd-homed.service amongst other things; might have to disable it first.)
+- disable --user dunst service(!)
