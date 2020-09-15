@@ -31,6 +31,8 @@ sudo sh aargh.sh (if gh PAT is alright)
           accordingly."
   Sockets to change(5)[all with --user]: gpg-agent.socket, gpg-agent-extra.socket, gpg-agent-browser.socket, gpg-agent-ssh.socket, and dirmngr.socket.
   Syntax to change them (sysu edit): `ListenStream=%t/gnupg/d."${HASH}"/S."${socketname}"`
+  NOTE:     the socketname is with a dot ".", as opposed to "-" in the unit name.
+  NOTE2:    Remember to tell the drop-in snippet the section of `ListenStream`.
 
 - plymouth: hook in mkinitcpio && regenerate initramfs; `sudo cp /usr/share/plymouth/arch-logo.png /usr/share/plymouth/themes/spinner/watermark.png`
 - tlp activation
