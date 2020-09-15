@@ -25,6 +25,13 @@ sudo sh aargh.sh (if gh PAT is alright)
 - remove asciidoc(used to install xsv docs)
 - swapfile
 - copy stuff from /etc (disables systemd-homed.service amongst other things; might have to disable it first.)
+- gnupg:
+          "Note that this currently does not work out-of-the-box using systemd user units and socket-based activation, since the socket directory changes based on the hash of
+          $GNUPGHOME. You can get the new socket directory using gpgconf --dry-run --create-socketdir, and have to modify the systemd user units to listen on the correct sockets
+          accordingly."
+  Sockets to change(5)[all with --user]: gpg-agent.socket, gpg-agent-extra.socket, gpg-agent-browser.socket, gpg-agent-ssh.socket, and dirmngr.socket.
+  Syntax to change them (sysu edit): `ListenStream=%t/gnupg/d."${HASH}"/S."${socketname}"`
+
 - plymouth: hook in mkinitcpio && regenerate initramfs; `sudo cp /usr/share/plymouth/arch-logo.png /usr/share/plymouth/themes/spinner/watermark.png`
 - tlp activation
 - systemctl: set-default multi-user-target; enable nordvpn.service
