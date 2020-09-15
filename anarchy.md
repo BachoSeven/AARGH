@@ -29,10 +29,9 @@ sudo sh aargh.sh (if gh PAT is alright)
           "Note that this currently does not work out-of-the-box using systemd user units and socket-based activation, since the socket directory changes based on the hash of
           $GNUPGHOME. You can get the new socket directory using gpgconf --dry-run --create-socketdir, and have to modify the systemd user units to listen on the correct sockets
           accordingly."
-  Sockets to change(5)[all with --user]: gpg-agent.socket, gpg-agent-extra.socket, gpg-agent-browser.socket, gpg-agent-ssh.socket, and dirmngr.socket.
+  Sockets to change(5)[all with systemctl --user edit --full]: gpg-agent.socket, gpg-agent-extra.socket, gpg-agent-browser.socket, gpg-agent-ssh.socket, and dirmngr.socket.
   Syntax to change them (sysu edit): `ListenStream=%t/gnupg/d."${HASH}"/S."${socketname}"`
-  NOTE:     the socketname is with a dot ".", as opposed to "-" in the unit name.
-  NOTE2:    Remember to tell the drop-in snippet the section of `ListenStream`.
+  vim command: substitute `gnupg\//&d\.babif6xw6skmb8ps84qeyyam\//g`
 
 - plymouth: hook in mkinitcpio && regenerate initramfs; `sudo cp /usr/share/plymouth/arch-logo.png /usr/share/plymouth/themes/spinner/watermark.png`
 - tlp activation
