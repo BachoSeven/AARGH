@@ -26,7 +26,6 @@ sudo sh aargh.sh (if gh PAT is alright)
 - swapfile
 - copy stuff from /etc (disables systemd-homed.service amongst other things; might have to disable it first.)
 - plymouth: hook in mkinitcpio && regenerate initramfs; `sudo cp /usr/share/plymouth/arch-logo.png /usr/share/plymouth/themes/spinner/watermark.png`
-- neovim plugins install (including Remote)
 - tlp activation
 - systemctl: set-default multi-user-target; enable nordvpn.service
 - sudo mandb
