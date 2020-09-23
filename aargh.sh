@@ -245,6 +245,7 @@ chsh -s /bin/zsh $name >/dev/null 2>&1
 sudo -u "$name" mkdir -p "/home/$name/.cache/zsh/"
 sudo -u "$name" mkdir -p "/home/$name/.local/share/tig/"
 sudo -u "$name" mkdir -p "/home/$name/.local/share/zsh/"
+sudo -u "$name" mkdir -p "/home/$name/.local/share/octave/"
 
 # Start/restart PulseAudio.
 killall pulseaudio; sudo -u "$name" pulseaudio --start
