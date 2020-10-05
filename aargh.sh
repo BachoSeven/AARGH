@@ -3,6 +3,8 @@
 # [based off LARBS by Luke Smith for my own setup]
 # License: GNU GPLv3
 
+# SLOC: 168
+
 ### OPTIONS AND VARIABLES ###
 
 while getopts ":a:r:b:p:sh" o; do case "${o}" in

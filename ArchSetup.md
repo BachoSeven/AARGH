@@ -23,7 +23,7 @@ export VIMINIT='if !has('nvim') | source "$XDG_CONFIG_HOME/vim/vimrc" | endif'
 ``` sh
 */2 * * * * export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus; export DISPLAY=:0; . ~/.profile; /usr/bin/mw sync >/dev/null 2>&1
 */5 * * * * export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus; export DISPLAY=:0; . ~/.profile; ~/.local/bin/cron/cronbat >/dev/null 2>&1
-*/10 * * * * /bin/rm -rf ~/.java ~/mconnect >/dev/null 2>&1
+*/10 * * * * /bin/rm -rf ~/.java ~/mconnect ~/Downloads >/dev/null 2>&1
 */30 * * * * export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus; export DISPLAY=:0; . ~/.profile; ~/.local/bin/cron/feedup >/dev/null 2>&1
 00 * * * *  export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus; export DISPLAY=:0; . ~/.profile; ~/.local/bin/cron/checkup >/dev/null 2>&1
 ```
