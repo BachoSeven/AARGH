@@ -248,6 +248,7 @@ sudo -u "$name" mkdir -p "/home/$name/.cache/zsh/"
 sudo -u "$name" mkdir -p "/home/$name/.local/share/tig/"
 sudo -u "$name" mkdir -p "/home/$name/.local/share/zsh/"
 sudo -u "$name" mkdir -p "/home/$name/.local/share/octave/"
+sudo -u "$name" mkdir -p "/home/$name/.config/weechat/python/autoload"
 
 # Start/restart PulseAudio.
 killall pulseaudio; sudo -u "$name" pulseaudio --start
