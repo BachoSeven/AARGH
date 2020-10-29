@@ -232,7 +232,7 @@ dialog --title "AARGH Installation" --infobox "Activating services (post-install
 sudo -u "$name" systemctl --user enable mpd.service
 
 dialog --title "AARGH Installation" --infobox "Finally, installing \`libxft-bgra\` to enable color emoji in suckless software without crashes." 5 70
-sudo -u "$name" $aurhelper -S --noconfirm libxft-bgra >/dev/null 2>&1
+sudo -u "$name" $aurhelper -S --noconfirm libxft-bgra-git >/dev/null 2>&1
 
 # Install the dotfiles in the user's home directory
 putgitrepo
