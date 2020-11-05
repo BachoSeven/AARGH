@@ -138,7 +138,6 @@ mpdris2
 mpv
 mpv-mpris-git
 mutt-wizard-git
-nb
 ncdu
 ncmpcpp-git
 ncpamixer
@@ -243,8 +242,8 @@ tlp
 transmission-cli
 tree
 ttf-font-awesome
+ttf-joypixels
 ttf-liberation
-ttf-mutant-emoji
 ttf-sarasa-gothic
 ttf-scientifica
 ttf-symbola
@@ -259,7 +258,6 @@ urlscan
 urlview
 usbutils
 util-linux
-verco-bin
 w3m
 wayland-protocols
 weechat-edit-git
