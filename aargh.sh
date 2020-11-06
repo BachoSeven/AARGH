@@ -22,7 +22,6 @@ esac done
 ### FUNCTIONS ###
 
 # Initial settings
-distro="arch"
 installpkg(){ pacman --noconfirm --needed -S "$1" >/dev/null 2>&1 ;}
 grepseq="\"^[PGA]*,\""
 
@@ -166,7 +165,7 @@ finalize(){ \
 
 ### This is how everything happens in an intuitive format and order.
 
-# Check if user is root on Arch distro. Install dialog.
+# Install dialog.
 installpkg dialog || error "Are you sure you're running this as the root user and have an internet connection?"
 
 # Welcome user and pick dotfiles.
@@ -197,24 +196,25 @@ installpkg ntp
 dialog --title "AARGH Installation" --infobox "Synchronizing system time to ensure successful and secure installation of software..." 4 70
 ntpdate 0.us.pool.ntp.org >/dev/null 2>&1
 
-[ "$distro" = arch ] && { \
-	[ -f /etc/sudoers.pacnew ] && cp /etc/sudoers.pacnew /etc/sudoers # Just in case
+[ -f /etc/sudoers.pacnew ] && cp /etc/sudoers.pacnew /etc/sudoers # Just in case
 
-	# Allow user to run sudo without password. Since AUR programs must be installed
-	# in a fakeroot environment, this is required for all builds with AUR.
-	newperms "%wheel ALL=(ALL) NOPASSWD: ALL"
+# Allow user to run sudo without password. Since AUR programs must be installed
+# in a fakeroot environment, this is required for all builds with AUR.
+newperms "%wheel ALL=(ALL) NOPASSWD: ALL"
 
-	# Make pacman and paru colorful and adds eye candy on the progress bar because why not.
-	grep "^Color" /etc/pacman.conf >/dev/null || sed -i "s/^#Color$/Color/" /etc/pacman.conf
-	grep "ILoveCandy" /etc/pacman.conf >/dev/null || sed -i "/#VerbosePkgLists/a ILoveCandy" /etc/pacman.conf
+# Make pacman and paru colorful and adds eye candy on the progress bar because why not.
+grep "^Color" /etc/pacman.conf >/dev/null || sed -i "s/^#Color$/Color/" /etc/pacman.conf
+grep "ILoveCandy" /etc/pacman.conf >/dev/null || sed -i "/#VerbosePkgLists/a ILoveCandy" /etc/pacman.conf
 
-	# Use all cores for compilation.
-	sed -i "s/-j2/-j$(nproc)/;s/^#MAKEFLAGS/MAKEFLAGS/" /etc/makepkg.conf
+# Use all cores for compilation.
+sed -i "s/-j2/-j$(nproc)/;s/^#MAKEFLAGS/MAKEFLAGS/" /etc/makepkg.conf
 
-	manualinstall $aurhelper || error "Failed to install AUR helper."
-	}
-
-## I need to manually install my sxiv here
+manualinstall $aurhelper || error "Failed to install AUR helper."
+# Chaotic Aur
+manualinstall chaotic-keyring
+manualinstall chaotic-mirrorlist
+printf "# Chaotic AUR\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
+# Custom Sxiv
 manualinstall sxiv-bachoseven-git
 
 # The command that does all the installing. Reads the progs.csv file and
@@ -255,7 +255,7 @@ killall pulseaudio; sudo -u "$name" pulseaudio --start
 
 # This line, overwriting the `newperms` command above will allow the user to run
 # serveral important commands, `shutdown`, `reboot`, updating, etc. without a password.
-[ "$distro" = arch ] && newperms "%wheel ALL=(ALL) ALL #AARGH
+newperms "%wheel ALL=(ALL) ALL #AARGH
 %wheel ALL=(ALL) NOPASSWD: /usr/bin/shutdown,/usr/bin/reboot,/usr/bin/systemctl suspend,/usr/bin/nmtui,/usr/bin/mount,/usr/bin/umount,/usr/bin/pacman,/usr/bin/systemctl restart NetworkManager,/usr/bin/pacnews"
 
 # Last message! Install complete!
