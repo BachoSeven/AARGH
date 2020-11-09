@@ -26,7 +26,6 @@ bzip2
 cabextract
 catdoc
 cava-git
-ccleste
 ccze
 chafa
 chaotic-keyring
@@ -65,7 +64,6 @@ gawk
 gcc
 gcc-libs
 gcr
-gdown
 gettext
 gifsicle
 git
@@ -284,6 +282,7 @@ xorg-xinput
 xorg-xprop
 xorg-xrandr
 xorg-xset
+xorg-xsetroot
 xsel
 xss-lock
 xwallpaper-git
