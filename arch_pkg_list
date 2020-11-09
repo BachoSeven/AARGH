@@ -48,6 +48,7 @@ duf-bin
 dunst
 e2fsprogs
 efibootmgr
+element-desktop
 exfat-utils
 exiv2
 expac
@@ -131,7 +132,7 @@ minizip
 mlocate
 moreutils
 mpc
-mpd
+mpd-git
 mpdris2
 mpv
 mpv-mpris-git
