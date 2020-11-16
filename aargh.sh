@@ -223,9 +223,9 @@ manualinstall sxiv-bachoseven-git
 # and all build dependencies are installed.
 installationloop
 
-# Uninstall useless packages from Anarchy
-dialog --title "AARGH Installation" --infobox "Removing useless packages from Anarchy installation: \`vim\` and \`zsh-syntax-highlighting\`" 5 70
-sudo -u "$name" $aurhelper -Rsc --noconfirm zsh-syntax-highlighting vim
+# Uninstall unneeded packages [from Anarchy or otherwise]
+dialog --title "AARGH Installation" --infobox "Removing useless packages from installation" 5 70
+sudo -u "$name" $aurhelper -Rsc --noconfirm zsh-syntax-highlighting vim asciidoc
 
 ### POST-INSTALLATION
 dialog --title "AARGH Installation" --infobox "Activating services (post-installation)" 5 70

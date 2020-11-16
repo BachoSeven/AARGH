@@ -60,7 +60,7 @@ filesystem
 findutils
 flex
 fontconfig
-fzf
+fzf-git
 gawk
 gcc
 gcc-libs

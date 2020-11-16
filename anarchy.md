@@ -22,7 +22,6 @@ sudo sh aargh.sh (if gh PAT is alright)
 
 ## Setups post-install
 - **Dotbare** (see dotbare.md)
-- remove asciidoc(used to install xsv docs)
 - swapfile
 - copy stuff from /etc (disables systemd-homed.service amongst other things; might have to disable it first.)
 - plymouth: hook in mkinitcpio && regenerate initramfs; `sudo cp /usr/share/plymouth/arch-logo.png /usr/share/plymouth/themes/spinner/watermark.png`
