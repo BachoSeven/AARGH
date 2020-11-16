@@ -23,7 +23,7 @@ bluez-utils
 bottom-bin
 bs
 bzip2
-cabextract
+castor-git
 catdoc
 cava-git
 ccze
@@ -60,7 +60,7 @@ filesystem
 findutils
 flex
 fontconfig
-fzf-git
+fzf
 gawk
 gcc
 gcc-libs
@@ -132,7 +132,7 @@ minizip
 mlocate
 moreutils
 mpc
-mpd-git
+mpd
 mpdris2
 mpv
 mpv-mpris-git
@@ -142,7 +142,7 @@ ncmpcpp-git
 ncpamixer
 ncspot-git
 neofetch-git
-neovim-git
+neovim
 neovim-remote
 nerd-fonts-hack
 networkmanager
@@ -160,12 +160,10 @@ odt2txt
 openssh
 openssl-1.0
 p7zip
-pacgraph
 pacman
 pacnews-neovim-git
 pamixer-git
 pango
-paru-git
 patch
 pciutils
 pdfgrep
@@ -236,13 +234,13 @@ texinfo
 texlive-core
 texlive-latexextra
 tig
-tikz-cd
 tlp
 transmission-cli
 tree
 ttf-font-awesome
 ttf-joypixels
 ttf-liberation
+ttf-material-design-icons-git
 ttf-sarasa-gothic
 ttf-scientifica
 ttf-symbola
