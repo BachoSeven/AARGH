@@ -23,7 +23,6 @@ bluez-utils
 bottom-bin
 bs
 bzip2
-castor-git
 catdoc
 cava-git
 ccze
@@ -69,7 +68,7 @@ gettext
 gifsicle
 git
 glibc
-glow-bin
+glow
 gnome-keyring
 grep
 grub
@@ -99,6 +98,7 @@ jbig2dec
 jq
 keepassxc
 kitty
+kristall
 kunst-git
 lesspipe
 lf-bachoseven-git
@@ -164,7 +164,7 @@ pacman
 pacnews-neovim-git
 pamixer-git
 pango
-paru
+paru-git
 patch
 pciutils
 pdfgrep
