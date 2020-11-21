@@ -4,6 +4,7 @@ apg
 arch-silence-grub-theme-git
 arch-wiki-docs
 archivemount
+asciiquarium
 at-spi2-atk
 at-spi2-core
 atk
@@ -33,7 +34,7 @@ chromium-widevine
 clang
 colord
 colorz
-copyq-git
+copyq
 coreutils
 cozette-ttf
 croc
@@ -54,6 +55,7 @@ expac
 fakeroot
 fast
 fd
+figlet
 file
 filesystem
 findutils
@@ -98,8 +100,8 @@ jbig2dec
 jq
 keepassxc
 kitty
-kristall
 kunst-git
+lagrange
 lesspipe
 lf-bachoseven-git
 libdatrie
@@ -195,8 +197,10 @@ polkit-gnome
 procps-ng
 psmisc
 pulseaudio-bluetooth
+python-poetry
 python-pynvim
 python-pywal
+python2
 qt5-declarative
 qt5-imageformats
 qt5-wayland
@@ -252,7 +256,7 @@ ungoogled-chromium
 unimatrix-git
 unrar
 unzip
-urlscan
+urlscan-git
 urlview
 usbutils
 util-linux
