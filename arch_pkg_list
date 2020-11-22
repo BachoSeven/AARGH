@@ -25,7 +25,7 @@ bottom-bin
 bs
 bzip2
 catdoc
-cava-git
+cava
 ccze
 chafa
 chaotic-keyring
@@ -41,6 +41,7 @@ croc
 cronie
 dialog
 djvulibre
+docx2txt
 dosfstools
 dotbare
 dragon-drag-and-drop
@@ -72,6 +73,7 @@ git
 glibc
 glow
 gnome-keyring
+go
 grep
 grub
 gruvbox-dark-gtk
@@ -168,6 +170,7 @@ pamixer-git
 pango
 paru-git
 patch
+pavucontrol
 pciutils
 pdfgrep
 perl-clone
@@ -268,13 +271,13 @@ weechat-matrix-git
 weechat-notify-send
 weechat-vimode-git
 wget
+whatscli
 which
 wikiman
 wireless_tools
 wpa_supplicant
 xbanish
 xcape
-xcompmgr
 xdotool-git
 xidlehook
 xkcd-git
