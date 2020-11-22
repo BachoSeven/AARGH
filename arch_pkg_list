@@ -69,7 +69,6 @@ gcc
 gcc-libs
 gcr
 gettext
-giara
 gifsicle
 git
 glibc
@@ -202,7 +201,6 @@ psmisc
 pulseaudio-bluetooth
 python-pynvim
 python-pywal
-python2
 qt5-declarative
 qt5-imageformats
 qt5-wayland
