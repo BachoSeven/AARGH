@@ -25,7 +25,7 @@ bottom-bin
 bs
 bzip2
 catdoc
-cava
+cava-git
 ccze
 chafa
 chaotic-keyring
@@ -45,6 +45,7 @@ docx2txt
 dosfstools
 dotbare
 dragon-drag-and-drop
+drive-git
 duf-bin
 dunst
 e2fsprogs
@@ -68,12 +69,12 @@ gcc
 gcc-libs
 gcr
 gettext
+giara
 gifsicle
 git
 glibc
 glow
 gnome-keyring
-go
 grep
 grub
 gruvbox-dark-gtk
@@ -170,7 +171,6 @@ pamixer-git
 pango
 paru-git
 patch
-pavucontrol
 pciutils
 pdfgrep
 perl-clone
@@ -200,7 +200,6 @@ polkit-gnome
 procps-ng
 psmisc
 pulseaudio-bluetooth
-python-poetry
 python-pynvim
 python-pywal
 python2
@@ -271,7 +270,6 @@ weechat-matrix-git
 weechat-notify-send
 weechat-vimode-git
 wget
-whatscli
 which
 wikiman
 wireless_tools
