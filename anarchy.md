@@ -37,7 +37,6 @@ sudo sh aargh.sh (if gh PAT is alright)
 - check keys from `https://lonewolf.pedrohlc.com/chaotic-aur/`.
 - install ungoogled-chromium from Chaotic AUR && configure it.
 - keepassxc import database && sync with chromium extension
-- DVD Ripping: install whipper-git WITH <'python-discid'# for calculating Musicbrainz ids, until they fix it upstream [ALTERNATIVE FOR LESS BLOAT: https://github.com/cyanreg/cyanrip]
 - weechat-plugins autoloading at startup: `ln -s /usr/share/weechat/python/weechat-matrix.py -t ~/.config/weechat/python/autoload`; `ln -s /usr/lib/weechat/python/notify_send.py -t $XDG_CONFIG_HOME/weechat/python/autoload`; `ln -s /usr/lib/weechat/python/vimode.py -t $XDG_CONFIG_HOME/weechat/python/autoload`; `ln -s /usr/lib/weechat/python/edit.py -t $XDG_CONFIG_HOME/weechat/python/autoload`
 - bootstrap weechat with https://wiki.archlinux.org/index.php/WeeChat; and also from https://weechat.org/files/doc/stable/weechat_quickstart.en.html
 - enable intel-undervolt service

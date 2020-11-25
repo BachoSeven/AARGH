@@ -11,4 +11,4 @@ export DOTBARE_TREE="~"
 ```
 
 - Give dotbare your remote URL and let it handle the rest (with ssh & cloning submodules at checkout):
-`dotbare finit -u https://github.com/kazhala/dotfiles.git -s`
+`dotbare finit -u git@github.com:BachoSeven/dotfiles.git -s`
