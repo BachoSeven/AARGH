@@ -17,6 +17,7 @@ A,stardict-dictd_www.dict.org_gcide,"Gnu Collaborative International Dictionary 
 A,chaotic-mirrorlist,"is the mirrorlist for Chaotic Aur repos."
 A,chaotic-keyring,"is the Chaotic-AUR keyring."
 A,ungoogled-chromium,"is the browser."
+A,s,"opens a web search from the terminal."
 A,drive-bin,"is a CLI google drive client."
 ,w3m,"is a great console web browser."
 ,lynx,"is another great console web browser."

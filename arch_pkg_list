@@ -74,6 +74,8 @@ git
 glibc
 glow
 gnome-keyring
+go
+gparted
 grep
 grub
 gruvbox-dark-gtk
@@ -212,6 +214,7 @@ rest
 rp-pppoe
 rsync
 rtl8822bu-dkms-git
+s-git
 screenkey-git
 sdcv-git
 sdl2_image
