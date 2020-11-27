@@ -63,7 +63,7 @@ filesystem
 findutils
 flex
 fontconfig
-fzf-git
+fzf
 gawk
 gcc
 gcc-libs
@@ -74,7 +74,6 @@ git
 glibc
 glow
 gnome-keyring
-go
 gparted
 grep
 grub
@@ -214,7 +213,7 @@ rest
 rp-pppoe
 rsync
 rtl8822bu-dkms-git
-s-git
+s
 screenkey-git
 sdcv-git
 sdl2_image
