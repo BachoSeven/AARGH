@@ -74,7 +74,6 @@ git
 glibc
 glow
 gnome-keyring
-gparted
 grep
 grub
 gruvbox-dark-gtk
@@ -100,7 +99,6 @@ isync-config-patched
 jackett-bin
 jasper
 jbig2dec
-jp2a
 jq
 keepassxc
 kitty
@@ -272,7 +270,7 @@ weechat-matrix-git
 weechat-notify-send
 weechat-vimode-git
 wget
-whatscli
+whatscli-git
 which
 wikiman
 wireless_tools
