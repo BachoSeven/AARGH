@@ -24,7 +24,7 @@ export VIMINIT='if !has('nvim') | source "$XDG_CONFIG_HOME/vim/vimrc" | endif'
 */2 * * * * export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$(id -u $USER)/bus; export DISPLAY=:0; . ~/.profile; /usr/bin/mw -Y >/dev/null 2>&1
 */5 * * * * export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$(id -u $USER)/bus; export DISPLAY=:0; . ~/.profile; ~/.local/bin/cron/cronbat >/dev/null 2>&1
 */10 * * * * /bin/rm -rf ~/.java ~/mconnect ~/Downloads >/dev/null 2>&1
-30 16 * * * ~/.local/bin/scripts/bmbkp ~/.config/browser/bkp/bm/bm.html && ~/.local/bin/script/histbkp ~/.config/browser/bkp/hist/hist.html && cd ~/.config/browser/bkp && drive push -no-prompt hist/hist.html bm/bm.html
+30 16 * * * ~/.local/bin/scripts/bmbkp ~/.config/browser/bkp/bm/bm.html && ~/.local/bin/scripts/histbkp ~/.config/browser/bkp/hist/hist.html && cd ~/.config/browser/bkp && drive push -no-prompt hist/hist.html bm/bm.html
 */30 * * * * export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$(id -u $USER)/bus; export DISPLAY=:0; . ~/.profile; ~/.local/bin/cron/feedup >/dev/null 2>&1
 00 * * * *  export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$(id -u $USER)/bus; export DISPLAY=:0; . ~/.profile; ~/.local/bin/cron/checkup >/dev/null 2>&1
 ```
