@@ -25,7 +25,7 @@ sudo sh aargh.sh (if gh PAT is alright)
 - copy stuff from /etc (disables systemd-homed.service amongst other things; might have to disable it first.)
 - plymouth: hook in mkinitcpio && regenerate initramfs; `sudo cp /usr/share/plymouth/arch-logo.png /usr/share/plymouth/themes/spinner/watermark.png`
 - tlp activation
-- systemctl: set-default multi-user-target; enable nordvpn.service
+- systemctl: set-default multi-user-target;
 - sudo mandb
 - crontab install
 - clean installed packages
@@ -40,4 +40,5 @@ sudo sh aargh.sh (if gh PAT is alright)
 - bootstrap weechat with https://wiki.archlinux.org/index.php/WeeChat; and also from https://weechat.org/files/doc/stable/weechat_quickstart.en.html
 - enable intel-undervolt service
 - spotify: `chmod 777 /opt/spotify; chmod 777 /opt/spotify/Apps -R` and then `spicetify backup apply enable-devtool`
-- cups: enable service
+
+- cups, jacket, nordvpn: enable services on demand so not to clutter boot.
