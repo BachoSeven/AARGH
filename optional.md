@@ -1,0 +1,2 @@
+- Installing `mpdris2`, `mpv-mpris-git` and `mconnect-git` to connect to my smartphone;
+- cups, jacket, nordvpn: enable services on demand so not to clutter boot.
