@@ -51,6 +51,7 @@ dunst
 e2fsprogs
 efibootmgr
 element-desktop
+epstool
 exfat-utils
 exiv2
 expac
@@ -263,7 +264,7 @@ unimatrix-git
 unrar
 unzip
 urlscan-git
-urlview
+urlview-git
 usbutils
 util-linux
 w3m
