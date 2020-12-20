@@ -250,6 +250,13 @@ sudo -u "$name" mkdir -p "/home/$name/.local/share/zsh/"
 sudo -u "$name" mkdir -p "/home/$name/.local/share/octave/"
 sudo -u "$name" mkdir -p "/home/$name/.config/weechat/python/autoload"
 
+# Create useful mount dirs under /mnt
+mkdir -p /mnt/usb1
+mkdir -p /mnt/usb2
+mkdir -p /mnt/iso
+mkdir -p /mnt/fraEl
+mkdir -p /mnt/fraPass
+
 # Start/restart PulseAudio.
 killall pulseaudio; sudo -u "$name" pulseaudio --start
 

@@ -105,7 +105,7 @@ kitty
 kunst-git
 lagrange
 lesspipe
-lf-bachoseven-git
+lf
 libdatrie
 libdbusmenu-qt5
 libgee
@@ -130,7 +130,6 @@ make
 man-db
 man-pages
 mathematica
-mconnect-git
 mediainfo
 mimi-bachoseven-git
 minizip
@@ -138,14 +137,11 @@ mlocate
 moreutils
 mpc
 mpd
-mpdris2
 mpv
-mpv-mpris-git
 mutt-wizard-git
 ncdu
 ncmpcpp-git
-ncpamixer
-ncspot-git
+ncspot
 neofetch-git
 neovim
 neovim-remote
@@ -165,7 +161,7 @@ odt2txt
 openssh
 openssl-1.0
 p7zip
-pacman
+pacman-git
 pacnews-neovim-git
 pamixer-git
 pango
@@ -195,7 +191,7 @@ perl-xml-parser
 pfetch-git
 picom-git
 pkgconf
-plymouth-git
+plymouth
 polkit-gnome
 procps-ng
 psmisc
@@ -281,6 +277,7 @@ wireless_tools
 wpa_supplicant
 xbanish
 xcape
+xclip-git
 xdotool-git
 xidlehook
 xkcd-git
