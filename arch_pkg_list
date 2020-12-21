@@ -78,9 +78,6 @@ grep
 grub
 gruvbox-dark-gtk
 gruvbox-dark-icons-gtk
-gtk-clearlooks-compact
-gtk-engine-murrine
-gtk-engines
 gtk-update-icon-cache
 gtk2
 gtk3
@@ -140,7 +137,7 @@ mpd
 mpv
 mutt-wizard-git
 ncdu
-ncmpcpp-git
+ncmpcpp
 ncspot
 neofetch-git
 neovim
