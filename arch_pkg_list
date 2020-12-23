@@ -85,6 +85,7 @@ gzip
 highlight
 hsetroot
 hunspell
+icu67
 imagemagick
 imgur.sh
 intel-undervolt
@@ -162,6 +163,7 @@ pacman-git
 pacnews-neovim-git
 pamixer-git
 pango
+pantalaimon
 paru-git
 patch
 pciutils
@@ -199,6 +201,7 @@ qt5-declarative
 qt5-imageformats
 qt5-wayland
 qt5ct
+quickmedia-git
 re2
 readability-cli
 redshift
@@ -232,7 +235,7 @@ task-spooler
 taskbook-git
 tealdeer
 teams
-telegram-desktop-userfonts-bin
+telegram-desktop-bin
 texinfo
 texlive-core
 texlive-latexextra
