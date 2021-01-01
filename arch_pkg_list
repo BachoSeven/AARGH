@@ -40,7 +40,6 @@ cozette-ttf
 croc
 cronie
 dialog
-displaycal
 djvulibre
 docx2txt
 dosfstools
@@ -77,8 +76,9 @@ glow
 gnome-keyring
 grep
 grub
-gruvbox-dark-gtk
-gruvbox-dark-icons-gtk
+gruvbox-material-gtk-theme-git
+gruvbox-material-icon-theme-git
+gtk-engine-murrine
 gtk-update-icon-cache
 gtk2
 gtk3
@@ -245,7 +245,6 @@ tree
 ttf-font-awesome
 ttf-joypixels
 ttf-liberation
-ttf-material-design-icons-git
 ttf-sarasa-gothic
 ttf-scientifica
 ttf-symbola
