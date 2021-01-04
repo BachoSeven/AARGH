@@ -50,7 +50,7 @@ duf-bin
 dunst-git
 e2fsprogs
 efibootmgr
-element-desktop
+element-desktop-nightly-bin
 exfat-utils
 exiv2
 expac
@@ -88,6 +88,7 @@ hsetroot
 hunspell
 imagemagick
 imgur.sh
+intel-media-driver
 intel-undervolt
 intltool
 iproute2
@@ -221,6 +222,7 @@ socat
 soulseekqt
 spicetify-cli-git
 spotify
+spotifywm-git
 stardict-dictd_www.dict.org_gcide
 stig-git
 sudo
@@ -292,7 +294,7 @@ xsel
 xss-lock
 xwallpaper-git
 xz
-youtube-dl-git
+youtube-dl
 zathura
 zathura-djvu
 zathura-pdf-mupdf
