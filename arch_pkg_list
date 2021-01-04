@@ -88,7 +88,6 @@ hsetroot
 hunspell
 imagemagick
 imgur.sh
-intel-media-driver
 intel-undervolt
 intltool
 iproute2
@@ -114,6 +113,7 @@ librsvg
 libsynctex
 libthai
 libusb-compat
+libva-intel-driver
 libxft-bgra-git
 licenses
 lingot
