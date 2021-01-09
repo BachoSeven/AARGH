@@ -14,7 +14,7 @@ automake
 bash
 bash-pipes
 bastet-xdg-git
-bat-cat-git
+bat
 bc
 binutils
 bison
@@ -89,7 +89,6 @@ hunspell
 imagemagick
 imgur.sh
 intel-undervolt
-intltool
 iproute2
 iputils
 iso-codes
@@ -130,6 +129,7 @@ man-db
 man-pages
 mathematica
 mediainfo
+mego
 mimi-bachoseven-git
 minizip
 mlocate
@@ -161,7 +161,6 @@ openssh
 openssl-1.0
 p7zip
 pacman-git
-pacnews-neovim-git
 pamixer-git
 pango
 paru-git
@@ -172,7 +171,6 @@ perl-clone
 perl-encode-locale
 perl-file-listing
 perl-file-mimeinfo
-perl-html-parser
 perl-html-tagset
 perl-http-cookies
 perl-http-daemon
@@ -181,12 +179,10 @@ perl-http-message
 perl-http-negotiate
 perl-image-exiftool
 perl-io-html
-perl-libwww
 perl-lwp-mediatypes
 perl-net-http
 perl-try-tiny
 perl-www-robotrules
-perl-xml-parser
 pfetch-git
 picom-git
 pkgconf
@@ -235,7 +231,7 @@ task-spooler
 taskbook-git
 tealdeer
 teams
-telegram-desktop-userfonts-bin
+telegram-desktop-bin-dev
 texinfo
 texlive-core
 texlive-latexextra
