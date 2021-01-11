@@ -161,9 +161,11 @@ openssh
 openssl-1.0
 p7zip
 pacman-git
+pacnews-neovim-git
 pamixer-git
 pango
-paru-git
+paru
+pass-otp
 patch
 pciutils
 pdfgrep
@@ -258,6 +260,7 @@ urlscan-git
 urlview-git
 usbutils
 util-linux
+vieb
 w3m
 wayland-protocols
 weechat
