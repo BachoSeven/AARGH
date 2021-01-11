@@ -102,7 +102,7 @@ kitty
 kunst-git
 lagrange
 lesspipe
-lf
+lf-bachoseven-git
 libdatrie
 libdbusmenu-qt5
 libgee
@@ -164,7 +164,7 @@ pacman-git
 pacnews-neovim-git
 pamixer-git
 pango
-paru
+paru-git
 pass-otp
 patch
 pciutils
@@ -289,6 +289,7 @@ xorg-xprop
 xorg-xrandr
 xorg-xset
 xorg-xsetroot
+xrootgif
 xsel
 xss-lock
 xwallpaper-git

@@ -31,10 +31,10 @@ sudo sh aargh.sh (if gh PAT is alright)
 - clean installed packages
 - nmdm-git: setup polkit permissions for NM (wiki) + sctl disable nm-wait-online.service
 - soulseek backup import
-- unbound: enable service, cp unbound.conf from stuff/etc; set as system resolver (bookmarks, wiki), and lock the .conf file.
+- unbound: enable service, cp unbound.conf from stuff/etc; set as system resolver (archwiki), and lock the resolv.conf file(`sudo chattr +i /etc/resolv.conf`).
 - ./gtypist-exercises.sh
 - check keys from `https://lonewolf.pedrohlc.com/chaotic-aur/`.
-- install ungoogled-chromium from Chaotic AUR && configure it.
+- configure Ungoogled-chromium.
 - keepassxc import database && sync with chromium extension
 - weechat-plugins autoloading at startup: `ln -s /usr/share/weechat/python/weechat-matrix.py -t ~/.config/weechat/python/autoload`; `ln -s /usr/lib/weechat/python/notify_send.py -t $XDG_CONFIG_HOME/weechat/python/autoload`; `ln -s /usr/lib/weechat/python/vimode.py -t $XDG_CONFIG_HOME/weechat/python/autoload`; `ln -s /usr/lib/weechat/python/edit.py -t $XDG_CONFIG_HOME/weechat/python/autoload`
 - bootstrap weechat with https://wiki.archlinux.org/index.php/WeeChat; and also from https://weechat.org/files/doc/stable/weechat_quickstart.en.html
