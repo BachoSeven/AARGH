@@ -45,6 +45,7 @@ djvulibre
 docx2txt
 dosfstools
 dotbare
+dragon-drag-and-drop-git
 drive-git
 duf-bin
 dunst-git
@@ -72,8 +73,10 @@ gifsicle
 git
 glibc
 glow
+gnome-keyring
 grep
 grub
+gruvbox-material-gtk-theme-git
 gruvbox-material-icon-theme-git
 gtk-engine-murrine
 gtk-update-icon-cache
@@ -111,6 +114,7 @@ libusb-compat
 libva-intel-driver
 libxft-bgra-git
 licenses
+lingot
 linux
 linux-firmware
 linux-headers
@@ -140,8 +144,9 @@ neofetch-git
 neovim
 neovim-remote
 nerd-fonts-hack
+networkmanager
+networkmanager-dmenu-git
 newsboat
-newsie
 nordvpn-bin
 noto-fonts-emoji
 ntfs-3g-fuse
@@ -200,11 +205,13 @@ rsync
 rtl8822bu-dkms-git
 s
 sane-airscan
+screenkey-git
 sdcv-git
 sdl2_image
 sed
 shadow
 shantz-xwinwrap-bzr
+simple-scan
 snappy
 socat
 soulseekqt
@@ -215,12 +222,14 @@ stardict-dictd_www.dict.org_gcide
 stig-git
 sudo
 sxiv-bachoseven-git
+system-config-printer
 systemd
 systemd-sysvcompat
 tar
 task-spooler
 taskbook-git
 tealdeer
+teams
 telegram-desktop-bin-dev
 texinfo
 texlive-core
@@ -241,6 +250,7 @@ tty-clock-git
 tty-solitaire
 typiskt
 unbound
+ungoogled-chromium
 unimatrix-git
 unrar
 unzip
@@ -248,6 +258,7 @@ urlscan-git
 urlview-git
 usbutils
 util-linux
+vieb
 w3m
 wayland-protocols
 weechat
@@ -281,5 +292,8 @@ xsel
 xss-lock
 xz
 youtube-dl
+zathura
+zathura-djvu
+zathura-pdf-mupdf
 zip
 zsh-minimal-git
