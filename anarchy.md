@@ -32,7 +32,7 @@ sudo sh aargh.sh (if gh PAT is alright)
 - nmdm-git: setup polkit permissions for NM (wiki) + sctl disable nm-wait-online.service
 - soulseek backup import
 - unbound: enable service, cp unbound.conf from stuff/etc; set as system resolver (archwiki), and lock the resolv.conf file(`sudo chattr +i /etc/resolv.conf`).
-- ./gtypist-exercises.sh
+- ./add-gtypist-exercises.sh
 - check keys from `https://lonewolf.pedrohlc.com/chaotic-aur/`.
 - configure Ungoogled-chromium.
 - keepassxc import database && sync with chromium extension

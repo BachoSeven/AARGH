@@ -190,6 +190,7 @@ plymouth
 procps-ng
 psmisc
 pulseaudio-bluetooth
+pulsemixer
 python-pynvim
 python-pywal
 qt5-declarative
@@ -287,6 +288,7 @@ xorg-xprop
 xorg-xrandr
 xorg-xset
 xorg-xsetroot
+xorg-xwininfo
 xrootgif
 xsel
 xss-lock
