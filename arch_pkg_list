@@ -140,7 +140,7 @@ mutt-wizard-git
 ncdu
 ncmpcpp
 ncspot
-neofetch-git
+neofetch
 neovim
 neovim-remote
 nerd-fonts-hack
@@ -183,7 +183,7 @@ perl-lwp-mediatypes
 perl-net-http
 perl-try-tiny
 perl-www-robotrules
-pfetch-git
+pfetch
 picom-git
 pkgconf
 plymouth
