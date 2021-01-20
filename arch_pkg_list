@@ -46,7 +46,7 @@ docx2txt
 dosfstools
 dotbare
 dragon-drag-and-drop-git
-drive-git
+drive-bin
 duf-bin
 dunst-git
 e2fsprogs
@@ -58,6 +58,7 @@ expac
 fakeroot
 fast
 fd
+ffmpeg
 figlet
 file
 filesystem
@@ -68,6 +69,7 @@ fzf
 gawk
 gcc
 gcc-libs
+gdu-bin
 gettext
 gifsicle
 git
@@ -135,9 +137,8 @@ mlocate
 moreutils
 mpc
 mpd
-mpv
+mpv-bachoseven-light
 mutt-wizard-git
-ncdu
 ncmpcpp
 ncspot
 neofetch
@@ -201,6 +202,7 @@ re2
 readability-cli
 redshift
 rest
+rofi
 rp-pppoe
 rsync
 rtl8822bu-dkms-git
@@ -237,6 +239,7 @@ texlive-core
 texlive-latexextra
 tig
 tlp
+toot
 torrentflix
 transmission-cli
 tree
