@@ -34,10 +34,5 @@ export VIMINIT='if !has('nvim') | source "$XDG_CONFIG_HOME/vim/vimrc" | endif'
 ## automatically switch to newly-connected devices
 `load-module module-switch-on-connect`
 
-## Ripped off https://github.com/GloverDonovan/dotfiles/tree/master/.archlinux/install-scripts
-# Enable colors in pacman by uncommenting the Color line.
-`sed -i '/Color/s/^#//g' /mnt/etc/pacman.conf`
-# Show package upgrades as a list
-`sed -i '/VerbosePkgLists/s/^#//g' /mnt/etc/pacman.conf`
 # Give users in the wheel group permission to use sudo
 `echo "%wheel ALL=(ALL) ALL" > /mnt/etc/sudoers.d/01_wheel_all`

@@ -241,7 +241,7 @@ putgitrepo
 systembeepoff
 
 # Make zsh the default shell for the user.
-chsh -s /bin/zsh $name >/dev/null 2>&1
+chsh -s /bin/zsh "$name" >/dev/null 2>&1
 
 # Create dirs to unclutter ~
 sudo -u "$name" mkdir -p "/home/$name/.cache/zsh/"
@@ -249,6 +249,9 @@ sudo -u "$name" mkdir -p "/home/$name/.local/share/tig/"
 sudo -u "$name" mkdir -p "/home/$name/.local/share/zsh/"
 sudo -u "$name" mkdir -p "/home/$name/.local/share/octave/"
 sudo -u "$name" mkdir -p "/home/$name/.config/weechat/python/autoload"
+
+# Enable user to turn bluetooth on/off with `rfkill`
+groupadd -a "$name" rfkill
 
 # Create useful mount dirs under /mnt
 mkdir -p /mnt/usb1
