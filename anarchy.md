@@ -40,4 +40,10 @@ sudo sh aargh.sh (if gh PAT is alright)
 - bootstrap weechat with https://wiki.archlinux.org/index.php/WeeChat; and also from https://weechat.org/files/doc/stable/weechat_quickstart.en.html
 - enable intel-undervolt service
 - spotify: `chmod 777 /opt/spotify; chmod 777 /opt/spotify/Apps -R` and then `spicetify backup apply enable-devtool`
-gpg-agent[5161]: No protocol specified
+- gpg: import keys; change sockets:
+         "Note that this currently does not work out-of-the-box using systemd user units and socket-based activation, since the socket directory changes based on the hash of
+         $GNUPGHOME. You can get the new socket directory using gpgconf --dry-run --create-socketdir, and have to modify the systemd user units to listen on the correct sockets
+         accordingly."
+ Sockets to change(5)[all with systemctl --user edit --full]: gpg-agent.socket, gpg-agent-extra.socket, gpg-agent-browser.socket, gpg-agent-ssh.socket, and dirmngr.socket.
+ Syntax to change them (sysu edit): `ListenStream=%t/gnupg/d."${HASH}"/S."${socketname}"`
+ Example vim substitute command `gnupg\//&d\.babif6xw6skmb8ps84qeyyam\//g`

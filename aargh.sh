@@ -214,7 +214,7 @@ manualinstall $aurhelper || error "Failed to install AUR helper."
 manualinstall chaotic-keyring
 manualinstall chaotic-mirrorlist
 printf "# Chaotic AUR\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
-# Custom Sxiv
+# Custom Packages (deleted but still on AUR)
 manualinstall sxiv-bachoseven-git
 
 # The command that does all the installing. Reads the progs.csv file and
@@ -249,6 +249,8 @@ sudo -u "$name" mkdir -p "/home/$name/.local/share/tig/"
 sudo -u "$name" mkdir -p "/home/$name/.local/share/zsh/"
 sudo -u "$name" mkdir -p "/home/$name/.local/share/octave/"
 sudo -u "$name" mkdir -p "/home/$name/.config/weechat/python/autoload"
+sudo -u "$name" mkdir -p "/home/$name/.local/share/gnupg"
+chmod 700 $GNUPGHOME
 
 # Enable user to turn bluetooth on/off with `rfkill`
 groupadd -a "$name" rfkill
