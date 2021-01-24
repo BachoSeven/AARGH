@@ -137,6 +137,7 @@ mpc
 mpd
 mpv-bachoseven-light
 mutt-wizard-git
+nb-git
 ncmpcpp
 ncspot
 neofetch
@@ -227,7 +228,6 @@ systemd
 systemd-sysvcompat
 tar
 task-spooler
-taskbook-git
 tealdeer
 teams
 telegram-desktop-bin-dev
