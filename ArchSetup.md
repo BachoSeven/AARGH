@@ -26,7 +26,7 @@ export VIMINIT='if !has('nvim') | source "$XDG_CONFIG_HOME/vim/vimrc" | endif'
 */5 * * * *     DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$(id -u $USER)/bus ~/.local/bin/cron/cronbat >/dev/null 2>&1
 */30 * * * *	DISPLAY=:0 ~/.local/bin/cron/feedup >/dev/null 2>&1
 30 16 * * * ~/.local/bin/scripts/bmbkp ~/.config/browser/bkp/bm/bm.html && ~/.local/bin/scripts/histbkp ~/.config/browser/bkp/hist/hist.html && cd ~/.config/browser/bkp && drive push -no-prompt hist/hist.html bm/bm.html
-*/3 * * * * /usr/bin/mailsync
+*/2 * * * * /usr/bin/mailsync
 ```
 
 # Bluetooth headphones autoconnect

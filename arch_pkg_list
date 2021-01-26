@@ -21,7 +21,7 @@ bison
 bluez
 bluez-utils
 bookmenu-git
-bottom-bin
+bottom-git
 brother-mfc-l2710dw
 bs
 bzip2
@@ -40,7 +40,6 @@ coreutils
 cozette-ttf
 croc
 cronie
-dialog
 djvulibre
 docx2txt
 dosfstools
@@ -69,7 +68,7 @@ fzf
 gawk
 gcc
 gcc-libs
-gdu-bin
+gdu
 gettext
 gifsicle
 git
@@ -102,7 +101,7 @@ kitty
 kunst-git
 lagrange
 lesspipe
-lf-bachoseven-git
+lf
 libdatrie
 libdbusmenu-qt5
 libgusb
@@ -147,6 +146,7 @@ nerd-fonts-hack
 networkmanager
 networkmanager-dmenu-git
 newsboat
+nicotine+
 nordvpn-bin
 noto-fonts-emoji
 ntfs-3g-fuse
@@ -198,7 +198,7 @@ qt5-wayland
 qt5ct
 re2
 readability-cli
-redshift
+redshift-minimal-git
 rest
 rofi
 rp-pppoe

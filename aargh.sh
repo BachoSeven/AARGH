@@ -214,8 +214,6 @@ manualinstall $aurhelper || error "Failed to install AUR helper."
 manualinstall chaotic-keyring
 manualinstall chaotic-mirrorlist
 printf "# Chaotic AUR\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
-# Custom Packages (deleted but still on AUR)
-manualinstall sxiv-bachoseven-git
 
 # The command that does all the installing. Reads the progs.csv file and
 # installs each needed program the way required. Be sure to run this only after

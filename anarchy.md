@@ -29,7 +29,7 @@ sudo sh aargh.sh (if gh PAT is alright)
 - sudo mandb
 - crontab install
 - clean installed packages
-- nmdm-git: setup polkit permissions for NM (wiki) + sctl disable nm-wait-online.service
+- nmdm-git: setup polkit permissions for NM (info in sysdots repo) + sctl disable nm-wait-online.service
 - soulseek backup import
 - unbound: enable service, cp unbound.conf from stuff/etc; set as system resolver (archwiki), and lock the resolv.conf file(`sudo chattr +i /etc/resolv.conf`).
 - ./add-gtypist-exercises.sh
@@ -39,6 +39,7 @@ sudo sh aargh.sh (if gh PAT is alright)
 - weechat-plugins autoloading at startup: `ln -s /usr/share/weechat/python/weechat-matrix.py -t ~/.config/weechat/python/autoload`; `ln -s /usr/lib/weechat/python/notify_send.py -t $XDG_CONFIG_HOME/weechat/python/autoload`; `ln -s /usr/lib/weechat/python/vimode.py -t $XDG_CONFIG_HOME/weechat/python/autoload`; `ln -s /usr/lib/weechat/python/edit.py -t $XDG_CONFIG_HOME/weechat/python/autoload`
 - bootstrap weechat with https://wiki.archlinux.org/index.php/WeeChat; and also from https://weechat.org/files/doc/stable/weechat_quickstart.en.html
 - enable intel-undervolt service
+- disable redshift service (started from xprofile)
 - mutt-wizard: add accounts && comment out "Flatten" in MBSYNCRC
 - spotify: `chmod 777 /opt/spotify; chmod 777 /opt/spotify/Apps -R` and then `spicetify backup apply enable-devtool`
 - gpg: import keys; ~~change sockets~~:
