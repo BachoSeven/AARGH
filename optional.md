@@ -1,2 +1,3 @@
 - Installing `mpdris2`, `mpv-mpris-git` and `mconnect-git` to connect to my smartphone;
 - cups, jacket, nordvpn: enable services on demand so not to clutter boot. For the `nordvpnd` service, from version 3.8.8 onwards, we ~~also need to create~~ have to be in the `nordvpn` group.
+- enable jacket in qbittorrent(update search engines + add jacket API; also, add indexers to jackett)
