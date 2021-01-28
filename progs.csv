@@ -34,7 +34,7 @@ A,wikiman,"is an offline search engine for the Arch Wiki and other documentation
 A,tealdeer,"is a a shell TLDR program."
 A,mpd-git,"is a lightweight music daemon."
 ,mpc,"is a terminal interface for mpd."
-,mpv,"is the patrician's choice video player."
+A,mpv-light-pulse,"is the patrician's choice video player."
 ,ncmpcpp,"a ncurses interface for music with multiple formats and a powerful tag editor."
 A,lyrics-in-terminal,"show lyrics for spotify songs."
 A,sxiv-bachoseven-git,"is a personal build of sxiv."
