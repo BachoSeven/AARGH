@@ -86,6 +86,7 @@ gzip
 highlight
 hsetroot
 hunspell
+idasen
 imagemagick
 imgur.sh
 intel-undervolt
@@ -187,7 +188,6 @@ pfetch
 picom-git
 pkgconf
 plymouth
-polkit
 procps-ng
 psmisc
 pulseaudio-bluetooth
