@@ -221,9 +221,9 @@ printf "# Chaotic AUR\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist
 # and all build dependencies are installed.
 installationloop
 
-# Uninstall unneeded packages [from Anarchy or otherwise]
+# Uninstall unneeded packages [i.e. from Anarchy]
 dialog --title "AARGH Installation" --infobox "Removing useless packages from installation" 5 70
-sudo -u "$name" $aurhelper -Rsc --noconfirm zsh-syntax-highlighting vim asciidoc
+sudo -u "$name" $aurhelper -Rsc --noconfirm zsh-syntax-highlighting vim
 
 ### POST-INSTALLATION
 dialog --title "AARGH Installation" --infobox "Activating services (post-installation)" 5 70
