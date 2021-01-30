@@ -33,6 +33,7 @@ chaotic-keyring
 chaotic-mirrorlist
 chromium-widevine
 clang
+code-minimap
 colord
 colorz
 copyq
@@ -40,6 +41,7 @@ coreutils
 cozette-ttf
 croc
 cronie
+csview-bin
 djvulibre
 docx2txt
 dosfstools
@@ -118,7 +120,6 @@ lingot
 linux
 linux-firmware
 linux-headers
-lvm2
 lynx
 lyrics-in-terminal
 m4
@@ -141,7 +142,7 @@ nb-git
 ncmpcpp
 ncspot
 neofetch
-neovim
+neovim-nightly-bin
 neovim-remote
 nerd-fonts-hack
 networkmanager
