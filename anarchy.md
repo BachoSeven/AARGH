@@ -39,8 +39,11 @@ sudo sh aargh.sh (if gh PAT is alright)
 - weechat-plugins autoloading at startup: `ln -s /usr/share/weechat/python/weechat-matrix.py -t ~/.config/weechat/python/autoload`; `ln -s /usr/lib/weechat/python/notify_send.py -t $XDG_CONFIG_HOME/weechat/python/autoload`; `ln -s /usr/lib/weechat/python/vimode.py -t $XDG_CONFIG_HOME/weechat/python/autoload`; `ln -s /usr/lib/weechat/python/edit.py -t $XDG_CONFIG_HOME/weechat/python/autoload`
 - bootstrap weechat with https://wiki.archlinux.org/index.php/WeeChat; and also from https://weechat.org/files/doc/stable/weechat_quickstart.en.html
 - enable intel-undervolt service
+- nbfc: enable --now service; `nbfc config -a "Asus Zenbook UX310UA"`; `nbfc status` to check.
+- start pkgstats.timer
 - disable redshift service (started from xprofile)
-- mutt-wizard: add accounts && comment out "Flatten" in MBSYNCRC
+- put ~/tmp/web-stuff/unified+gambling+fakenews_hosts in /etc/hosts
+- mutt-wizard: Just add accounts normally, and then, BEFORE SYNCING, comment out "Flatten" rows in MBSYNCRC (and then remove ~/.urlview)
 - spotify: `chmod 777 /opt/spotify; chmod 777 /opt/spotify/Apps -R` and then `spicetify backup apply enable-devtool`
 - gpg: import keys; ~~change sockets~~:
          <!-- "Note that this currently does not work out-of-the-box using systemd user units and socket-based activation, since the socket directory changes based on the hash of -->

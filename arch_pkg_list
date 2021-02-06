@@ -33,7 +33,7 @@ chaotic-keyring
 chaotic-mirrorlist
 chromium-widevine
 clang
-code-minimap
+code-minimap-git
 colord
 colorz
 copyq
@@ -86,6 +86,7 @@ gtk-update-icon-cache
 gtk2
 gzip
 highlight
+hosts-add-github-git
 hsetroot
 hunspell
 idasen
@@ -139,6 +140,7 @@ mpd-light-pulse-ffmpeg
 mpv-light-pulse
 mutt-wizard-git
 nb-git
+nbfc-git
 ncmpcpp
 ncspot
 neofetch
@@ -188,6 +190,7 @@ perl-www-robotrules
 pfetch
 picom-git
 pkgconf
+pkgstats
 plymouth
 procps-ng
 psmisc
