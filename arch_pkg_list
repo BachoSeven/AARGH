@@ -166,7 +166,7 @@ pacman-git
 pacnews-neovim-git
 pamixer-git
 pango
-paru-git
+paru6alfa-git
 pass-otp
 patch
 pciutils
@@ -250,7 +250,6 @@ ttf-liberation
 ttf-sarasa-gothic
 ttf-scientifica
 ttf-symbola
-ttf-typicons
 tty-clock-git
 tty-solitaire
 typiskt
@@ -283,6 +282,7 @@ xclip-git
 xdotool-git
 xidlehook
 xkcd-git
+xmenu
 xorg-server
 xorg-xdpyinfo
 xorg-xev
