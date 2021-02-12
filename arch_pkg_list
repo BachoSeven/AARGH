@@ -81,7 +81,6 @@ grep
 grub
 gruvbox-material-gtk-theme-git
 gruvbox-material-icon-theme-git
-gtk-engine-murrine
 gtk-update-icon-cache
 gtk2
 gzip
@@ -115,7 +114,7 @@ libsynctex
 libthai
 libusb-compat
 libva-intel-driver
-libxft-bgra-git
+libxft-bgra
 licenses
 lingot
 linux
@@ -150,7 +149,7 @@ nerd-fonts-hack
 networkmanager
 networkmanager-dmenu-git
 newsboat
-nicotine-plus-git
+nicotine+
 nordvpn-bin
 noto-fonts-emoji
 ntfs-3g-fuse
