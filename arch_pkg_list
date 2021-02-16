@@ -201,6 +201,7 @@ python-pywal
 qbittorrent-cli-bin
 qbittorrent-git
 qt5-declarative
+qt5-imageformats
 qt5-wayland
 qt5ct
 re2
