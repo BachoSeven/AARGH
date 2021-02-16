@@ -70,6 +70,7 @@ gawk
 gcc
 gcc-libs
 gdu
+gebaar-libinput-git
 gettext
 gifsicle
 git
@@ -194,6 +195,7 @@ procps-ng
 psmisc
 pulseaudio-bluetooth
 pulsemixer
+python-piexif
 python-pynvim
 python-pywal
 qbittorrent-cli-bin
@@ -261,6 +263,7 @@ urlview-xdg-git
 usbutils
 util-linux
 vieb
+vimiv-qt-git
 w3m
 wayland-protocols
 weechat
