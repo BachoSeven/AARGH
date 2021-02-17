@@ -51,7 +51,6 @@ duf-bin
 dunst-git
 e2fsprogs
 efibootmgr
-element-desktop-nightly-bin
 exfat-utils
 exiv2
 expac
@@ -173,7 +172,6 @@ pdfgrep
 perl-clone
 perl-encode-locale
 perl-file-listing
-perl-file-mimeinfo
 perl-html-tagset
 perl-http-cookies
 perl-http-daemon
@@ -195,11 +193,10 @@ procps-ng
 psmisc
 pulseaudio-bluetooth
 pulsemixer
-python-piexif
 python-pynvim
 python-pywal
 qbittorrent-cli-bin
-qbittorrent-git
+qbittorrent-stable-git
 qt5-declarative
 qt5-imageformats
 qt5-wayland
