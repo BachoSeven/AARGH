@@ -242,7 +242,6 @@ systembeepoff
 chsh -s /bin/zsh "$name" >/dev/null 2>&1
 
 # Create dirs to unclutter ~
-sudo -u "$name" mkdir -p "/home/$name/.cache/zsh/"
 sudo -u "$name" mkdir -p "/home/$name/.local/share/tig/"
 sudo -u "$name" mkdir -p "/home/$name/.local/share/zsh/"
 sudo -u "$name" mkdir -p "/home/$name/.local/share/octave/"
