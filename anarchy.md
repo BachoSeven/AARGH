@@ -41,7 +41,7 @@ sudo sh aargh.sh (if gh PAT is alright)
 - enable intel-undervolt service
 - nbfc: enable --now service; `nbfc config -a "Asus Zenbook UX310UA"`; `nbfc status` to check.
 - start pkgstats.timer
-- disable redshift service (started from xprofile)
+- disable redshift and dunst(--user) services (both work better when started from xprofile).
 - put ~/tmp/web-stuff/unified+gambling+fakenews_hosts in /etc/hosts
 - mutt-wizard: Just add accounts normally, and then, BEFORE SYNCING, comment out "Flatten" rows in MBSYNCRC (and then remove ~/.urlview)
 - spotify: `chmod 777 /opt/spotify; chmod 777 /opt/spotify/Apps -R` and then `spicetify backup apply enable-devtool`
