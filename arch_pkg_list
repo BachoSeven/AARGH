@@ -116,9 +116,9 @@ libva-intel-driver
 libxft-bgra
 licenses
 lingot
-linux
 linux-firmware
-linux-headers
+linux-zen
+linux-zen-headers
 lynx
 lyrics-in-terminal
 m4
@@ -142,7 +142,7 @@ nbfc-git
 ncmpcpp
 ncspot
 neofetch
-neovim-nightly-bin
+neovim-nightly-git
 neovim-remote
 nerd-fonts-hack
 networkmanager

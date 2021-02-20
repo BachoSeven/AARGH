@@ -1,7 +1,8 @@
-## Packages
+## Packages to be installed through Anarchy
 
 - openssh
 - wget
+- Kernel: Zen-Linux
 
 ## Stuff
 - `zsh`
