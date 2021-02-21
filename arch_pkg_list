@@ -12,6 +12,7 @@ atool
 autoconf
 automake
 bash
+bash-language-server
 bash-pipes
 bastet-xdg-git
 bat
@@ -235,6 +236,7 @@ teams
 tectonic-bin
 telegram-desktop-bin-dev
 texinfo
+texlab
 tig
 tlp
 toot
@@ -259,6 +261,7 @@ urlview-xdg-git
 usbutils
 util-linux
 vieb
+vim-language-server
 vimiv-qt-git
 w3m
 wayland-protocols
