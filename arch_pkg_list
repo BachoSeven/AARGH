@@ -85,7 +85,6 @@ gtk-update-icon-cache
 gtk2
 gzip
 highlight
-hosts-add-github-git
 hsetroot
 hunspell
 idasen
@@ -143,7 +142,7 @@ nbfc-git
 ncmpcpp
 ncspot
 neofetch
-neovim-nightly-git
+neovim-nightly-bin
 neovim-remote
 nerd-fonts-hack
 networkmanager
