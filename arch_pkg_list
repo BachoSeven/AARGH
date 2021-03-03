@@ -151,6 +151,7 @@ newsboat
 nicotine+
 nordvpn-bin
 noto-fonts-emoji
+nss-mdns
 ntfs-3g-fuse
 nudoku-git
 nyancat
@@ -231,7 +232,7 @@ systemd-sysvcompat
 tar
 task-spooler
 tealdeer
-teams
+teams-insiders
 tectonic-bin
 telegram-desktop-bin-dev
 texinfo
@@ -259,7 +260,6 @@ urlscan-git
 urlview-xdg-git
 usbutils
 util-linux
-vieb
 vim-language-server
 vimiv-qt-git
 w3m
