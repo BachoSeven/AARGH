@@ -23,7 +23,6 @@ bluez
 bluez-utils
 bookmenu-git
 bottom-git
-brother-mfc-l2710dw
 bs
 bzip2
 catdoc
@@ -42,6 +41,7 @@ cozette-ttf
 croc
 cronie
 csview-bin
+cups
 djvulibre
 docx2txt
 dosfstools
@@ -127,6 +127,7 @@ make
 man-db
 man-pages
 mathematica
+matrix-mirage
 mediainfo
 mego
 mimi-bachoseven-git
@@ -194,7 +195,9 @@ procps-ng
 psmisc
 pulseaudio-bluetooth
 pulsemixer
+python-html-sanitizer
 python-pywal
+python-simpleaudio
 qbittorrent-cli-bin
 qbittorrent-stable-git
 qt5-declarative
@@ -216,7 +219,6 @@ sdcv-git
 sdl2_image
 sed
 shadow
-shantz-xwinwrap-bzr
 simple-scan
 snappy
 socat
@@ -260,6 +262,7 @@ urlscan-git
 urlview-xdg-git
 usbutils
 util-linux
+vieb
 vim-language-server
 vimiv-qt-git
 w3m
@@ -295,6 +298,7 @@ xorg-xwininfo
 xrootgif
 xsel
 xss-lock
+xwinwrap-git
 xz
 youtube-dl
 zathura
