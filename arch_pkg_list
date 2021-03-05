@@ -219,6 +219,7 @@ sdcv-git
 sdl2_image
 sed
 shadow
+shantz-xwinwrap-bzr
 simple-scan
 snappy
 socat
@@ -298,7 +299,6 @@ xorg-xwininfo
 xrootgif
 xsel
 xss-lock
-xwinwrap-git
 xz
 youtube-dl
 zathura
