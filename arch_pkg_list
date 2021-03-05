@@ -195,8 +195,11 @@ procps-ng
 psmisc
 pulseaudio-bluetooth
 pulsemixer
+python-enzyme
+python-guessit
 python-html-sanitizer
 python-pywal
+python-rarfile
 python-simpleaudio
 qbittorrent-cli-bin
 qbittorrent-stable-git
@@ -227,6 +230,7 @@ spicetify-cli-git
 spotify
 spotifywm-git
 stardict-dictd_www.dict.org_gcide
+subliminal
 sudo
 sxiv-bachoseven-git
 system-config-printer
