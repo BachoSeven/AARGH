@@ -1,8 +1,3 @@
-# Replace tabs with spaces(vimium):
-``` sh
-1,$s/\t/ /g
-```
-
 # crontab:
 ``` sh
 @hourly		DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$(id -u $USER)/bus ~/.local/bin/cron/desk >/dev/null 2>&1
@@ -14,9 +9,5 @@
 ```
 
 # Bluetooth headphones autoconnect
-`/etc/pulse/default.pa`:
-## automatically switch to newly-connected devices
-`load-module module-switch-on-connect`
-
-# Give users in the wheel group permission to use sudo
-`echo "%wheel ALL=(ALL) ALL" > /mnt/etc/sudoers.d/01_wheel_all`
+In `/etc/pulse/default.pa`:
+`load-module module-switch-on-connect` (automatic switch to newly-connected devices)
