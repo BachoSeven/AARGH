@@ -127,6 +127,7 @@ make
 man-db
 man-pages
 mathematica
+matrix-mirage
 mediainfo
 mego
 mimi-bachoseven-git
@@ -221,10 +222,10 @@ simple-scan
 snappy
 socat
 spicetify-cli-git
-spotify-dev
+spotify-edge-snap
 spotifywm-git
-squashfs-tools
 stardict-dictd_www.dict.org_gcide
+subliminal-git
 sudo
 sxiv-bachoseven-git
 system-config-printer
