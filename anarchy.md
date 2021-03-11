@@ -9,7 +9,7 @@
 - install efibootmgr if needed...
 - same for os-prober
 - use Grub:)
-- activate touchpad, dhcpd(i think) to activate ip at startup, networkmanager, wifi stuff, pppoe(ethernet), also bluez stuff if asked.
+- activate touchpad, networkmanager, wifi stuff, also bluez stuff if asked.
 
 ### SSH [TODO]
 - this needs to be done "manually" with a pastebin before installing from github...
@@ -17,7 +17,8 @@
 ## AARGH
 ``` sh
 wget https://raw.githubusercontent.com/BachoSeven/AARGH/master/aargh.sh
-sudo sh aargh.sh (if gh PAT is alright)
+# TODO: fix github PAT part
+sudo sh aargh.sh
 ```
 
 ## Setups post-install
