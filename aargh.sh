@@ -191,6 +191,7 @@ dialog --title "AARGH Installation" --infobox "Installing \`basedevel\` and \`gi
 installpkg curl
 installpkg base-devel
 installpkg git
+# Is removed later on
 installpkg ntp
 
 dialog --title "AARGH Installation" --infobox "Synchronizing system time to ensure successful and secure installation of software..." 4 70
@@ -223,7 +224,7 @@ installationloop
 
 # Uninstall unneeded packages [i.e. from Anarchy]
 dialog --title "AARGH Installation" --infobox "Removing useless packages from installation" 5 70
-sudo -u "$name" $aurhelper -Rsc --noconfirm zsh-syntax-highlighting vim
+sudo -u "$name" $aurhelper -Rsc --noconfirm zsh-syntax-highlighting vim ntp
 
 ### POST-INSTALLATION
 dialog --title "AARGH Installation" --infobox "Activating services (post-installation)" 5 70
