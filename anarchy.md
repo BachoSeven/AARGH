@@ -47,6 +47,7 @@ sudo sh aargh.sh
 - put ~/tmp/web-stuff/unified+gambling+fakenews_hosts in /etc/hosts
 - mutt-wizard: Just add accounts normally, and then, BEFORE SYNCING, comment out "Flatten" rows in MBSYNCRC (and then remove ~/.urlview)
 - spotify: `chmod 777 /opt/spotify; chmod 777 /opt/spotify/Apps -R` and then `spicetify backup apply enable-devtool`
+- octave: compile `openblas-lapack` to replace the default blas implementation.
 - gpg: import keys; ~~change sockets~~:
          <!-- "Note that this currently does not work out-of-the-box using systemd user units and socket-based activation, since the socket directory changes based on the hash of -->
          <!-- $GNUPGHOME. You can get the new socket directory using gpgconf --dry-run --create-socketdir, and have to modify the systemd user units to listen on the correct sockets -->
