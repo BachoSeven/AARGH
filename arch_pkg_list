@@ -22,7 +22,8 @@ bison
 bluez
 bluez-utils
 bookmenu-git
-bottom-git
+bottom-bin
+brave-bin
 bs
 bzip2
 catdoc
@@ -68,7 +69,7 @@ fzf
 gawk
 gcc
 gcc-libs
-gdu
+gdu-bin
 gebaar-libinput-git
 gettext
 gifsicle
@@ -206,6 +207,7 @@ qt5ct
 re2
 readability-cli
 redshift-minimal
+replit-desktop
 rest
 rofi
 rsync
@@ -222,7 +224,7 @@ simple-scan
 snappy
 socat
 spicetify-cli-git
-spotify-edge-snap
+spotify
 spotifywm-git
 stardict-dictd_www.dict.org_gcide
 subliminal-git
