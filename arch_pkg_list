@@ -82,7 +82,6 @@ grub
 gruvbox-material-gtk-theme-git
 gruvbox-material-icon-theme-git
 gtk-update-icon-cache
-gtk2
 gzip
 highlight
 hsetroot
