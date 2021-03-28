@@ -46,7 +46,7 @@ sudo sh aargh.sh
 - disable redshift and dunst(--user) services (both work better when started from xprofile).
 - put ~/tmp/web-stuff/unified+gambling+fakenews_hosts in /etc/hosts
 - mutt-wizard: Just add accounts normally, and then, BEFORE SYNCING, comment out "Flatten" rows in MBSYNCRC (and then remove ~/.urlview)
-- spotify: `chmod 777 /opt/spotify; chmod 777 /opt/spotify/Apps -R` and then `spicetify backup apply enable-devtool`
+- spotify: `sudo chmod 777 /opt/spotify; sudo chmod 777 /opt/spotify/Apps -R` and then `spicetify backup apply`
 - octave: compile `openblas-lapack` to replace the default blas implementation.
 - gpg: import keys; ~~change sockets~~:
          <!-- "Note that this currently does not work out-of-the-box using systemd user units and socket-based activation, since the socket directory changes based on the hash of -->
