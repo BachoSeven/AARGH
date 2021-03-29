@@ -79,6 +79,7 @@ git
 glibc
 glow
 gnome-keyring
+gnuplot-git
 grep
 grub
 gruvbox-material-gtk-theme-git
@@ -273,6 +274,7 @@ weechat-edit-git
 weechat-matrix-git
 weechat-notify-send
 weechat-vimode-git
+wezterm-bin
 wget
 whatscli
 which
