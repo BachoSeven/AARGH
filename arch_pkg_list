@@ -1,7 +1,6 @@
 abook-configdir
 adwaita-icon-theme
 apg
-arch-silence-grub-theme-git
 arch-wiki-docs
 archivemount
 asciiquarium
@@ -81,7 +80,6 @@ glow
 gnome-keyring
 gnuplot-git
 grep
-grub
 gruvbox-material-gtk-theme-git
 gruvbox-material-icon-theme-git
 gtk-update-icon-cache
