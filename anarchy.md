@@ -1,4 +1,4 @@
-## Packages to be installed through Anarchy
+## Packages to be installed through Anarchy (or else)
 
 - openssh
 - wget
@@ -6,9 +6,8 @@
 
 ## Stuff
 - `zsh`
-- install efibootmgr if needed...
-- same for os-prober
-- use Grub:)
+- install efibootmgr,os-prober if they are needed
+- Grub (or limine, with Root UUID and usual kernel cli)
 - activate touchpad, networkmanager, wifi stuff, also bluez stuff if asked.
 
 ### SSH [TODO]
@@ -35,7 +34,6 @@ sudo sh aargh.sh
 - soulseek backup import
 - unbound: enable service, cp unbound.conf from stuff/etc; set as system resolver (archwiki), and lock the resolv.conf file(`sudo chattr +i /etc/resolv.conf`).
 - ./add-gtypist-exercises.sh
-- check keys from `https://lonewolf.pedrohlc.com/chaotic-aur/`.
 - configure Ungoogled-chromium.
 - keepassxc import database && sync with chromium extension
 - weechat-plugins autoloading at startup: `ln -s /usr/share/weechat/python/weechat-matrix.py -t ~/.config/weechat/python/autoload`; `ln -s /usr/lib/weechat/python/notify_send.py -t $XDG_CONFIG_HOME/weechat/python/autoload`; `ln -s /usr/lib/weechat/python/vimode.py -t $XDG_CONFIG_HOME/weechat/python/autoload`; `ln -s /usr/lib/weechat/python/edit.py -t $XDG_CONFIG_HOME/weechat/python/autoload`
