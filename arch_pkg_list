@@ -65,6 +65,7 @@ file
 filesystem
 findutils
 flex
+fluffychat
 fontconfig
 fzf
 gawk
@@ -140,6 +141,7 @@ mpd-light-pulse-ffmpeg
 mpv-light-pulse
 mutt-wizard-git
 nb
+nbfc-git
 ncmpcpp
 ncspot
 neofetch
@@ -191,7 +193,7 @@ pfetch
 picom-git
 pkgconf
 pkgstats
-plymouth
+plymouth-git
 procps-ng
 psmisc
 pulseaudio-bluetooth
