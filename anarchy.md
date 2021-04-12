@@ -32,7 +32,8 @@ sudo sh aargh.sh
 - clean installed packages
 - nmdm-git: setup polkit permissions for NM (info in sysdots repo) + sctl disable nm-wait-online.service
 - soulseek backup import
-- unbound: enable service, cp unbound.conf from stuff/etc; set as system resolver (archwiki), and lock the resolv.conf file(`sudo chattr +i /etc/resolv.conf`).
+- unbound: enable service, cp unbound.conf from stuff/etc; set as system resolver (archwiki), and lock the resolv.conf file(`sudo chattr +i /etc/resolv.conf`). (and disable
+  systemd-resolved(?))
 - ./add-gtypist-exercises.sh
 - configure Ungoogled-chromium.
 - keepassxc import database && sync with chromium extension
