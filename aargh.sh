@@ -247,6 +247,7 @@ sudo -u "$name" mkdir -p "/home/$name/.local/share/tig/"
 sudo -u "$name" mkdir -p "/home/$name/.local/share/octave/"
 sudo -u "$name" mkdir -p "/home/$name/.config/weechat/python/autoload"
 sudo -u "$name" mkdir -p "/home/$name/.local/share/gnupg"
+sudo -u "$name" mkdir -p "/home/$name/.config/nvim/sessions"
 chmod 700 $GNUPGHOME
 
 # Enable user to turn bluetooth on/off with `rfkill`
