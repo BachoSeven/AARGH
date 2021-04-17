@@ -1,5 +1,6 @@
 abook-configdir
 adwaita-icon-theme
+annepro2-tools-git
 apg
 arch-wiki-docs
 archivemount
@@ -214,7 +215,6 @@ rofi
 rsync
 rtl8822bu-dkms-git
 s
-samba
 sane-airscan
 screenkey
 sdcv-git
@@ -281,7 +281,6 @@ which
 wikiman
 wireless_tools
 wpa_supplicant
-wsdd
 xbanish
 xcape
 xclip-git
