@@ -123,7 +123,7 @@ installationloop() { \
 putgitrepo() {
 	[ ! -d "/home/$name" ] && mkdir -p "/home/$name"
 	mkdir -p "/home/$name/.config/dots"
-	chown -R "$name":wheel "/home/$name"
+	chown "$name":wheel "/home/$name"
 	# Install dotbare from AUR [paru is needed at this point]
 		dialog --title "AARGH Installation" --infobox "Installing \`dotbare\` from AUR to manage dotfiles" 5 70
 		sudo -u "$name" $aurhelper -S --noconfirm dotbare >/dev/null 2>&1
