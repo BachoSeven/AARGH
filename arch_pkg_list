@@ -106,7 +106,7 @@ kotatogram-desktop-bin
 kunst-git
 lagrange
 lesspipe
-lf
+lf-git
 libdatrie
 libdbusmenu-qt5
 libgusb
@@ -125,7 +125,7 @@ linux-zen-headers
 lynx
 lyrics-in-terminal
 m4
-maim-git
+maim
 make
 man-db
 man-pages
@@ -226,6 +226,7 @@ simple-scan
 snappy
 socat
 spicetify-cli-git
+spicetify-custom-apps-and-extensions-git
 spotify
 spotifywm-git
 stardict-dictd_www.dict.org_gcide
