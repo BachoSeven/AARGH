@@ -199,6 +199,7 @@ procps-ng
 psmisc
 pulseaudio-bluetooth
 pulsemixer
+python-piexif
 python-pywal
 qbittorrent-cli-bin
 qbittorrent-stable-git
