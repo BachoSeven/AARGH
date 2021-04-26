@@ -102,7 +102,7 @@ jbig2dec
 jq
 keepassxc
 kitty
-kotatogram-desktop-bin
+kotatogram-dev-git
 kunst-git
 lagrange
 lesspipe
@@ -202,7 +202,7 @@ pulsemixer
 python-exiv2
 python-pywal
 qbittorrent-cli-bin
-qbittorrent-stable-git
+qbittorrent-dark-git
 qt5-declarative
 qt5-imageformats
 qt5-wayland
