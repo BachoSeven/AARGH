@@ -8,4 +8,4 @@
 ,samba,"is the SMB fileserver."
 A,wsdd,"Is a Web Service Discovery Daemon for SMB."
   ```
-for Sammba support.
+for Samba support.
