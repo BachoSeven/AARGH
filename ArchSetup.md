@@ -6,7 +6,3 @@
 30 16 * * *	~/.local/bin/scripts/bmbkp ~/.config/browser/bkp/bm/bm.html && ~/.local/bin/scripts/histbkp ~/.config/browser/bkp/hist/hist.html && cd ~/.config/browser/bkp && drive push -no-prompt hist/hist.html bm/bm.html && ~/.local/bin/scripts/txtbkp
 */2 * * * *	/usr/bin/mailsync >/dev/null 2>&1
 ```
-
-# Bluetooth headphones autoconnect
-In `/etc/pulse/default.pa`:
-`load-module module-switch-on-connect` (automatic switch to newly-connected devices)
