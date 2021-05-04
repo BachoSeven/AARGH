@@ -201,8 +201,8 @@ pulseaudio-bluetooth
 pulsemixer
 python-exiv2
 python-pywal
+qbittorrent
 qbittorrent-cli-bin
-qbittorrent-dark-git
 qt5-declarative
 qt5-imageformats
 qt5-wayland
