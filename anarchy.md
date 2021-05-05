@@ -39,8 +39,6 @@ sudo sh aargh.sh
 - keepassxc import database && sync with chromium extension
 - weechat-plugins autoloading at startup: `ln -s /usr/share/weechat/python/weechat-matrix.py -t ~/.config/weechat/python/autoload`; `ln -s /usr/lib/weechat/python/notify_send.py -t $XDG_CONFIG_HOME/weechat/python/autoload`; `ln -s /usr/lib/weechat/python/vimode.py -t $XDG_CONFIG_HOME/weechat/python/autoload`; `ln -s /usr/lib/weechat/python/edit.py -t $XDG_CONFIG_HOME/weechat/python/autoload`
 - bootstrap weechat with https://wiki.archlinux.org/index.php/WeeChat; and also from https://weechat.org/files/doc/stable/weechat_quickstart.en.html
-- enable intel-undervolt service
-- nbfc: enable --now service; `nbfc config -a "Asus Zenbook UX310UA"`; `nbfc status` to check.
 - start pkgstats.timer
 - disable redshift and dunst(--user) services (both work better when started from xprofile).
 - put ~/tmp/web-stuff/unified+gambling+fakenews_hosts in /etc/hosts
@@ -54,3 +52,7 @@ sudo sh aargh.sh
  <!-- Sockets to change(5)[all with systemctl --user edit --full]: gpg-agent.socket, gpg-agent-extra.socket, gpg-agent-browser.socket, gpg-agent-ssh.socket, and dirmngr.socket. -->
  <!-- Syntax to change them (sysu edit): `ListenStream=%t/gnupg/d."${HASH}"/S."${socketname}"` -->
  <!-- Example vim substitute command `gnupg\//&d\.babif6xw6skmb8ps84qeyyam\//g` -->
+
+## Services (done through aargh, here for reference)
+- nbfc: enable --now service; `nbfc config -a "Asus Zenbook UX310UA"`(done through sysdots repo); `nbfc status` to check.
+- enable intel-undervolt service

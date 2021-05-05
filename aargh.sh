@@ -223,6 +223,8 @@ sudo -u "$name" $aurhelper -Rsc --noconfirm zsh-syntax-highlighting vim ntp
 ### POST-INSTALLATION
 dialog --title "AARGH Installation" --infobox "Activating services (post-installation)" 5 70
 sudo -u "$name" systemctl --user enable mpd.service
+systemctl enable nbfc.service
+systemctl enable intel-undervolt.service
 
 dialog --title "AARGH Installation" --infobox "Finally, installing \`libxft-bgra\` to enable color emoji in suckless software without crashes." 5 70
 sudo -u "$name" $aurhelper -S --noconfirm libxft-bgra >/dev/null 2>&1
