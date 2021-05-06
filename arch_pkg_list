@@ -102,7 +102,7 @@ jbig2dec
 jq
 keepassxc
 kitty
-kotatogram-dev-git
+kotatogram-desktop-bin
 kunst-git
 lagrange
 lesspipe
@@ -239,6 +239,7 @@ systemd
 systemd-sysvcompat
 tar
 task-spooler
+tauon-music-box
 tealdeer
 teams-insiders
 tectonic-bin
