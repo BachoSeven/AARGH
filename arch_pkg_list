@@ -154,6 +154,7 @@ networkmanager-dmenu-git
 newsboat
 nicotine+
 nordvpn-bin
+noto-fonts-cjk
 noto-fonts-emoji
 nss-mdns
 ntfs-3g-fuse
@@ -252,7 +253,6 @@ tree
 ttf-font-awesome
 ttf-joypixels
 ttf-liberation
-ttf-sarasa-gothic
 ttf-scientifica
 ttf-symbola
 tty-clock-git
