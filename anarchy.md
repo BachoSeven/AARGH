@@ -37,8 +37,6 @@ sudo sh aargh.sh
 - ./add-gtypist-exercises.sh
 - configure Ungoogled-chromium.
 - keepassxc import database && sync with chromium extension
-- weechat-plugins autoloading at startup: `ln -s /usr/share/weechat/python/weechat-matrix.py -t ~/.config/weechat/python/autoload`; `ln -s /usr/lib/weechat/python/notify_send.py -t $XDG_CONFIG_HOME/weechat/python/autoload`; `ln -s /usr/lib/weechat/python/vimode.py -t $XDG_CONFIG_HOME/weechat/python/autoload`; `ln -s /usr/lib/weechat/python/edit.py -t $XDG_CONFIG_HOME/weechat/python/autoload`
-- bootstrap weechat with https://wiki.archlinux.org/index.php/WeeChat; and also from https://weechat.org/files/doc/stable/weechat_quickstart.en.html
 - start pkgstats.timer
 - disable redshift and dunst(--user) services (both work better when started from xprofile).
 - put ~/tmp/web-stuff/unified+gambling+fakenews_hosts in /etc/hosts
