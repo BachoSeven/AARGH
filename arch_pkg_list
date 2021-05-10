@@ -29,8 +29,6 @@ catdoc
 cava-git
 ccze
 chafa
-chaotic-keyring
-chaotic-mirrorlist
 chromium-widevine
 clang
 clipmenu
@@ -142,7 +140,7 @@ mpd-light-pulse-ffmpeg
 mpv-light-pulse
 mutt-wizard-git
 nb-git
-nbfc-git
+nbfc-linux
 ncmpcpp
 ncspot
 neofetch

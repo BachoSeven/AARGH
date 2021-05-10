@@ -52,5 +52,5 @@ sudo sh aargh.sh
  <!-- Example vim substitute command `gnupg\//&d\.babif6xw6skmb8ps84qeyyam\//g` -->
 
 ## Services (done through aargh, here for reference)
-- nbfc: enable --now service; `nbfc config -a "Asus Zenbook UX310UA"`(done through sysdots repo); `nbfc status` to check.
+- nbfc: enable --now service; `nbfc config -a "Asus Zenbook UX310UAK"`(done through sysdots repo); `nbfc status -s` to check.
 - enable intel-undervolt service
