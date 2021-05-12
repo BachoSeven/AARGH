@@ -1,4 +1,5 @@
 #TAG,NAME IN REPO (or git url),PURPOSE
+A,limine,"is the bootloader."
 A,mimi-bachoseven-git,"is a better xdg-open. [replaces xdg-utils]."
 A,nerd-fonts-hack,"is the main system font."
 A,ttf-scientifica,"is the main console bitmap font."

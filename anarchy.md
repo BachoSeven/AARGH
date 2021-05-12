@@ -23,7 +23,7 @@ sudo sh aargh.sh
 ## Setups post-install
 - **Dotbare** (see dotbare.md)
 - swapfile
-- copy stuff from /etc (disables systemd-homed.service amongst other things; might have to disable it first.)
+- copy stuff from /etc (using sysdots, TODO) (disables systemd-homed.service amongst other things; might have to disable it first.)
 - plymouth: hook in mkinitcpio && regenerate initramfs; `sudo cp /usr/share/plymouth/arch-logo.png /usr/share/plymouth/themes/spinner/watermark.png`
 - tlp activation
 - systemctl: set-default multi-user-target;
