@@ -252,11 +252,7 @@ chmod 700 $GNUPGHOME
 groupadd -a "$name" rfkill
 
 # Create useful mount dirs under /mnt
-mkdir -p /mnt/usb1
-mkdir -p /mnt/usb2
-mkdir -p /mnt/iso
-mkdir -p /mnt/fraEl
-mkdir -p /mnt/fraPass
+mkdir -p /mnt/usb1 /mnt/usb2 /mnt/iso /mnt/backup /mnt/backup/home /mnt/backup/root /mnt/roba /mnt/fraEl /mnt/fraPass
 
 # Start/restart PulseAudio.
 killall pulseaudio; sudo -u "$name" pulseaudio --start
