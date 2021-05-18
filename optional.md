@@ -1,3 +1,7 @@
+- tauon(amazing music player) :
+```
+A,tauon-music-box,"is a modern streamlined music player."
+```
 - Installing `mpdris2`, `mpv-mpris-git` and `mconnect-git` to connect to my smartphone;
 - Installing `katcr` (jackett CLI interface) (need to add jackett API to katcr.ini)
 - cups(+avahi-daemon for network printers with IPP everywhere), jacket, nordvpn: enable services on demand so not to clutter boot. For the `nordvpnd` service, from version 3.8.8 onwards, we ~~also need to create~~ have to be in the `nordvpn` group.

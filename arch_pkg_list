@@ -45,6 +45,7 @@ dashbinsh
 djvulibre
 dmenu-bachoseven-git
 docx2txt
+doge
 dosfstools
 dotbare
 dragon-drag-and-drop-git
@@ -128,7 +129,7 @@ make
 man-db
 man-pages
 mathematica
-matrix-mirage
+matrix-mirage-git
 mediainfo
 mego
 mimi-bachoseven-git
@@ -225,7 +226,7 @@ shantz-xwinwrap-bzr
 simple-scan
 snappy
 socat
-spicetify-cli-git
+spicetify-cli
 spicetify-custom-apps-and-extensions-git
 spotify
 spotifywm-git
@@ -238,7 +239,6 @@ systemd
 systemd-sysvcompat
 tar
 task-spooler
-tauon-music-box
 tealdeer
 teams-insiders
 tectonic-bin
@@ -246,7 +246,6 @@ texinfo
 texlab
 tig
 tlp
-torrentflix
 tree
 ttf-font-awesome
 ttf-joypixels
@@ -270,6 +269,7 @@ vim-language-server
 vimiv-qt-git
 w3m
 wayland-protocols
+webos-cli
 wezterm
 wget
 whatscli
