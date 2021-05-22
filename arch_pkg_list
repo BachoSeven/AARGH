@@ -56,7 +56,7 @@ e2fsprogs
 efibootmgr
 exfat-utils
 exiv2
-expac
+expac-git
 fakeroot
 fast
 fd
@@ -72,7 +72,7 @@ gawk
 gcc
 gcc-libs
 gdu-bin
-gebaar-libinput-git
+gebaar-libinput-fork
 gettext
 gifsicle
 git
@@ -104,7 +104,7 @@ kotatogram-desktop-bin
 kunst-git
 lagrange
 lesspipe
-lf-git
+lf
 libdatrie
 libdbusmenu-qt5
 libgusb
@@ -152,7 +152,7 @@ nerd-fonts-mononoki
 networkmanager
 networkmanager-dmenu-git
 newsboat
-nicotine+
+nicotine-plus-git
 nordvpn-bin
 noto-fonts-cjk
 noto-fonts-emoji
@@ -226,7 +226,7 @@ shantz-xwinwrap-bzr
 simple-scan
 snappy
 socat
-spicetify-cli
+spicetify-cli-git
 spicetify-custom-apps-and-extensions-git
 spotify
 spotifywm-git
