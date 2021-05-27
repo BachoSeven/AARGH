@@ -19,8 +19,7 @@ bat
 bc
 binutils
 bison
-bluez
-bluez-utils
+bluez-git
 bookmenu-git
 bottom-bin
 bs
@@ -145,7 +144,7 @@ nbfc-linux
 ncmpcpp
 ncspot
 neofetch
-neovim-nightly-git
+neovim-nightly-bin
 neovim-remote
 nerd-fonts-hack
 nerd-fonts-mononoki
@@ -225,6 +224,7 @@ shadow
 shantz-xwinwrap-bzr
 simple-scan
 snappy
+so-git
 socat
 spicetify-cli-git
 spicetify-custom-apps-and-extensions-git
@@ -246,6 +246,7 @@ texinfo
 texlab
 tig
 tlp
+torrentflix
 tree
 ttf-font-awesome
 ttf-joypixels
@@ -304,4 +305,4 @@ zathura
 zathura-djvu
 zathura-pdf-mupdf
 zip
-zsh-minimal-git
+zsh

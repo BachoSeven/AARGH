@@ -8,7 +8,7 @@
 - `zsh`
 - install efibootmgr,os-prober if they are needed
 - Grub (or limine, with Root UUID and usual kernel cli)
-- activate touchpad, networkmanager, wifi stuff, also bluez stuff if asked.
+- activate touchpad, networkmanager, wifi stuff, and bluetooth(bluez).
 
 ### SSH [TODO]
 - this needs to be done "manually" with a pastebin before installing from github...
