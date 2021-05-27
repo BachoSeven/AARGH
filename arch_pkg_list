@@ -28,6 +28,7 @@ catdoc
 cava-git
 ccze
 chafa
+chromaprint
 chromium-widevine
 clang
 clipmenu
@@ -54,6 +55,7 @@ duf-bin
 dunst-git
 e2fsprogs
 efibootmgr
+element-desktop
 exfat-utils
 exiv2
 expac-git
@@ -128,7 +130,6 @@ make
 man-db
 man-pages
 mathematica
-matrix-mirage-git
 mediainfo
 mego
 mimi-bachoseven-git
@@ -191,6 +192,7 @@ perl-net-http
 perl-try-tiny
 perl-www-robotrules
 pfetch
+picard
 picom-git
 pkgconf
 pkgstats
