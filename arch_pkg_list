@@ -55,7 +55,7 @@ duf-bin
 dunst-git
 e2fsprogs
 efibootmgr
-element-desktop
+element-desktop-nightly-bin
 exfat-utils
 exiv2
 expac-git
@@ -212,7 +212,6 @@ qt5ct
 re2
 readability-cli
 redshift-minimal
-replit-desktop
 rest
 rofi
 rsync
