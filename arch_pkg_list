@@ -49,6 +49,7 @@ dosfstools
 dotbare
 dragon-drag-and-drop-git
 drive-bin
+dua-cli
 duf-bin
 dunst-git
 e2fsprogs
@@ -70,7 +71,6 @@ fzf
 gawk
 gcc
 gcc-libs
-gdu-bin
 gebaar-libinput-fork
 gettext
 gifsicle
