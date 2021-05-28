@@ -55,7 +55,6 @@ duf-bin
 dunst-git
 e2fsprogs
 efibootmgr
-element-desktop-nightly-bin
 exfat-utils
 exiv2
 expac-git
@@ -195,6 +194,7 @@ qt5-declarative
 qt5-imageformats
 qt5-wayland
 qt5ct
+quickmedia-git
 re2
 readability-cli
 redshift-minimal
