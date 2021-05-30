@@ -213,8 +213,7 @@ simple-scan
 snappy
 so-git
 socat
-spicetify-cli-git
-spicetify-custom-apps-and-extensions-git
+spicetify-cli
 spotify
 spotifywm-git
 stardict-dictd_www.dict.org_gcide
