@@ -225,6 +225,7 @@ sudo -u "$name" $aurhelper -Rsc --noconfirm zsh-syntax-highlighting vim ntp
 ### POST-INSTALLATION
 dialog --title "AARGH Installation" --infobox "Activating services (post-installation)" 5 70
 sudo -u "$name" systemctl --user enable mpd.service
+systemctl enable blueooth.service
 systemctl enable nbfc_service.service
 systemctl enable intel-undervolt.service
 
