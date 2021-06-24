@@ -19,7 +19,9 @@ bat
 bc
 binutils
 bison
-bluez-git
+blissify-git
+bluez
+bluez-libs
 bookmenu-git
 bottom-bin
 bs
@@ -28,6 +30,8 @@ catdoc
 cava-git
 ccze
 chafa
+chaotic-keyring
+chaotic-mirrorlist
 chromaprint
 chromium-widevine
 clang

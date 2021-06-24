@@ -205,7 +205,7 @@ grep "ILoveCandy" /etc/pacman.conf >/dev/null || sed -i "/#VerbosePkgLists/a ILo
 sed -i "s/-j2/-j$(nproc)/;s/^#MAKEFLAGS/MAKEFLAGS/" /etc/makepkg.conf
 
 manualinstall $aurhelper || error "Failed to install AUR helper."
-# Chaotic Aur [TODO: Either have sysdots already moved at this point(and thus use `pkginstall`), or remove chaotic-* and deal with them manually]
+# Chaotic Aur
 manualinstall chaotic-keyring
 manualinstall chaotic-mirrorlist
 printf "# Chaotic AUR\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
