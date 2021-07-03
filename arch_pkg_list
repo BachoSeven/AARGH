@@ -144,7 +144,7 @@ mpd-light-pulse-ffmpeg
 mpv-light-pulse
 mutt-wizard-git
 nb-git
-nbfc-linux-git
+nbfc-linux
 ncmpcpp
 ncspot
 neofetch
@@ -258,7 +258,6 @@ vim-language-server
 vimiv-qt-git
 w3m
 wayland-protocols
-webos-cli
 wezterm
 wget
 whatscli
