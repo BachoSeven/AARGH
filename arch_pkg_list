@@ -274,12 +274,14 @@ xidlehook
 xkcd-git
 xmenu
 xorg-server
+xorg-xauth
 xorg-xdpyinfo
 xorg-xev
-xorg-xinit
 xorg-xinput
+xorg-xmodmap
 xorg-xprop
 xorg-xrandr
+xorg-xrdb
 xorg-xset
 xorg-xsetroot
 xorg-xwininfo
