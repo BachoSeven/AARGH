@@ -213,7 +213,6 @@ shadow
 shantz-xwinwrap-bzr
 simple-scan
 snappy
-so-git
 socat
 spicetify-cli
 spotify
@@ -227,7 +226,7 @@ systemd
 systemd-sysvcompat
 tar
 task-spooler
-tealdeer
+tealdeer-bin
 teams-insiders
 tectonic-bin
 texinfo

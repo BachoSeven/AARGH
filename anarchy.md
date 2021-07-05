@@ -25,6 +25,7 @@ sudo sh aargh.sh
 - tlp activation
 - systemctl: set-default multi-user-target;
 - sudo mandb
+- install `tealdeer-bin`: `curl https://keybase.io/dbrgn/pgp_keys.asc | gpg --import` is necessary.
 - crontab install
 - clean installed packages
 - nmdm-git: setup polkit permissions for NM (info in sysdots repo) + sctl disable nm-wait-online.service
