@@ -134,7 +134,7 @@ putgitrepo() {
 	chown "$name":wheel "/home/$name"
 	# Install dotbare from AUR
 		dialog --title "AARGH Installation" --infobox "Installing \`dotbare\` from AUR to manage dotfiles" 5 70
-		sudo -u "$name" $aurhelper --skipreview -S --noconfirm dotbare >/dev/null 2>&1
+		sudo -u "$name" $aurhelper --useask --skipreview -S --noconfirm dotbare >/dev/null 2>&1
 	# set dotbare ENV variables
 		DOTBARE_DIR="/home/$name/.config/dots"
 		DOTBARE_TREE="/home/$name"
@@ -224,7 +224,7 @@ installationloop
 
 # Uninstall unneeded packages [i.e. from Anarchy]
 dialog --title "AARGH Installation" --infobox "Removing useless packages from installation" 5 70
-sudo -u "$name" $aurhelper -Rsc --noconfirm zsh-syntax-highlighting vim ntp
+sudo -u "$name" $aurhelper --useask -Rsc --noconfirm zsh-syntax-highlighting vim ntp
 
 ### POST-INSTALLATION
 dialog --title "AARGH Installation" --infobox "Activating services (post-installation)" 5 70
@@ -234,7 +234,7 @@ systemctl enable nbfc_service.service
 systemctl enable intel-undervolt.service
 
 dialog --title "AARGH Installation" --infobox "Finally, installing \`libxft-bgra\` to enable color emoji in suckless software without crashes." 5 70
-sudo -u "$name" $aurhelper --skipreview -S --noconfirm libxft-bgra >/dev/null 2>&1
+sudo -u "$name" $aurhelper --useask --skipreview -S --noconfirm libxft-bgra >/dev/null 2>&1
 
 # Install the dotfiles in the user's home directory
 putgitrepo
