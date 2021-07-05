@@ -132,15 +132,17 @@ putgitrepo() {
 		DOTBARE_TREE="/home/$name"
 		DOTBARE_BACKUP="/home/$name/.local/share/dotbare"
 	# make ssh key in an interactive way
-		dialog --title "AARGH Installation" --infobox "Generating ssh key and importing it into your github account" 5 70
-		sudo -u "$name" ssh-keygen -t rsa -b 4096 -C "ad17fmin@uwcad.it"
+		dialog --title "AARGH Installation" --infobox "Generating ssh key(you can optionally import it into your github account): insert your email" 5 70
+		printf "email:\n"
+		read -r email
+		sudo -u "$name" ssh-keygen -t rsa -b 4096 -C "$email"
 		cat /home/$name/.ssh/id_rsa.pub > /tmp/sshkey
-		dialog --title "AARGH Installation" --infobox "insert github Personal Access Token to add the ssh key for your account, if you'd like to. It's useful when using dotbare" 12 80
+		dialog --title "AARGH Installation" --infobox "Insert your github Personal Access Token to add the ssh key to your account, if you'd like to. It's useful when using dotbare" 12 80
 		printf "token:\n"
 		read -r token
 		sudo -u "$name" curl -H "Authorization: $token" \
 			--data "{\"title\":\"Machine_$(date +%Y%m%d%H%M%S)\",\"key\":\"$(cat /tmp/sshkey)\"}" \
-		    https://api.github.com/user/keys
+			https://api.github.com/user/keys
 		dialog --infobox "Downloading and installing config files..." 4 60
 		sudo -u "name" dotbare finit -u $dotfilesrepo -s
 	}
