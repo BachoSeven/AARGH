@@ -3,7 +3,7 @@
 - Kernel: Zen-Linux
 - openssh
 - wget
-- `zsh`
+- zsh
 - Grub(with efibootmgr and os-prober if needed), or limine, with Root UUID and usual kernel cli.
 - networkmanager
 
