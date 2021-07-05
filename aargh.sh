@@ -70,6 +70,13 @@ refreshkeys() { \
 	pacman --noconfirm -Sy archlinux-keyring >/dev/null 2>&1
 	}
 
+chaoticsetup() { \
+	dialog --infobox "Adding the Chaotic AUR Repository..." 4 40
+	manualinstall chaotic-keyring
+	manualinstall chaotic-mirrorlist
+	printf "# Chaotic AUR\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
+	}
+
 newperms() { # Set special sudoers settings for install (or after).
 	sed -i "/#AARGH/d" /etc/sudoers
 	echo "$* #AARGH" >> /etc/sudoers ;}
@@ -178,6 +185,8 @@ adduserandpass || error "Error adding username and/or password."
 # Refresh Arch keyrings.
 refreshkeys || error "Error automatically refreshing Arch keyring. Consider doing so manually."
 
+chaoticsetup || error "Error adding the chaotic-aur repository."
+
 dialog --title "AARGH Installation" --infobox "Installing \`basedevel\` and \`git\` for installing other software required for the installation of other programs." 5 70
 installpkg curl
 installpkg base-devel
@@ -202,10 +211,7 @@ grep "ILoveCandy" /etc/pacman.conf >/dev/null || sed -i "/#VerbosePkgLists/a ILo
 sed -i "s/-j2/-j$(nproc)/;s/^#MAKEFLAGS/MAKEFLAGS/" /etc/makepkg.conf
 
 manualinstall $aurhelper || error "Failed to install AUR helper."
-# Chaotic Aur
-manualinstall chaotic-keyring
-manualinstall chaotic-mirrorlist
-printf "# Chaotic AUR\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
+# Removed packages
 manualinstall dmenu-bachoseven-git
 manualinstall sxiv-bachoseven-git
 
