@@ -3,8 +3,6 @@
 - openssh
 - wget
 - Kernel: Zen-Linux
-
-## Stuff
 - `zsh`
 - install efibootmgr,os-prober if they are needed
 - Grub (or limine, with Root UUID and usual kernel cli)
