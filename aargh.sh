@@ -17,7 +17,7 @@ esac done
 
 [ -z "$dotfilesrepo" ] && dotfilesrepo="git@github.com:BachoSeven/dotfiles.git"
 [ -z "$progsfile" ] && progsfile="https://raw.githubusercontent.com/BachoSeven/AARGH/master/progs.csv"
-[ -z "$aurhelper" ] && aurhelper="paru"
+[ -z "$aurhelper" ] && aurhelper="paru-bin"
 
 ### FUNCTIONS ###
 
@@ -124,7 +124,7 @@ putgitrepo() {
 	[ ! -d "/home/$name" ] && mkdir -p "/home/$name"
 	mkdir -p "/home/$name/.config/dots"
 	chown "$name":wheel "/home/$name"
-	# Install dotbare from AUR [paru is needed at this point]
+	# Install dotbare from AUR
 		dialog --title "AARGH Installation" --infobox "Installing \`dotbare\` from AUR to manage dotfiles" 5 70
 		sudo -u "$name" $aurhelper -S --noconfirm dotbare >/dev/null 2>&1
 	# set dotbare ENV variables
@@ -194,7 +194,7 @@ ntpdate 0.us.pool.ntp.org >/dev/null 2>&1
 # in a fakeroot environment, this is required for all builds with AUR.
 newperms "%wheel ALL=(ALL) NOPASSWD: ALL"
 
-# Make pacman and paru colorful and adds eye candy on the progress bar because why not.
+# Make pacman colorful and add eye candy on the progress bar.
 grep "^Color" /etc/pacman.conf >/dev/null || sed -i "s/^#Color$/Color/" /etc/pacman.conf
 grep "ILoveCandy" /etc/pacman.conf >/dev/null || sed -i "/#VerbosePkgLists/a ILoveCandy" /etc/pacman.conf
 

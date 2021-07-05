@@ -1,12 +1,11 @@
 ## Packages to be installed through Anarchy (or else)
 
+- Kernel: Zen-Linux
 - openssh
 - wget
-- Kernel: Zen-Linux
 - `zsh`
-- install efibootmgr,os-prober if they are needed
-- Grub (or limine, with Root UUID and usual kernel cli)
-- activate touchpad, networkmanager, wifi stuff, not bluetooth(bluez is pulled by packages, and service is enabled in aargh).
+- Grub(with efibootmgr and os-prober if needed), or limine, with Root UUID and usual kernel cli.
+- networkmanager
 
 ### SSH [TODO]
 - this needs to be done "manually" with a pastebin before installing from github...
