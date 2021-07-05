@@ -75,6 +75,7 @@ chaoticsetup() { \
 	manualinstall chaotic-keyring
 	manualinstall chaotic-mirrorlist
 	printf "\n# Chaotic AUR\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
+	pacman -Syy >/dev/null 2>&1
 	}
 
 newperms() { # Set special sudoers settings for install (or after).
@@ -110,7 +111,7 @@ gitmakeinstall() {
 aurinstall() { \
 	dialog --title "AARGH Installation" --infobox "Installing \`$1\` ($n of $total) from the AUR. $1 $2" 5 70
 	echo "$aurinstalled" | grep "^$1$" >/dev/null 2>&1 && return
-	sudo -u "$name" $aurhelper -S --noconfirm "$1" >/dev/null 2>&1
+	sudo -u "$name" $aurhelper --skipreview -S --noconfirm "$1" >/dev/null 2>&1
 	}
 
 installationloop() { \
@@ -133,7 +134,7 @@ putgitrepo() {
 	chown "$name":wheel "/home/$name"
 	# Install dotbare from AUR
 		dialog --title "AARGH Installation" --infobox "Installing \`dotbare\` from AUR to manage dotfiles" 5 70
-		sudo -u "$name" $aurhelper -S --noconfirm dotbare >/dev/null 2>&1
+		sudo -u "$name" $aurhelper --skipreview -S --noconfirm dotbare >/dev/null 2>&1
 	# set dotbare ENV variables
 		DOTBARE_DIR="/home/$name/.config/dots"
 		DOTBARE_TREE="/home/$name"
@@ -233,7 +234,7 @@ systemctl enable nbfc_service.service
 systemctl enable intel-undervolt.service
 
 dialog --title "AARGH Installation" --infobox "Finally, installing \`libxft-bgra\` to enable color emoji in suckless software without crashes." 5 70
-sudo -u "$name" $aurhelper -S --noconfirm libxft-bgra >/dev/null 2>&1
+sudo -u "$name" $aurhelper --skipreview -S --noconfirm libxft-bgra >/dev/null 2>&1
 
 # Install the dotfiles in the user's home directory
 putgitrepo
