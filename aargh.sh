@@ -3,7 +3,7 @@
 # [based off LARBS by Luke Smith for my own setup]
 # License: GNU GPLv3
 
-# SLOC: 168
+# SLOC: 172
 
 ### OPTIONS AND VARIABLES ###
 
@@ -74,7 +74,7 @@ chaoticsetup() { \
 	dialog --infobox "Adding the Chaotic AUR Repository..." 4 40
 	manualinstall chaotic-keyring
 	manualinstall chaotic-mirrorlist
-	printf "# Chaotic AUR\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
+	printf "\n# Chaotic AUR\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
 	}
 
 newperms() { # Set special sudoers settings for install (or after).
