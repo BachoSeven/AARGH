@@ -72,7 +72,7 @@ refreshkeys() { \
 
 chaoticsetup() { \
 	dialog --infobox "Adding the Chaotic AUR Repository..." 4 40
-	## TODO: These two below currently do not freakin' work (outdated)
+	## TODO: These two below currently do not freakin' work (outdated) [could resolve by also printing a couple of mirrors to the /etc/pacman.conf file; since it is then overwritten by sysdots anyways..]
 	# manualinstall chaotic-keyring
 	# manualinstall chaotic-mirrorlist
 	printf "\n# Chaotic AUR\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
