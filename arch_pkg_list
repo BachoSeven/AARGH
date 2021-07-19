@@ -22,7 +22,7 @@ bison
 blissify-git
 bluez-utils
 bookmenu-git
-bottom-bin
+bottom
 bs
 bzip2
 catdoc
@@ -223,7 +223,7 @@ systemd
 systemd-sysvcompat
 tar
 task-spooler
-tealdeer-bin
+tealdeer
 teams-insiders
 tectonic-bin
 texinfo
