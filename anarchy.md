@@ -36,6 +36,7 @@ sudo sh aargh.sh
 - keepassxc import database && sync with chromium extension
 - start pkgstats.timer
 - disable redshift and dunst(--user) services (both work better when started from xprofile).
+- w3m: copy .cgi scripts(see README)
 - put ~/tmp/web-stuff/unified+gambling+fakenews_hosts in /etc/hosts
 - mutt-wizard: Just add accounts normally, and then, BEFORE SYNCING, comment out "Flatten" rows in MBSYNCRC (and then remove ~/.urlview)
 - spotify: `sudo chmod 777 /opt/spotify; sudo chmod 777 /opt/spotify/Apps -R` and then `spicetify backup apply`
