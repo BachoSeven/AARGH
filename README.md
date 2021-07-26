@@ -1,6 +1,6 @@
 # AARGH
 
-Hi! This is a bootstrapping script which I use to setup an Arch machine (usually with [Anarchy](https://anarchyinstaller.org "anarchy") and installing very few packages, so it should be usable on any new Arch install).
+Hi! This is a bootstrapping script which I use to setup an Arch machine; it should be usable on any fresh Arch install.
 
 ## Instructions
 ``` sh
