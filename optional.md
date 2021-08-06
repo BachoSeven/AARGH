@@ -14,7 +14,6 @@ A,tauon-music-box,"is a modern streamlined music player."
 A,wsdd,"Is a Web Service Discovery Daemon for SMB."
   ```
 for Samba support.
-- kotatogram-desktop-bin
 - whatscli
 - weechat(+plugins):
   - installation:

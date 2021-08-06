@@ -101,6 +101,7 @@ jackett-bin
 jbig2dec
 jq
 keepassxc
+kotatogram-desktop-bin
 kunst-git
 lagrange
 lesspipe
@@ -151,7 +152,7 @@ nerd-fonts-mononoki
 networkmanager
 networkmanager-dmenu-git
 newsboat
-nicotine+
+nicotine-plus-git
 noto-fonts-cjk
 noto-fonts-emoji
 nss-mdns
