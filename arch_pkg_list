@@ -120,8 +120,8 @@ licenses
 limine
 lingot
 linux-firmware
-linux-zen
-linux-zen-headers
+linux-tkg-cacule-lto_v3
+linux-tkg-cacule-lto_v3-headers
 lynx
 lyrics-in-terminal
 m4
@@ -145,7 +145,7 @@ nbfc-linux
 ncmpcpp
 ncspot
 neofetch
-neovim
+neovim-git
 neovim-remote
 nerd-fonts-hack
 nerd-fonts-mononoki
@@ -199,6 +199,7 @@ redshift-minimal
 rest
 rofi
 rsync
+rtl88x2bu-dkms-git
 s
 sane-airscan
 screenkey
