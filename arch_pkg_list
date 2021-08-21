@@ -121,8 +121,8 @@ licenses
 limine
 lingot
 linux-firmware
-linux-tkg-cacule-lto_v3
-linux-tkg-cacule-lto_v3-headers
+linux-zen
+linux-zen-headers
 lynx
 lyrics-in-terminal
 m4
