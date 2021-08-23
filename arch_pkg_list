@@ -27,7 +27,6 @@ bs
 bzip2
 catdoc
 cava-git
-ccze
 chafa
 chaotic-keyring
 chaotic-mirrorlist
@@ -101,7 +100,7 @@ isync-config-patched
 jackett-bin
 jbig2dec
 jq
-keepassxc
+keepassxc-git
 kotatogram-desktop-bin
 kunst-git
 lagrange
