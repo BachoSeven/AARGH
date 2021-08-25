@@ -17,7 +17,7 @@ esac done
 
 [ -z "$dotfilesrepo" ] && dotfilesrepo="git@github.com:BachoSeven/dotfiles.git"
 [ -z "$progsfile" ] && progsfile="https://raw.githubusercontent.com/BachoSeven/AARGH/master/progs.csv"
-[ -z "$aurhelper" ] && aurhelper="paru-bin"
+[ -z "$aurhelper" ] && aurhelper="paru"
 
 ### FUNCTIONS ###
 
@@ -212,7 +212,7 @@ grep "ILoveCandy" /etc/pacman.conf >/dev/null || sed -i "/#VerbosePkgLists/a ILo
 # Use all cores for compilation.
 sed -i "s/-j2/-j$(nproc)/;s/^#MAKEFLAGS/MAKEFLAGS/" /etc/makepkg.conf
 
-manualinstall $aurhelper || error "Failed to install AUR helper."
+manualinstall $aurhelper-bin || error "Failed to install AUR helper."
 # Removed packages
 manualinstall dmenu-bachoseven-git
 manualinstall sxiv-bachoseven-git
