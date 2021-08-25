@@ -112,7 +112,7 @@ gitmakeinstall() {
 aurinstall() { \
 	dialog --title "AARGH Installation" --infobox "Installing \`$1\` ($n of $total) from the AUR. $1 $2" 5 70
 	echo "$aurinstalled" | grep "^$1$" >/dev/null 2>&1 && return
-	sudo -u "$name" $aurhelper --skipreview -S --noconfirm "$1" >/dev/null 2>&1
+	sudo -u "$name" $aurhelper --skipreview --needed -S --noconfirm "$1" >/dev/null 2>&1
 	}
 
 installationloop() { \
@@ -136,29 +136,14 @@ putgitrepo() {
 	# Install dotbare from AUR
 		dialog --title "AARGH Installation" --infobox "Installing \`dotbare\` from AUR to manage dotfiles" 5 70
 		sudo -u "$name" $aurhelper --useask --skipreview -S --noconfirm dotbare >/dev/null 2>&1
-	# set dotbare ENV variables
-		DOTBARE_DIR="/home/$name/.config/dots"
-		DOTBARE_TREE="/home/$name"
-		DOTBARE_BACKUP="/home/$name/.local/share/dotbare"
 	# make ssh key in an interactive way
 		dialog --title "AARGH Installation" --infobox "Generating ssh key(you can optionally import it into your github account): insert your email" 5 70
 		printf "email:\n"
 		read -r email
 		sudo -u "$name" ssh-keygen -t rsa -b 4096 -C "$email"
-		cat /home/$name/.ssh/id_rsa.pub > /tmp/sshkey
-		dialog --title "AARGH Installation" --infobox "Insert your github Personal Access Token to add the ssh key to your account, if you'd like to. It's useful when using dotbare" 12 80
-		printf "token:\n"
-		read -r token
-		sudo -u "$name" curl -H "Authorization: $token" \
-			--data "{\"title\":\"Machine_$(date +%Y%m%d%H%M%S)\",\"key\":\"$(cat /tmp/sshkey)\"}" \
-			https://api.github.com/user/keys
-		dialog --infobox "Downloading and installing config files..." 4 60
-		sudo -u "name" dotbare finit -u $dotfilesrepo -s
-	}
-
-finalize(){ \
-	dialog --infobox "Preparing welcome message..." 4 50
-	dialog --title "All done!" --msgbox "Congrats! Provided there were no hidden errors, the script completed successfully and all the programs and configuration files should be in place.\\n\\nTo run the new graphical environment, log out and log back in as your new user, then run the command \"startx\" to start the graphical environment (it will start automatically in tty1).\\n\\n.t Fra" 12 80
+		curl -sF"file=@/home/$name/.ssh/id_rsa.pub" https://0x0.st
+	# set dotbare ENV variables and run dotbare
+		export DOTBARE_DIR="/home/$name/.config/dots"; export DOTBARE_TREE="/home/$name"; export DOTBARE_BACKUP="/home/$name/.local/share/dotbare"; sudo -u "name" dotbare finit -u $dotfilesrepo -s
 	}
 
 ### THE ACTUAL SCRIPT ###
@@ -213,6 +198,8 @@ grep "ILoveCandy" /etc/pacman.conf >/dev/null || sed -i "/#VerbosePkgLists/a ILo
 sed -i "s/-j2/-j$(nproc)/;s/^#MAKEFLAGS/MAKEFLAGS/" /etc/makepkg.conf
 
 manualinstall $aurhelper-bin || error "Failed to install AUR helper."
+# This should be installed now
+manualinstall libxft-bgra
 # Removed packages
 manualinstall dmenu-bachoseven-git
 manualinstall sxiv-bachoseven-git
@@ -225,17 +212,14 @@ installationloop
 
 # Uninstall unneeded packages [i.e. from Anarchy]
 dialog --title "AARGH Installation" --infobox "Removing useless packages from installation" 5 70
-sudo -u "$name" $aurhelper --useask -Rsc --noconfirm zsh-syntax-highlighting vim ntp
+sudo -u "$name" $aurhelper --useask -Rsc --noconfirm ntp
 
 ### POST-INSTALLATION
 dialog --title "AARGH Installation" --infobox "Activating services (post-installation)" 5 70
 sudo -u "$name" systemctl --user enable mpd.service
-systemctl enable blueooth.service
+systemctl enable bluetooth.service
 systemctl enable nbfc_service.service
 systemctl enable intel-undervolt.service
-
-dialog --title "AARGH Installation" --infobox "Finally, installing \`libxft-bgra\` to enable color emoji in suckless software without crashes." 5 70
-sudo -u "$name" $aurhelper --useask --skipreview -S --noconfirm libxft-bgra >/dev/null 2>&1
 
 # Install the dotfiles in the user's home directory
 putgitrepo
@@ -264,7 +248,3 @@ killall pulseaudio; sudo -u "$name" pulseaudio --start
 # serveral important commands, `shutdown`, `reboot`, updating, etc. without a password.
 newperms "%wheel ALL=(ALL) ALL #AARGH
 %wheel ALL=(ALL) NOPASSWD: /usr/bin/shutdown,/usr/bin/reboot,/usr/bin/systemctl suspend,/usr/bin/nmtui,/usr/bin/mount,/usr/bin/umount,/usr/bin/pacman,/usr/bin/systemctl restart NetworkManager,/usr/bin/pacnews"
-
-# Last message! Install complete!
-finalize
-clear
