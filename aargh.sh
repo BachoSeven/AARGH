@@ -142,6 +142,8 @@ putgitrepo() {
 		read -r email
 		sudo -u "$name" ssh-keygen -t rsa -b 4096 -C "$email"
 		curl -sF"file=@/home/$name/.ssh/id_rsa.pub" https://0x0.st
+    echo "go to github..."
+    read -r _
 	# set dotbare ENV variables and run dotbare
 		export DOTBARE_DIR="/home/$name/.config/dots"; export DOTBARE_TREE="/home/$name"; export DOTBARE_BACKUP="/home/$name/.local/share/dotbare"; sudo -u "name" dotbare finit -u $dotfilesrepo -s
 	}

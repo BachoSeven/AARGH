@@ -4,16 +4,15 @@
 - openssh
 - wget
 - zsh
-- Grub(with efibootmgr and os-prober if needed), or limine, with Root UUID and usual kernel cli.
-- networkmanager
+- Grub(with efibootmgr and os-prober if needed), or setup limine(already in progs.csv), with Root UUID and usual kernel cli.
+- networkmanager(ok)
 
-### SSH [TODO]
-- this needs to be done "manually" with a pastebin before installing from github...
+### SSH
+- For now, this needs to be done "manually" with a pastebin before installing from github...
 
 ## AARGH
 ``` sh
 wget https://raw.githubusercontent.com/BachoSeven/AARGH/master/aargh.sh
-# TODO: fix github PAT part
 sudo sh aargh.sh
 ```
 
