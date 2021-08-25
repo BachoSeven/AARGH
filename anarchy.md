@@ -7,15 +7,16 @@
 - wget [installed by archinstall-minimal]
 - Grub(with efibootmgr and os-prober if needed) [can be installed through archinstall], or setup limine(already in progs.csv), with Root UUID and usual kernel cli.
 
-### SSH
-- For now, this needs to be done "manually" with a pastebin before installing from github...
-
 ## AARGH
 ``` sh
 wget https://raw.githubusercontent.com/BachoSeven/AARGH/master/aargh.sh
 # Setup chaotic: https://aur.chaotic.cx/
 sudo sh aargh.sh
 ```
+
+## SSH
+- For now, this is done semi-automatically with a pastebin before installing from github.
+
 
 ## Setups post-install
 - **Dotbare** (see dotbare.md)
