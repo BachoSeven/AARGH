@@ -10,7 +10,7 @@
 ## AARGH
 ``` sh
 wget https://raw.githubusercontent.com/BachoSeven/AARGH/master/aargh.sh
-# Setup chaotic: https://aur.chaotic.cx/
+# Install chaotic packages: https://aur.chaotic.cx/
 sudo sh aargh.sh
 ```
 
