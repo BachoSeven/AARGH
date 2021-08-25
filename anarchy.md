@@ -20,14 +20,11 @@ sudo sh aargh.sh
 
 ## Setups post-install
 - **Dotbare** (see dotbare.md)
-- swapfile
+- **swapfile**
 - copy stuff from /etc (using sysdots, TODO) (disables systemd-homed.service amongst other things; might have to disable it first.)
 - plymouth: hook in mkinitcpio && regenerate initramfs; `sudo cp /usr/share/plymouth/arch-logo.png /usr/share/plymouth/themes/spinner/watermark.png`
-- tlp activation
-- systemctl: set-default multi-user-target;
-- sudo mandb
 - crontab install
-- clean installed packages
+- `mkclean` installed packages (plus i.e. `grub` if using `limine`)
 - nmdm-git: setup polkit permissions for NM (info in sysdots repo) + sctl disable nm-wait-online.service
 - soulseek backup import
 - unbound: enable service, cp unbound.conf from stuff/etc; set as system resolver (archwiki), and lock the resolv.conf file(`sudo chattr +i /etc/resolv.conf`). (and disable

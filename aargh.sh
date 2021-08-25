@@ -219,7 +219,9 @@ dialog --title "AARGH Installation" --infobox "Activating services (post-install
 sudo -u "$name" systemctl --user enable mpd.service
 systemctl enable bluetooth.service
 systemctl enable nbfc_service.service
+systemctl enable tlp.service
 systemctl enable intel-undervolt.service
+systemctl set-default multi-user-target
 
 # Install the dotfiles in the user's home directory
 putgitrepo
