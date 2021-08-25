@@ -129,7 +129,7 @@ installationloop() { \
 
 putgitrepo() {
 	[ ! -d "/home/$name" ] && mkdir -p "/home/$name"
-	mkdir -p "/home/$name/.config/dots"
+	sudo -u "$name" mkdir -p "/home/$name/.config/dots"
 	chown "$name":wheel "/home/$name"
 	# Install dotbare from AUR
 		dialog --title "AARGH Installation" --infobox "Installing \`dotbare\` from AUR to manage dotfiles" 5 70
@@ -143,7 +143,7 @@ putgitrepo() {
     echo "go to github..."
     read -r _
 	# set dotbare ENV variables and run dotbare
-		export DOTBARE_DIR="/home/$name/.config/dots"; export DOTBARE_TREE="/home/$name"; export DOTBARE_BACKUP="/home/$name/.local/share/dotbare"; sudo -u "name" dotbare finit -u $dotfilesrepo -s
+		export DOTBARE_DIR="/home/$name/.config/dots"; export DOTBARE_TREE="/home/$name"; export DOTBARE_BACKUP="/home/$name/.local/share/dotbare"; sudo -u "$name" dotbare finit -u $dotfilesrepo -s
 	}
 
 ### THE ACTUAL SCRIPT ###
@@ -233,16 +233,16 @@ sudo -u "$name" mkdir -p "/home/$name/.local/share/octave/"
 sudo -u "$name" mkdir -p "/home/$name/.config/weechat/python/autoload"
 sudo -u "$name" mkdir -p "/home/$name/.local/share/gnupg"
 sudo -u "$name" mkdir -p "/home/$name/.config/nvim/sessions"
-chmod 700 $GNUPGHOME
+chmod 700 "/home/$name/.local/share/gnupg"
 
 # Enable user to turn bluetooth on/off with `rfkill`
-groupadd -a "$name" rfkill
+usermod -aG rfkill "$name"
 
 # Create useful mount dirs under /mnt
 mkdir -p /mnt/usb1 /mnt/usb2 /mnt/iso /mnt/backup /mnt/backup/home /mnt/backup/root /mnt/roba /mnt/fraEl /mnt/fraPass
 
 # Start/restart PulseAudio.
-killall pulseaudio; sudo -u "$name" pulseaudio --start
+killall pulseaudio >/dev/null 2>&1; sudo -u "$name" pulseaudio --start
 
 # This line, overwriting the `newperms` command above will allow the user to run
 # serveral important commands, `shutdown`, `reboot`, updating, etc. without a password.
