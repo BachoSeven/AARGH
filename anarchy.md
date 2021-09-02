@@ -23,6 +23,7 @@ sudo sh aargh.sh
 - plymouth: hook in mkinitcpio && regenerate initramfs; `sudo cp /usr/share/plymouth/arch-logo.png /usr/share/plymouth/themes/spinner/watermark.png`
 - crontab install
 - `mkclean` installed packages (plus i.e. `grub` if using `limine`, and hardware-specific packages which might not be needed)
+- Install `mpd-light-pulse-ffmpeg` (my package), substitute `nodejs` with `nodejs-lts-fermium` or the most recent LTS available.
 - nmdm-git: setup polkit permissions for NM (info in sysdots repo) + sctl disable nm-wait-online.service
 - soulseek backup import
 - unbound: enable service, cp unbound.conf from stuff/etc; set as system resolver (archwiki), and lock the resolv.conf file(`sudo chattr +i /etc/resolv.conf`). (and disable

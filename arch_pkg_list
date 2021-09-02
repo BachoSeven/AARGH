@@ -86,7 +86,6 @@ gtk-update-icon-cache
 gzip
 highlight
 hsetroot
-hunspell
 imagemagick
 imgur.sh
 intel-ucode
@@ -111,7 +110,6 @@ libmng
 librsvg
 libsynctex
 libthai
-libusb-compat
 libva-intel-driver
 libxft-bgra
 licenses
@@ -131,7 +129,6 @@ mangohud
 mathematica
 mediainfo
 mego
-mesa-demos
 mimi-bachoseven-git
 minizip
 mlocate
@@ -169,7 +166,7 @@ pacman
 pacnews-neovim-git
 pamixer-git
 pango
-paru
+paru-bin
 pass-otp
 patch
 pciutils
@@ -204,7 +201,6 @@ s
 sane-airscan
 screenkey
 sdcv-git
-sdl2_image
 sed
 shadow
 shantz-xwinwrap-bzr
@@ -258,7 +254,6 @@ wezterm
 wget
 which
 wikiman
-wireless_tools
 wol
 wpa_supplicant
 xbanish

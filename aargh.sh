@@ -219,6 +219,7 @@ sudo -u "$name" systemctl --user enable mpd.service
 systemctl enable bluetooth.service
 systemctl enable nbfc_service.service
 systemctl enable tlp.service
+systemctl enable systemd-timesyncd.service
 systemctl set-default multi-user-target
 
 # Install the dotfiles in the user's home directory
