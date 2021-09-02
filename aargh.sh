@@ -3,7 +3,7 @@
 # [based off LARBS by Luke Smith for my own setup]
 # License: GNU GPLv3
 
-# SLOC: 158
+# SLOC: 153
 
 ### OPTIONS AND VARIABLES ###
 
@@ -22,7 +22,7 @@ esac done
 ### FUNCTIONS ###
 
 # Initial settings
-installpkg(){ pacman --noconfirm --needed -S "$1" >/dev/null 2>&1 ;}
+installpkg(){ pacman --noconfirm --needed -S "$@" >/dev/null 2>&1 ;}
 grepseq="\"^[PGA]*,\""
 
 error() { clear; printf "ERROR:\\n%s\\n" "$1"; exit;}
@@ -169,11 +169,7 @@ refreshkeys || error "Error automatically refreshing Arch keyring. Consider doin
 chaoticsetup || error "Error adding the chaotic-aur repository."
 
 dialog --title "AARGH Installation" --infobox "Installing \`basedevel\` and \`git\` for installing other software required for the installation of other programs." 5 70
-installpkg curl
-installpkg base-devel
-installpkg git
-# Is removed later on
-installpkg ntp
+installpkg curl base-devel git ntp
 
 dialog --title "AARGH Installation" --infobox "Synchronizing system time to ensure successful and secure installation of software..." 4 70
 ntpdate 0.us.pool.ntp.org >/dev/null 2>&1
@@ -233,11 +229,7 @@ sudo -u "$name" $aurhelper -Rsc --noconfirm ntp dialog
 chsh -s /bin/zsh "$name" >/dev/null 2>&1
 
 # Create dirs to unclutter ~
-sudo -u "$name" mkdir -p "/home/$name/.local/share/tig/"
-sudo -u "$name" mkdir -p "/home/$name/.local/share/octave/"
-sudo -u "$name" mkdir -p "/home/$name/.config/weechat/python/autoload"
-sudo -u "$name" mkdir -p "/home/$name/.local/share/gnupg"
-sudo -u "$name" mkdir -p "/home/$name/.config/nvim/sessions"
+sudo -u "$name" mkdir -p "/home/$name/.local/share/tig/" "/home/$name/.local/share/octave/" "/home/$name/.config/weechat/python/autoload" "/home/$name/.local/share/gnupg" "/home/$name/.config/nvim/sessions"
 chmod 700 "/home/$name/.local/share/gnupg"
 
 # Enable user to turn bluetooth on/off with `rfkill`
