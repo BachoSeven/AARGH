@@ -18,7 +18,7 @@ sudo sh aargh.sh
 - For now, this is done semi-automatically with a pastebin before installing from github.
 
 ## Setups post-install
-- **swapfile**
+- **swapfile**: ~/slsk/resources/Linux/SwapCommands.sh
 - copy stuff from /etc (using sysdots, TODO) (disables systemd-homed.service amongst other things; might have to disable it first.)
 - plymouth: hook in mkinitcpio && regenerate initramfs; `sudo cp /usr/share/plymouth/arch-logo.png /usr/share/plymouth/themes/spinner/watermark.png`
 - crontab install
