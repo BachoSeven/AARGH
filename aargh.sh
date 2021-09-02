@@ -134,14 +134,6 @@ putgitrepo() {
 	# Install dotbare from AUR
 		dialog --title "AARGH Installation" --infobox "Installing \`dotbare\` from AUR to manage dotfiles" 5 70
 		sudo -u "$name" $aurhelper --useask --skipreview -S --noconfirm dotbare >/dev/null 2>&1
-	# make ssh key in an interactive way
-		dialog --title "AARGH Installation" --infobox "Generating ssh key(you can optionally import it into your github account): insert your email" 5 70
-		printf "email:\n"
-		read -r email
-		sudo -u "$name" ssh-keygen -t rsa -b 4096 -C "$email"
-		curl -sF"file=@/home/$name/.ssh/id_rsa.pub" https://0x0.st
-    echo "go to github..."
-    read -r _
 	# set dotbare ENV variables and run dotbare
 		export DOTBARE_DIR="/home/$name/.config/dots"; export DOTBARE_TREE="/home/$name"; export DOTBARE_BACKUP="/home/$name/.local/share/dotbare"; sudo -u "$name" dotbare finit -u $dotfilesrepo -s
 	}
@@ -203,6 +195,15 @@ manualinstall libxft-bgra
 # Removed packages
 manualinstall dmenu-bachoseven-git
 manualinstall sxiv-bachoseven-git
+
+# make ssh key in an interactive way
+dialog --title "AARGH Installation" --infobox "Generating ssh key(you can optionally import it into your github account): insert your email" 5 70
+printf "email:\n"
+read -r email
+sudo -u "$name" ssh-keygen -t rsa -b 4096 -C "$email"
+curl -sF"file=@/home/$name/.ssh/id_rsa.pub" https://0x0.st
+echo "go to github..."
+read -r _
 
 # The command that does all the installing. Reads the progs.csv file and
 # installs each needed program the way required. Be sure to run this only after
