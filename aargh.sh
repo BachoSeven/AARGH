@@ -135,7 +135,9 @@ putgitrepo() {
 		dialog --title "AARGH Installation" --infobox "Installing \`dotbare\` from AUR to manage dotfiles" 5 70
 		sudo -u "$name" $aurhelper --skipreview -S --noconfirm dotbare >/dev/null 2>&1
 	# set dotbare ENV variables and run dotbare
-		export DOTBARE_DIR="/home/$name/.config/dots"; export DOTBARE_TREE="/home/$name"; export DOTBARE_BACKUP="/home/$name/.local/share/dotbare"; sudo -u "$name" dotbare finit -u $dotfilesrepo -s
+		export DOTBARE_DIR="/home/$name/.config/dots"
+    export DOTBARE_TREE="/home/$name"
+    sudo -u "$name" dotbare finit -u $dotfilesrepo -s
 	}
 
 ### THE ACTUAL SCRIPT ###
@@ -211,21 +213,21 @@ read -r _
 # and all build dependencies are installed.
 installationloop
 
-# Uninstall unneeded packages
-dialog --title "AARGH Installation" --infobox "Removing useless packages from installation" 5 70
-sudo -u "$name" $aurhelper -Rsc --noconfirm ntp
-
 ### POST-INSTALLATION
 dialog --title "AARGH Installation" --infobox "Activating services (post-installation)" 5 70
 sudo -u "$name" systemctl --user enable mpd.service
 systemctl enable bluetooth.service
-systemctl enable nbfc_service.service
 systemctl enable tlp.service
-systemctl enable intel-undervolt.service
+systemctl enable systemd-timesyncd.service
+systemctl start pkgstats.service
 systemctl set-default multi-user-target
 
 # Install the dotfiles in the user's home directory
 putgitrepo
+
+# Uninstall unneeded packages
+dialog --title "AARGH Installation" --infobox "Removing useless packages from installation" 5 70
+sudo -u "$name" $aurhelper -Rsc --noconfirm ntp dialog
 
 # Make zsh the default shell for the user.
 chsh -s /bin/zsh "$name" >/dev/null 2>&1

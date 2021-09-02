@@ -11,6 +11,7 @@ atk
 atool
 autoconf
 automake
+base
 bash
 bash-language-server
 bash-pipes
@@ -47,7 +48,6 @@ djvulibre
 dmenu-bachoseven-git
 docx2txt
 doge
-dosfstools
 dotbare
 dragon-drag-and-drop-git
 drive-bin
@@ -87,7 +87,6 @@ gtk-update-icon-cache
 gzip
 highlight
 hsetroot
-hunspell
 imagemagick
 imgur.sh
 intel-ucode
@@ -112,7 +111,6 @@ libmng
 librsvg
 libsynctex
 libthai
-libusb-compat
 libva-intel-driver
 libxft-bgra
 licenses
@@ -169,7 +167,7 @@ pacman
 pacnews-neovim-git
 pamixer-git
 pango
-paru
+paru-bin
 pass-otp
 patch
 pciutils
@@ -204,7 +202,6 @@ s
 sane-airscan
 screenkey
 sdcv-git
-sdl2_image
 sed
 shadow
 shantz-xwinwrap-bzr
@@ -215,7 +212,7 @@ spicetify-cli
 spotify
 spotifywm-git
 stardict-dictd_www.dict.org_gcide
-subliminal
+subliminal-git
 sudo
 sxiv-bachoseven-git
 system-config-printer
@@ -249,22 +246,21 @@ urlscan-git
 urlview-xdg-git
 usbutils
 util-linux
-vieb
+vieb-bin
 vim-language-server
-vimiv-qt-git
+vimiv-qt
 w3m
 wayland-protocols
 wezterm
 wget
 which
 wikiman
-wireless_tools
 wol
 wpa_supplicant
 xbanish
 xcape
 xclip-git
-xdotool-git
+xdotool
 xidlehook
 xmenu
 xorg-server
