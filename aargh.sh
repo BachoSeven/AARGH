@@ -3,7 +3,7 @@
 # [based off LARBS by Luke Smith for my own setup]
 # License: GNU GPLv3
 
-# SLOC: 172
+# SLOC: 158
 
 ### OPTIONS AND VARIABLES ###
 
