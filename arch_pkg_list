@@ -47,7 +47,6 @@ djvulibre
 dmenu-bachoseven-git
 docx2txt
 doge
-dosfstools
 dotbare
 dragon-drag-and-drop-git
 drive-bin
@@ -132,6 +131,7 @@ mangohud
 mathematica
 mediainfo
 mego
+mesa-demos
 mimi-bachoseven-git
 minizip
 mlocate
@@ -215,7 +215,7 @@ spicetify-cli
 spotify
 spotifywm-git
 stardict-dictd_www.dict.org_gcide
-subliminal
+subliminal-git
 sudo
 sxiv-bachoseven-git
 system-config-printer
@@ -251,7 +251,7 @@ usbutils
 util-linux
 vieb
 vim-language-server
-vimiv-qt-git
+vimiv-qt
 w3m
 wayland-protocols
 wezterm
@@ -264,7 +264,7 @@ wpa_supplicant
 xbanish
 xcape
 xclip-git
-xdotool-git
+xdotool
 xidlehook
 xmenu
 xorg-server

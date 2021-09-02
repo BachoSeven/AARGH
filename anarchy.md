@@ -47,4 +47,3 @@ sudo sh aargh.sh
 
 ## Services (done through aargh, here for reference)
 - nbfc: enable --now service; `nbfc config -a "Asus Zenbook UX310UAK"`(done through sysdots repo); `nbfc status -s` to check.
-- enable intel-undervolt service
