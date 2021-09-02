@@ -11,6 +11,7 @@ atk
 atool
 autoconf
 automake
+base
 bash
 bash-language-server
 bash-pipes
