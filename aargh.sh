@@ -133,7 +133,7 @@ putgitrepo() {
 	chown "$name":wheel "/home/$name"
 	# Install dotbare from AUR
 		dialog --title "AARGH Installation" --infobox "Installing \`dotbare\` from AUR to manage dotfiles" 5 70
-		sudo -u "$name" $aurhelper --useask --skipreview -S --noconfirm dotbare >/dev/null 2>&1
+		sudo -u "$name" $aurhelper --skipreview -S --noconfirm dotbare >/dev/null 2>&1
 	# set dotbare ENV variables and run dotbare
 		export DOTBARE_DIR="/home/$name/.config/dots"; export DOTBARE_TREE="/home/$name"; export DOTBARE_BACKUP="/home/$name/.local/share/dotbare"; sudo -u "$name" dotbare finit -u $dotfilesrepo -s
 	}
@@ -211,9 +211,9 @@ read -r _
 # and all build dependencies are installed.
 installationloop
 
-# Uninstall unneeded packages [i.e. from Anarchy]
+# Uninstall unneeded packages
 dialog --title "AARGH Installation" --infobox "Removing useless packages from installation" 5 70
-sudo -u "$name" $aurhelper --useask -Rsc --noconfirm ntp
+sudo -u "$name" $aurhelper -Rsc --noconfirm ntp
 
 ### POST-INSTALLATION
 dialog --title "AARGH Installation" --infobox "Activating services (post-installation)" 5 70
