@@ -18,26 +18,23 @@ sudo sh aargh.sh
 - For now, this is done semi-automatically with a pastebin before installing from github.
 
 ## Setups post-install
+### Main
 - **swapfile**: ~/slsk/resources/Linux/SwapCommands.sh
-- copy stuff from /etc (using sysdots, TODO) (disables systemd-homed.service amongst other things; might have to disable it first.)
-- plymouth: hook in mkinitcpio && regenerate initramfs; `sudo cp /usr/share/plymouth/arch-logo.png /usr/share/plymouth/themes/spinner/watermark.png`
-- crontab install
-- `mkclean` installed packages (plus i.e. `grub` if using `limine`, and hardware-specific packages which might not be needed)
-- Install `mpd-light-pulse-ffmpeg` (my package), substitute `nodejs` with `nodejs-lts-fermium` or the most recent LTS available.
-- nmdm-git: setup polkit permissions for NM (info in sysdots repo) + sctl disable nm-wait-online.service
-- soulseek backup import
-- unbound: enable service, cp unbound.conf from stuff/etc; set as system resolver (archwiki), and lock the resolv.conf file(`sudo chattr +i /etc/resolv.conf`). (and disable
-  systemd-resolved(?))
+- `crontab -e`
+- `mkclean` installed packages (plus i.e. `grub` if using `limine`)
+- Install `mpd-light-pulse-ffmpeg` (my package); substitute `nodejs` with `nodejs-lts-fermium` or the most recent LTS available; octave: compile `openblas-lapack` to replace the default blas implementation.
+- nmdm-git: setup polkit permissions for NM (info in sysdots repo) + disable `NetworkManager-wait-online.service`
+- unbound: `sudo unbound-control-setup`, enable service, cp unbound.conf from stuff/etc; set as systemeresolver (archwiki), and lock the resolv.conf file(`sudo chattr +i /etc/resolv.conf`).
+- nbfc: enable --now service; `nbfc config -a "Asus Zenbook UX310UAK"`(or else); `nbfc status -s` to check.
+- plymouth: hook in mkinitcpio[included in sysdots but needs to be checked manually] && regenerate initramfs; copy `sysdots`'s `watermark.png` to `/usr/share/plymouth/themes/spinner/watermark.png`.
+- copy stuff to /etc and /root (using sysdots, better manual..) (disables systemd-homed.service amongst other things; might have to disable it first.)
 - ./add-gtypist-exercises.sh
-- configure Ungoogled-chromium.
-- keepassxc import database && sync with chromium extension
-- start pkgstats.timer
-- disable redshift and dunst(--user) services (both work better when started from xprofile).
+### Extra
 - w3m: copy .cgi scripts(see README)
-- put ~/tmp/web-stuff/unified+gambling+fakenews_hosts in /etc/hosts
 - mutt-wizard: Just add accounts normally, and then, BEFORE SYNCING, comment out "Flatten" rows in MBSYNCRC (and then remove ~/.urlview)
 - spotify: `sudo chmod 777 /opt/spotify; sudo chmod 777 /opt/spotify/Apps -R` and then `spicetify backup apply`
-- octave: compile `openblas-lapack` to replace the default blas implementation.
+- configure Ungoogled-chromium.
+- keepassxc import database && sync with chromium extension
 - gpg: import keys; ~~change sockets~~:
          <!-- "Note that this currently does not work out-of-the-box using systemd user units and socket-based activation, since the socket directory changes based on the hash of -->
          <!-- $GNUPGHOME. You can get the new socket directory using gpgconf --dry-run --create-socketdir, and have to modify the systemd user units to listen on the correct sockets -->
@@ -45,6 +42,3 @@ sudo sh aargh.sh
  <!-- Sockets to change(5)[all with systemctl --user edit --full]: gpg-agent.socket, gpg-agent-extra.socket, gpg-agent-browser.socket, gpg-agent-ssh.socket, and dirmngr.socket. -->
  <!-- Syntax to change them (sysu edit): `ListenStream=%t/gnupg/d."${HASH}"/S."${socketname}"` -->
  <!-- Example vim substitute command `gnupg\//&d\.babif6xw6skmb8ps84qeyyam\//g` -->
-
-## Services (done through aargh, here for reference)
-- nbfc: enable --now service; `nbfc config -a "Asus Zenbook UX310UAK"`(done through sysdots repo); `nbfc status -s` to check.
