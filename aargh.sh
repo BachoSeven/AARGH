@@ -230,6 +230,7 @@ chsh -s /bin/zsh "$name" >/dev/null 2>&1
 
 # Create dirs to unclutter ~
 sudo -u "$name" mkdir -p "/home/$name/.local/share/tig/" "/home/$name/.local/share/octave/" "/home/$name/.config/weechat/python/autoload" "/home/$name/.local/share/gnupg" "/home/$name/.config/nvim/sessions"
+sudo -u "$name" touch "/home/$name/.local/share/bg"
 chmod 700 "/home/$name/.local/share/gnupg"
 
 # Enable user to turn bluetooth on/off with `rfkill`
