@@ -1,4 +1,4 @@
 - bcm20702a1-firmware
 - /etc/tlp.conf
-- `st`, `wezterm` and `dwm` smaller font size
-- [obviously] `br` script parameters
+- `fprintd` for fingerprint sensor
+- `st`, `wezterm` and `dwm` smaller font size, `br` script parameters
