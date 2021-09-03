@@ -41,4 +41,4 @@ sudo sh aargh.sh
          <!-- accordingly." -->
  <!-- Sockets to change(5)[all with systemctl --user edit --full]: gpg-agent.socket, gpg-agent-extra.socket, gpg-agent-browser.socket, gpg-agent-ssh.socket, and dirmngr.socket. -->
  <!-- Syntax to change them (sysu edit): `ListenStream=%t/gnupg/d."${HASH}"/S."${socketname}"` -->
- <!-- Example vim substitute command `gnupg\//&d\.babif6xw6skmb8ps84qeyyam\//g` -->
+ <!-- Example vim substitute command `%s/gnupg\//&d\.babif6xw6skmb8ps84qeyyam\//g` -->

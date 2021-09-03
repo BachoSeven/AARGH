@@ -1,5 +1,8 @@
 - `bcm20702a1-firmware`
-- `/etc/tlp.conf`
+- `tlp-rdw`
 - `acpi_call-dkms` --> needs `linux-zen-headers`
+- `/etc/tlp.conf`
+- `/etc/X11/xorg.conf.d/40-thinkpad.conf`
+- `/etc/udev/rules.d/10-trackpoint.rules`
 - `fprintd` for fingerprint sensor
-- `st`, `wezterm` and `dwm` smaller font size, `br` script parameters
+- `st`, `wezterm` and `dwm` smaller font size, `br` and `dim` script parameters
