@@ -8,8 +8,8 @@ A,tauon-music-box,"is a modern streamlined music player."
 - `mathematica`
 - cups(+avahi-daemon for network printers with IPP everywhere), jacket, nordvpn: enable services on demand so not to clutter boot. For the `nordvpnd` service, from version 3.8.8 onwards, we ~~also need to create~~ have to be in the `nordvpn` group.
 - enable jacket in qbittorrent(update search engines + add jacket API; also, add indexers to jackett)
+- compile `blissify-git` for mpd smart playlist generation
 - install `annepro2-tools-git` in order to compile the annepro2_tools binary with pacman
-- Install `intel-undervolt`, configure it by trial and error and then enable `intel-undervolt` service
 - put ~/stuff/web-stuff/lists/unified+gambling+fakenews_hosts in /etc/hosts
 - `katcr` (jackett CLI interface) (need to add jackett API to katcr.ini)
 - Install:

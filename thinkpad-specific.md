@@ -1,0 +1,2 @@
+- bcm20702a1-firmware
+- /etc/tlp.conf
