@@ -1,2 +1,3 @@
 - bcm20702a1-firmware
 - /etc/tlp.conf
+- acpi_call-dkms --> needs `linux-zen-headers`
