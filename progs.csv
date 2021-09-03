@@ -95,7 +95,7 @@ A,croc,"is a fast method for transferring files across devices using a relay ser
 ,tig,"is a text-mode interface for Git."
 ,subliminal-git,"is a python tool for downloading subtitles."
 A,spotify,"is the official spotify client."
-A,spicetify-cli,"is a CLI tool to customize spotify."
+A,spicetify-cli-git,"is a CLI tool to customize spotify."
 A,spotifywm-git,"is needed to make the official client's class behave decently."
 ,python-pywal,"is a wonderful wallpaper and coloscheme setter."
 A,urlscan-git,"is required for my newsboat config."
