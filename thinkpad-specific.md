@@ -4,5 +4,5 @@
 - `/etc/tlp.conf`
 - `/etc/X11/xorg.conf.d/40-thinkpad.conf`
 - `/etc/udev/rules.d/10-trackpoint.rules`
-- `fprintd` for fingerprint sensor
+- `fprintd` for fingerprint sensor (+ `polkit-dumb-agent-git`, adding `_ polkit-dumb-agent` inside `xprofile`)
 - `st`, `wezterm` and `dwm` smaller font size, `br` and `dim` script parameters
