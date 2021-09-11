@@ -31,10 +31,10 @@ sudo sh aargh.sh
 - ./add-gtypist-exercises.sh
 ### Extra
 - w3m: copy .cgi scripts(see README)
-- mutt-wizard: Just add accounts normally, and then, BEFORE SYNCING, comment out "Flatten" rows in MBSYNCRC (and then remove ~/.urlview)
 - spotify: `sudo chmod 777 /opt/spotify; sudo chmod 777 /opt/spotify/Apps -R` and then `spicetify backup apply`
 - configure Ungoogled-chromium.
 - keepassxc import database && sync with chromium extension
+- mutt-wizard: Just add accounts normally, and then, BEFORE SYNCING, comment out "Flatten" rows in MBSYNCRC (and then remove ~/.urlview)
 - gpg: import keys; ~~change sockets~~:
          <!-- "Note that this currently does not work out-of-the-box using systemd user units and socket-based activation, since the socket directory changes based on the hash of -->
          <!-- $GNUPGHOME. You can get the new socket directory using gpgconf --dry-run --create-socketdir, and have to modify the systemd user units to listen on the correct sockets -->
