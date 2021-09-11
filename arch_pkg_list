@@ -93,6 +93,7 @@ intel-ucode
 intel-undervolt
 iproute2
 iputils
+iscanimage
 iso-codes
 isync-config-patched
 jackett-bin
@@ -205,7 +206,6 @@ sdcv-git
 sed
 shadow
 shantz-xwinwrap-bzr
-simple-scan
 snappy
 socat
 spicetify-cli-git
@@ -244,6 +244,7 @@ unrar
 unzip
 urlscan-git
 urlview-xdg-git
+usb_modeswitch
 usbutils
 util-linux
 vieb-bin
