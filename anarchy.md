@@ -29,6 +29,14 @@ sudo sh aargh.sh
 - plymouth: hook in mkinitcpio[included in sysdots but needs to be checked manually] && regenerate initramfs; copy `sysdots`'s `watermark.png` to `/usr/share/plymouth/themes/spinner/watermark.png`.
 - copy stuff to /etc and /root (using sysdots, better manual..) (disables systemd-homed.service amongst other things; might have to disable it first.)
 - ./add-gtypist-exercises.sh
+- crontab (enable `cronie.service`):
+  ``` sh
+  @hourly		DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$(id -u $USER)/bus ~/.local/bin/cron/checkup >/dev/null 2>&1
+  */5 * * * *	DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$(id -u $USER)/bus ~/.local/bin/cron/cronbat >/dev/null 2>&1
+  */30 * * * *	~/.local/bin/cron/feedup >/dev/null 2>&1
+  30 16 * * *	~/.local/bin/scripts/bmbkp ~/.config/browser/bkp/bm/bm.html && ~/.local/bin/scripts/histbkp ~/.config/browser/bkp/hist/hist.html && cd ~/.config/browser/bkp && ~/.local/bin/scripts/txtbkp && drive push -no-prompt hist/hist.html bm/bm.html bm/plain hist/plain
+  */2 * * * *	/usr/bin/mailsync >/dev/null 2>&1
+  ```
 ### Extra
 - w3m: copy .cgi scripts(see README)
 - spotify: `sudo chmod 777 /opt/spotify; sudo chmod 777 /opt/spotify/Apps -R` and then `spicetify backup apply`
