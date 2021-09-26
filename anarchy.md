@@ -42,11 +42,14 @@ sudo sh aargh.sh
 - spotify: `sudo chmod 777 /opt/spotify; sudo chmod 777 /opt/spotify/Apps -R` and then `spicetify backup apply`
 - configure Ungoogled-chromium.
 - keepassxc import database && sync with chromium extension
-- mutt-wizard: Just add accounts normally, and then, BEFORE SYNCING, comment out "Flatten" rows in MBSYNCRC (and then remove ~/.urlview)
 - gpg: import keys; ~~change sockets~~:
-         <!-- "Note that this currently does not work out-of-the-box using systemd user units and socket-based activation, since the socket directory changes based on the hash of -->
-         <!-- $GNUPGHOME. You can get the new socket directory using gpgconf --dry-run --create-socketdir, and have to modify the systemd user units to listen on the correct sockets -->
-         <!-- accordingly." -->
+    <!-- Questa roba è commentata perché non serve davvero, funziona anche senzsa spostare i file dei socket nella directory con l'hash. -->
+ <!-- "Note that this currently does not work out-of-the-box using systemd user units and socket-based activation, since the socket directory changes based on the hash of -->
+ <!-- $GNUPGHOME. You can get the new socket directory using gpgconf --dry-run --create-socketdir, and have to modify the systemd user units to listen on the correct sockets -->
+ <!-- accordingly." -->
  <!-- Sockets to change(5)[all with systemctl --user edit --full]: gpg-agent.socket, gpg-agent-extra.socket, gpg-agent-browser.socket, gpg-agent-ssh.socket, and dirmngr.socket. -->
  <!-- Syntax to change them (sysu edit): `ListenStream=%t/gnupg/d."${HASH}"/S."${socketname}"` -->
  <!-- Example vim substitute command `%s/gnupg\//&d\.babif6xw6skmb8ps84qeyyam\//g` -->
+ <!-- Finally, do `gpgconf --create-socketdir` and reboot (hopefully it works). -->
+- mutt-wizard: Just add accounts normally, and then, BEFORE SYNCING, comment out "Flatten" rows in MBSYNCRC (and then remove ~/.urlview) [also, deduplicate muttrc and mbsyncrc and
+  msmtp/config files...]
