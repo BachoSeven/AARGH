@@ -52,4 +52,4 @@ sudo sh aargh.sh
  <!-- Example vim substitute command `%s/gnupg\//&d\.babif6xw6skmb8ps84qeyyam\//g` -->
  <!-- Finally, do `gpgconf --create-socketdir` and reboot (hopefully it works). -->
 - mutt-wizard: Just add accounts normally, and then, BEFORE SYNCING, comment out "Flatten" rows in MBSYNCRC (and then remove ~/.urlview) [also, deduplicate muttrc and mbsyncrc and
-  msmtp/config files...]
+  msmtp/config files...]; migrate abook contacts.
