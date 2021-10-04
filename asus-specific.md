@@ -9,3 +9,4 @@
 
 ## VCS versions:
 - keepassxc-git
+- ntfs3-dkms-git

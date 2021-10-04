@@ -28,6 +28,7 @@ bs
 bzip2
 catdoc
 cava-git
+cbonsai
 chafa
 chaotic-keyring
 chaotic-mirrorlist
@@ -155,7 +156,7 @@ nicotine-plus-git
 noto-fonts-cjk
 noto-fonts-emoji
 nss-mdns
-ntfs3-dkms
+ntfs3-dkms-git
 nudoku-git
 nyancat
 octave
@@ -181,6 +182,7 @@ pkgconf
 pkgstats
 plymouth-git
 procps-ng
+profile-sync-daemon
 psmisc
 pulseaudio-bluetooth
 pulsemixer
@@ -218,6 +220,7 @@ sxiv-bachoseven-git
 system-config-printer
 systemd
 systemd-sysvcompat
+sysz
 tar
 task-spooler
 tealdeer
@@ -251,7 +254,6 @@ vieb-bin
 vim-language-server
 vimiv-qt
 w3m
-wayland-protocols
 wezterm
 wget
 which
