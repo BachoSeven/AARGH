@@ -53,7 +53,7 @@ A,gebaar-libinput-fork,"is a super simple wm independent touchpad gesture daemon
 A,lf,"is an extensive terminal file manager that everyone likes."
 ,xplr,"is a minimal TUI file explorer."
 ,bc,"is used for a dropdown calculator."
-A,dunst-git,"is a suckless notification system."
+,dunst,"is a suckless notification system."
 ,exfat-utils,"allows management of FAT drives."
 ,nss-mdns,"is needed for .local hostname resolution (for CUPS and network printers)."
 ,cups,"is the CUPS printing system."
