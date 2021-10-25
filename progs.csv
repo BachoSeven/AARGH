@@ -23,6 +23,7 @@ A,stardict-dictd_www.dict.org_gcide,"Gnu Collaborative International Dictionary 
 ,libva-intel-driver,"VAAPI driver for my GPU."
 A,chromium-widevine,"is a plugin for using Netflix in chromium."
 ,ungoogled-chromium,"is the main browser."
+,vulkan-intel,"is the Intel mesa driver for Vulkan."
 ,mangohud,"is an FPS overlay for Vulkan."
 A,vieb-bin,"is the Vim Inspired Electron Browser."
 ,w3m,"is a great console web browser."
