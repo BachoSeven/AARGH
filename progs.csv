@@ -205,6 +205,7 @@ G,git@github.com:mayfrost/guides.git,"is a very handy collection of guides on va
 G,git@github.com:mitchweaver/subs.git,"is a better Youtube feed using dmenu."
 G,git@github.com:officialcactar/colors,"is a simple program to extract colors from PNG files."
 A,typiskt,"a terminal touch typing tutor."
+,typespeed,"another terminal-based typing speed test."
 A,xclip-git,"is required by pass (which is necessary for mutt-wizard)."
 A,isync-config-patched,"patched version of mbsync for XDG dirs."
 A,mutt-wizard-git,"is a light-weight terminal-based email system."
