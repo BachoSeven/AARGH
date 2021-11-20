@@ -19,7 +19,6 @@ bastet-xdg-git
 bat
 bc
 binutils
-bison
 blissify-git
 bluez-utils
 bookmenu-git
@@ -68,7 +67,6 @@ figlet
 file
 filesystem
 findutils
-flex
 fontconfig
 fzf
 gawk
@@ -141,7 +139,7 @@ mpd-light-pulse-ffmpeg
 mpv-light-pulse
 mutt-wizard-git
 nb-git
-nbfc-linux
+nbfc-linux-git
 ncmpcpp
 ncspot
 neofetch
