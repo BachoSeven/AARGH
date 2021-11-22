@@ -6,5 +6,5 @@
 - `/etc/X11/xorg.conf.d/20-intel.conf`
 - `/etc/udev/rules.d/10-trackpoint.rules`
 - `fprintd` for fingerprint sensor (+ `polkit-dumb-agent-git`, adding `_ polkit-dumb-agent` inside `xprofile`) [+ add lines to system-local-login and sudo]
-- `st`, `wezterm` and `dwm` smaller font size, `br` and `dim` script parameters
+- `st`, `wezterm` and `dwm` smaller font size, `br`, `mon` and `dim` script parameters
 - cpu/graphics: `xf86-video-intel`, `intel-opencl-runtime`
