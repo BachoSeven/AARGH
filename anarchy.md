@@ -24,7 +24,7 @@ sudo sh aargh.sh
 - `mkclean` installed packages (plus i.e. `grub` if using `limine`)
 - Install `mpd-light-pulse-ffmpeg` (my package); substitute `nodejs` with `nodejs-lts-fermium` or the most recent LTS available; octave: compile `openblas-lapack` to replace the default blas implementation.
 - nmdm-git: setup polkit permissions for NM (info in sysdots repo) + disable `NetworkManager-wait-online.service`
-- unbound: `sudo unbound-control-setup`, enable service, cp unbound.conf from stuff/etc; set as systemeresolver (archwiki), and lock the resolv.conf file(`sudo chattr +i /etc/resolv.conf`).
+- unbound: `sudo unbound-control-setup`, enable service, cp unbound.conf from stuff/etc; set as system resolver (archwiki), and lock the resolv.conf file(`sudo chattr +i /etc/resolv.conf`).
 - nbfc: enable --now service; `nbfc config -a "Asus Zenbook UX310UAK"`(or else); `nbfc status -s` to check.
 - plymouth: hook in mkinitcpio[included in sysdots but needs to be checked manually] && regenerate initramfs; copy `sysdots`'s `watermark.png` to `/usr/share/plymouth/themes/spinner/watermark.png`.
 - copy stuff to /etc and /root (using sysdots, better manual..) (disables systemd-homed.service amongst other things; might have to disable it first.)
