@@ -19,6 +19,12 @@ A,tauon-music-box,"is a modern streamlined music player."
 A,wsdd,"Is a Web Service Discovery Daemon for SMB."
   ```
 for Samba support.
+- deadbeef:
+  - deadbeef
+  - deadbeef-mpris2-plugin
+  - deadbeef-plugin-headerbar-gtk3-git
+  - deadbeef-plugin-spectrogram-gtk3-git
+  - deadbeef-plugin-waveform-gtk3-git
 - whatscli
 - weechat(+plugins):
   - installation:
