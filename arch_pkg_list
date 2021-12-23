@@ -35,7 +35,6 @@ chromaprint
 chromium-widevine
 clang
 clipmenu
-colord
 copyq
 coreutils
 cozette-ttf
@@ -56,6 +55,7 @@ duf-bin
 dunst
 e2fsprogs
 efibootmgr
+entr
 exfat-utils
 exiv2
 expac
@@ -136,6 +136,7 @@ mlocate
 moreutils
 mpc
 mpd-light-pulse-ffmpeg
+mpdscribble-git
 mpv-light-pulse
 mutt-wizard-git
 nb-git
