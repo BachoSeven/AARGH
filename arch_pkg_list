@@ -165,7 +165,7 @@ openssl-1.0
 p7zip
 pacman
 pacnews-neovim-git
-pamixer-git
+pamixer
 pango
 paru-bin
 pass-otp
