@@ -26,14 +26,16 @@ for Samba support.
   - deadbeef-plugin-spectrogram-gtk3-git
   - deadbeef-plugin-waveform-gtk3-git
 - whatscli
-- weechat(+plugins):
-  - installation:
-  ,weechat,"is the IRC client."
-  A,weechat-edit-git,"is the matrix client for Weechat."
-  A,weechat-matrix-git,"is the matrix client for Weechat."
-  A,weechat-notify-send,"is the matrix client for Weechat."
-  A,weechat-vimode-git,"is the matrix client for Weechat."
-  - configuration:
-    - weechat-plugins autoloading at startup: `ln -s /usr/share/weechat/python/weechat-matrix.py -t ~/.config/weechat/python/autoload`; `ln -s /usr/lib/weechat/python/notify_send.py -t $XDG_CONFIG_HOME/weechat/python/autoload`; `ln -s /usr/lib/weechat/python/vimode.py -t $XDG_CONFIG_HOME/weechat/python/autoload`; `ln -s /usr/lib/weechat/python/edit.py -t $XDG_CONFIG_HOME/weechat/python/autoload`
-    - bootstrap weechat with https://wiki.archlinux.org/index.php/WeeChat; and also from https://weechat.org/files/doc/stable/weechat_quickstart.en.html (some stuff might be
-      already set by weechat.conf from dotfiles repo).
+- IRC:
+  - `catgirl`
+  - weechat(+plugins):
+    - installation:
+    ,weechat,"is the IRC client."
+    A,weechat-edit-git,"is the matrix client for Weechat."
+    A,weechat-matrix-git,"is the matrix client for Weechat."
+    A,weechat-notify-send,"is the matrix client for Weechat."
+    A,weechat-vimode-git,"is the matrix client for Weechat."
+    - configuration:
+      - weechat-plugins autoloading at startup: `ln -s /usr/share/weechat/python/weechat-matrix.py -t ~/.config/weechat/python/autoload`; `ln -s /usr/lib/weechat/python/notify_send.py -t $XDG_CONFIG_HOME/weechat/python/autoload`; `ln -s /usr/lib/weechat/python/vimode.py -t $XDG_CONFIG_HOME/weechat/python/autoload`; `ln -s /usr/lib/weechat/python/edit.py -t $XDG_CONFIG_HOME/weechat/python/autoload`
+      - bootstrap weechat with https://wiki.archlinux.org/index.php/WeeChat; and also from https://weechat.org/files/doc/stable/weechat_quickstart.en.html (some stuff might be
+        already set by weechat.conf from dotfiles repo).
