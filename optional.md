@@ -26,6 +26,7 @@ for Samba support.
   - deadbeef-plugin-spectrogram-gtk3-git
   - deadbeef-plugin-waveform-gtk3-git
 - whatscli
+- `jackett-bin` (torrent scraper)
 - IRC:
   - `catgirl`
   - weechat(+plugins):
