@@ -191,6 +191,7 @@ qt5-declarative
 qt5-imageformats
 qt5-wayland
 qt5ct
+qt6ct
 re2
 readability-cli
 redshift-minimal
