@@ -53,5 +53,5 @@ sudo sh aargh.sh
  <!-- Example vim substitute command `%s/gnupg\//&d\.babif6xw6skmb8ps84qeyyam\//g` -->
  <!-- Finally, do `gpgconf --create-socketdir` and reboot (hopefully it works). -->
 - mutt-wizard: Just add accounts normally, and then, BEFORE SYNCING, comment out "Flatten" rows in MBSYNCRC (and then remove ~/.urlview) [also, deduplicate muttrc and mbsyncrc and
-  msmtp/config files...]; migrate abook contacts.
-  - for mail.dm.unipi.it: use `--cacert CERTIFICATE`, where the certificate is obtained through `openssl s_client -showcerts -servername student.dm.unipi.it -connect student.dm.unipi.it:993 2>&1 < /dev/null | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | sed -ne '1,/-END CERTIFICATE-/p' > student.dm.unipi.it.pem` + add certificates in `mbsynrc` and `msmtp`'s configs.
+  msmtp/config files... might be worth removing the relevant lines beforehand]; migrate abook contacts.
+  - for mail.dm.unipi.it: use `--cacert CERTIFICATE` for `curl` command in `mw`, where the certificate is obtained through `openssl s_client -showcerts -servername student.dm.unipi.it -connect student.dm.unipi.it:993 2>&1 < /dev/null | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | sed -ne '1,/-END CERTIFICATE-/p' > student.dm.unipi.it.pem` + add certificates in `mbsynrc` and `msmtp`'s configs.
