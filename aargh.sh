@@ -216,7 +216,7 @@ systemctl enable bluetooth.service
 systemctl enable tlp.service
 systemctl enable systemd-timesyncd.service
 systemctl start pkgstats.service
-systemctl set-default multi-user-target
+systemctl set-default multi-user.target
 
 # Install the dotfiles in the user's home directory
 putgitrepo
