@@ -40,7 +40,7 @@ sudo sh aargh.sh
   ```
 ### Extra
 - w3m: copy .cgi scripts(see README)
-- spotify: `sudo chmod 777 /opt/spotify; sudo chmod 777 /opt/spotify/Apps -R` and then `spicetify backup apply`
+- spotify: download `Fluent`'s css, ini, assets and js, then `sudo chmod 777 /opt/spotify; sudo chmod 777 /opt/spotify/Apps -R` and then `spicetify backup apply enable-devtool`
 - configure Ungoogled-chromium.
 - keepassxc import database && sync with chromium extension
 - gpg: import keys; ~~change sockets~~:
