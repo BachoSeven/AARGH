@@ -119,7 +119,6 @@ linux-firmware
 linux-zen
 linux-zen-headers
 lynx
-lyrics-in-terminal
 m4
 maim
 make
@@ -211,6 +210,7 @@ socat
 spicetify-cli
 spotify
 spotifywm-git
+sptlrx-bin
 stardict-dictd_www.dict.org_gcide
 subliminal-git
 sudo
