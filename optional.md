@@ -1,3 +1,15 @@
+- add ALHP: put
+
+    [core-x86-64-v3]
+    Include = /etc/pacman.d/alhp-mirrorlist
+
+    [extra-x86-64-v3]
+    Include = /etc/pacman.d/alhp-mirrorlist
+
+    [community-x86-64-v3]
+    Include = /etc/pacman.d/alhp-mirrorlist
+
+  at the top of pacman.conf repos, and run `sudo pacman -Syyuu`.
 - tauon(amazing music player) :
 ```
 A,tauon-music-box,"is a modern streamlined music player."

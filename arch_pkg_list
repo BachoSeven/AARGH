@@ -1,5 +1,7 @@
 abook-configdir
 adwaita-icon-theme
+alhp-keyring
+alhp-mirrorlist
 annepro2-tools-git
 apg
 arch-wiki-docs
@@ -98,7 +100,7 @@ isync-config-patched
 jbig2dec
 jq
 keepassxc-git
-kotatogram-desktop-bin
+kotatogram-dev-git
 kunst-git
 lagrange
 lesspipe
@@ -162,6 +164,7 @@ openssh
 openssl-1.0
 p7zip
 pacman
+pacman-contrib
 pacnews-neovim-git
 pamixer
 pango
