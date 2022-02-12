@@ -194,7 +194,7 @@ manualinstall dmenu-bachoseven-git
 manualinstall sxiv-bachoseven-git
 
 # make ssh key in an interactive way
-dialog --title "AARGH Installation" --infobox "Generating ssh key(you can optionally import it into your github account): insert your email" 5 70
+dialog --title "AARGH Installation" --infobox "Generating ssh key (you can optionally import it into your github account): insert your email" 5 70
 printf "email:\n"
 read -r email
 sudo -u "$name" ssh-keygen -t rsa -b 4096 -C "$email"
@@ -218,7 +218,7 @@ systemctl start pkgstats.service
 systemctl set-default multi-user.target
 
 # Install the dotfiles in the user's home directory
-putgitrepo
+[ -d "/home/$name/.config/dots" ] || putgitrepo
 
 # Uninstall unneeded packages
 dialog --title "AARGH Installation" --infobox "Removing useless packages from installation" 5 70
