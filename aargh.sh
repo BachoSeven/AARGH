@@ -70,10 +70,9 @@ refreshkeys() { \
 	pacman --noconfirm -Sy archlinux-keyring >/dev/null 2>&1
 	}
 
-# TODO: This breaks if script is ran multiple times in a row
 chaoticsetup() { \
 	dialog --infobox "Adding the Chaotic AUR Repository..." 4 40
-	printf "\n# Chaotic AUR\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
+	grep "chaotic-aur" /etc/pacman.conf || printf "\n# Chaotic AUR\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
 	pacman -Sy >/dev/null 2>&1
 	}
 
