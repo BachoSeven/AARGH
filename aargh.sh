@@ -72,7 +72,9 @@ refreshkeys() { \
 
 chaoticsetup() { \
 	dialog --infobox "Adding the Chaotic AUR Repository..." 4 40
-	grep "chaotic-aur" /etc/pacman.conf || printf "\n# Chaotic AUR\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
+	if ! grep -qF "chaotic-aur" /etc/pacman.conf; then
+		printf "\n# Chaotic AUR\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | tee -a /etc/pacman.conf
+	fi
 	pacman -Sy >/dev/null 2>&1
 	}
 
