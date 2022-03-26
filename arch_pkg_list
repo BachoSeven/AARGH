@@ -152,6 +152,7 @@ networkmanager
 networkmanager-dmenu-git
 newsboat
 nicotine+
+nodejs-readability-cli
 noto-fonts-cjk
 noto-fonts-emoji
 nss-mdns
@@ -196,7 +197,6 @@ qt5-wayland
 qt5ct
 qt6ct
 re2
-readability-cli
 redshift-minimal
 rest
 rofi
