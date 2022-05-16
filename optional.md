@@ -10,10 +10,6 @@
     Include = /etc/pacman.d/alhp-mirrorlist
 
   at the top of pacman.conf repos, and run `sudo pacman -Syyuu`.
-- tauon(amazing music player) :
-```
-A,tauon-music-box,"is a modern streamlined music player."
-```
 - `xournalpp`, for graphics tablets.
 - nicotine+ backup import
 - Installing `mpdris2`, `mpv-mpris-git` and `mconnect-git` to connect to my smartphone;
@@ -31,6 +27,10 @@ A,tauon-music-box,"is a modern streamlined music player."
 A,wsdd,"Is a Web Service Discovery Daemon for SMB."
   ```
 for Samba support.
+- tauon(amazing music player) :
+```
+A,tauon-music-box,"is a modern streamlined music player."
+```
 - deadbeef:
   - deadbeef
   - deadbeef-mpris2-plugin
