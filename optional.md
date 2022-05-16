@@ -11,7 +11,6 @@
 
   at the top of pacman.conf repos, and run `sudo pacman -Syyuu`.
 - `xournalpp`, for graphics tablets.
-- nicotine+ backup import
 - Installing `mpdris2`, `mpv-mpris-git` and `mconnect-git` to connect to my smartphone;
 - `mathematica`
 - cups(+avahi-daemon for network printers with IPP everywhere), jacket, nordvpn: enable services on demand so not to clutter boot. For the `nordvpnd` service, from version 3.8.8 onwards, we also have to be in the `nordvpn` group.
@@ -37,7 +36,7 @@ A,tauon-music-box,"is a modern streamlined music player."
   - deadbeef-plugin-headerbar-gtk3-git
   - deadbeef-plugin-spectrogram-gtk3-git
   - deadbeef-plugin-waveform-gtk3-git
-- whatscli
+- `whatscli`
 - `jackett-bin` (torrent scraper)
 - IRC:
   - `catgirl`
