@@ -203,6 +203,7 @@ G,git@github.com:BachoSeven/sysdots.git,"is the repository for system configurat
 G,git@github.com:BachoSeven/wiki.git,"is the Wiki."
 G,git@github.com:BachoSeven/mimi.git,"is a local copy of my xdg-open replacement script. (redundant install of mimi-bachoseven package but who cares.)"
 G,git@github.com:BachoSeven/tt.git,"is a typing timer/tutor/test."
+G,git@github.com:BachoSeven/pdfExt.git,"is a custom Chromium extension."
 G,git@github.com:mayfrost/guides.git,"is a very handy collection of guides on various software-related topics."
 G,git@github.com:mitchweaver/subs.git,"is a better Youtube feed using dmenu."
 G,git@github.com:officialcactar/colors,"is a simple program to extract colors from PNG files."
