@@ -145,7 +145,6 @@ ncmpcpp
 ncspot-bin
 neofetch
 neovim
-neovim-remote
 nerd-fonts-hack
 nerd-fonts-mononoki
 networkmanager
@@ -188,6 +187,7 @@ psmisc
 pulseaudio-bluetooth
 pulsemixer
 python-exiv2
+python-pynvim
 python-pywal
 qbittorrent
 qbittorrent-cli-bin
