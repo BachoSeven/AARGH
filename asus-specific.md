@@ -4,7 +4,6 @@
 
 # Other
 
-- annepro2-tools-git
 - blissify-git
 
 ## VCS versions:

@@ -16,7 +16,7 @@
 - cups(+avahi-daemon for network printers with IPP everywhere), jacket, nordvpn: enable services on demand so not to clutter boot. For the `nordvpnd` service, from version 3.8.8 onwards, we also have to be in the `nordvpn` group.
 - enable jacket in qbittorrent(update search engines + add jacket API; also, add indexers to jackett)
 - compile `blissify-git` for mpd smart playlist generation
-- install `annepro2-tools-git` in order to compile the annepro2_tools binary with pacman
+- install `annepro2-tools-git-bin` for quick annepro2 firmware flashing
 - if on an SSD which supports it (probably, `hdparm -I /dev/sdX | grep TRIM`), enable `fstrim.timer` for longevity.
 - put ~/stuff/web-stuff/lists/unified+gambling+fakenews_hosts in /etc/hosts
 - `katcr` (jackett CLI interface) (need to add jackett API to katcr.ini)
