@@ -100,7 +100,7 @@ A,croc,"is a fast method for transferring files across devices using a relay ser
 ,wol,"is a program for Wake On LAN."
 ,tig,"is a text-mode interface for Git."
 A,subliminal,"is a python tool for downloading subtitles."
-A,spotify,"is the official spotify client."
+,spotify-launcher,"is a launcher for the official spotify client."
 ,spicetify-cli,"is a CLI tool to customize spotify."
 A,spotifywm-git,"is needed to make the official client's class behave decently."
 ,python-pywal,"is a wonderful wallpaper and coloscheme setter."
