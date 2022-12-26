@@ -189,8 +189,6 @@ grep "ILoveCandy" /etc/pacman.conf >/dev/null || sed -i "/#VerbosePkgLists/a ILo
 sed -i "s/-j2/-j$(nproc)/;s/^#MAKEFLAGS/MAKEFLAGS/" /etc/makepkg.conf
 
 manualinstall $aurhelper-bin || error "Failed to install AUR helper."
-# This should be installed now
-manualinstall libxft-bgra
 # Removed packages
 manualinstall dmenu-bachoseven-git
 manualinstall sxiv-bachoseven-git
