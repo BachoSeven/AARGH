@@ -1,4 +1,4 @@
-- `bcm20702a1-firmware`
+- `broadcom-bt-firmware`
 - `tlp-rdw`
 - `acpi_call-dkms` --> needs `linux-zen-headers`
 - `/etc/tlp.conf`
