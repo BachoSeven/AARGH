@@ -234,6 +234,8 @@ chmod 700 "/home/$name/.local/share/gnupg"
 
 # Enable user to turn bluetooth on/off with `rfkill`
 usermod -aG rfkill "$name"
+usermod -aG input "$name"
+usermod -aG network "$name"
 
 # Create useful mount dirs under /mnt
 mkdir -p /mnt/usb1 /mnt/usb2 /mnt/iso /mnt/backup /mnt/backup/home /mnt/backup/root /mnt/roba /mnt/fraEl /mnt/fraPass
