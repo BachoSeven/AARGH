@@ -30,6 +30,7 @@ sudo sh aargh.sh
 - copy stuff to /etc and /root (using sysdots, better manual..) (disables systemd-homed.service amongst other things; might have to disable it first.)
 - ./add-gtypist-exercises.sh
 - psd (enable `psd.service` as user after copying sudoers file)
+- configure rescrobbled (put api in config) and mpdscribble (goes in /etc)
 - crontab (enable `cronie.service`):
   ``` sh
   @hourly		DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$(id -u $USER)/bus ~/.local/bin/cron/checkup >/dev/null 2>&1
