@@ -138,7 +138,8 @@ putgitrepo() {
 	# set dotbare ENV variables and run dotbare
 		export DOTBARE_DIR="/home/$name/.config/dots"
     export DOTBARE_TREE="/home/$name"
-    sudo -u "$name" dotbare finit -u $dotfilesrepo -s
+  # now should preserve environment
+    sudo -E -u "$name" dotbare finit -u $dotfilesrepo -s
 	}
 
 ### THE ACTUAL SCRIPT ###
@@ -197,7 +198,7 @@ manualinstall sxiv-bachoseven-git
 dialog --title "AARGH Installation" --infobox "Generating ssh key (you can optionally import it into your github account): insert your email" 5 70
 printf "email:\n"
 read -r email
-sudo -u "$name" ssh-keygen -t rsa -b 4096 -C "$email"
+sudo -u "$name" ssh-keygen -t ed25519 -b 4096 -C "$email"
 curl -sF"file=@/home/$name/.ssh/id_rsa.pub" https://0x0.st
 echo "go to github..."
 read -r _
